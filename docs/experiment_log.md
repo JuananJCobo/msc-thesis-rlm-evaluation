@@ -4,7 +4,7 @@ Registro cronológico de decisiones, cambios y observaciones durante la fase exp
 
 ---
 
-## 2026-04-04 — Inicialización del repositorio
+## 2026-04-06 — Inicialización del repositorio
 
 - Estructura de directorios creada.
 - Dependencias definidas en `requirements.txt`.
