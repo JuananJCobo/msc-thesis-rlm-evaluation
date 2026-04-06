@@ -1,2 +1,1 @@
-# msc-thesis-rlm-evaluation
-Experimental evaluation of Recursive Language Models for long-context processing in the analysis of scientific literature.
+# Evaluación experimental de Recursive Language Models para el análisis automatizado de literatura científica
