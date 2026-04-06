@@ -1,0 +1,29 @@
+# APIs de modelos
+anthropic>=0.25.0
+openai>=1.30.0
+
+# Pipeline RAG
+langchain>=0.2.0
+langchain-community>=0.2.0
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# Parseo de PDFs
+pdfplumber>=0.11.0
+pymupdf>=1.24.0
+
+# Métricas de evaluación
+rouge-score>=0.1.2
+bert-score>=0.3.13
+
+# Análisis y visualización
+pandas>=2.2.0
+matplotlib>=3.9.0
+seaborn>=0.13.0
+numpy>=1.26.0
+
+# Utilidades
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+tqdm>=4.66.0
+requests>=2.32.0
