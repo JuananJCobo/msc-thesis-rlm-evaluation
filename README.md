@@ -3,6 +3,7 @@
 Trabajo de Fin de Máster - Máster Universitario en Inteligencia Artificial - Universidad Tecnológica Atlántico-Mediterráneo - Curso 2025/2026
 
 **Autor:** Juan Antonio Jiménez Cobo
+
 **Director:** Daniel Fernández Fernández
 
 🚧 **Estado en desarrollo** — Fase experimental en curso (abril 2026)
