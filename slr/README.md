@@ -4,13 +4,13 @@ En este documento se explica el procedimiento seguido para la realización de la
 
 La RSL se ha llevado a cabo siguiendo el procedimiento estándar PRISMA (*Preferred Reporting Items for Systematic Reviews and Meta-Analyses*), que establece una guía de 27 pasos y un diagrama de flujo para garantizar la transparencia, calidad y reproducibilidad del proceso.
 
-> **Nota:** La RSL se llevó a cabo entre los días 6 y 15 de abril de 2026. Téngase esto encuenta a la hora de reproducir los resultados.
+> **Nota:** La RSL se llevó a cabo en abril de 2026. Téngase esto en cuenta a la hora de reproducir los resultados.
 
 <br>
 
 ## 1. Pregunta de investigación
 
-Se siguió la herramienta estándar PICO, que establece cuatro componentes para definir la pregunta de innvestigación.
+Se siguió la herramienta estándar PICO, que establece cuatro componentes para definir la pregunta de investigación.
 
 | Componente | Descripción | Aplicación al caso |
 |---|---|---|
@@ -22,7 +22,7 @@ Se siguió la herramienta estándar PICO, que establece cuatro componentes para 
 
 ### Formulación de la pregunta de investigación
 
-¿Son capaces los LLM de tomar decisiones de forma racional en juegos estratégicos, y cómo se comparan dichas decisiones frente a soluciones clásicas, jugadores jumanos y/u otros modelos?
+¿Son capaces los LLM de exhibir comportamiento racional en juegos estratégicos, y cómo se compara dicho comportamiento frente a soluciones clásicas, jugadores humanos y/u otros modelos?
 
 <br>
 
@@ -37,7 +37,7 @@ Se siguió la herramienta estándar PICO, que establece cuatro componentes para 
 | CI-3 | Texto en inglés | Búsqueda inicial |
 | CI-4 | Involucra al menos a un LLM, o agente basado en LLM, como jugador en un juego estratégico | Cribado por título y resumen y por texto completo |
 | CI-5 | Incluye comparación con soluciones clásicas, jugadores humanos y/u otros LLM o agentes basados en LLM | Cribado por título y resumen y por texto completo |
-| CE-6 | Proporciona resultados cuantitativos sobre el comportamiento del LLM o agente basado en LLM | Cribado por título y resumen y por texto completo |
+| CI-6 | Proporciona resultados cuantitativos sobre el comportamiento del LLM o agente basado en LLM | Cribado por título y resumen y por texto completo |
 
 > **Nota:** Los criterios CI-4 y CI-5 fueron ampliados a posteriori para incluir estudios que emplearan agentes basados en LLM, no únicamente LLM tradicionales, e incluir comparaciones entre modelos, además de comparaciones frente a soluciones clásicas y/o jugadores humanos.
 
@@ -53,7 +53,7 @@ Se siguió la herramienta estándar PICO, que establece cuatro componentes para 
 | CE-5 | El texto completo no se encuentra disponible | Cribado por texto completo |
 | CE-6 | Preprints sin publicación en editorial reconocida o comunicación a congresos sin revisión por pares | Corpus final |
 
-> **Nota:** Los artículos incluidos deben de cumplir todos los criterios de inclusión, mientras que cualquier criterio de exclusión es suficiente para excluirlos. Para pulir los criterios de inclusión y exclusión se empleó el modelo de lenguaje Sonnet 4.6.
+> **Nota:** Los artículos incluidos deben de cumplir todos los criterios de inclusión, mientras que cualquier criterio de exclusión es suficiente para excluirlos. Los criterios de inclusión y exclusión fueron refinados con el modelo de lenguaje Claude Sonnet 4.6.
 
 <br>
 
@@ -108,7 +108,7 @@ Se utilizó la herramienta de software <a href="https://new.rayyan.ai/">Rayyan</
 - Duplicados detectados por Rayyan: 33
 - Registros únicos tras la eliminación de duplicados: 117 (se pueden consultar en `screening/corpus_deduplicated_20260408.csv`)
 
-> **Nota:** Pese a que la identificación de duplicados fue realizada completamente mediante Rayyan, la decisión final de qué artículos eliminar residió en el usuario.
+> **Nota:** Rayyan únicamente identificó registros duplicados, pero todas las decisiones fueron comprobadas por el revisor.
 
 ### Fase 2: Cribado por título y resumen
 
@@ -116,7 +116,7 @@ Se utilizó la herramienta de software <a href="https://new.rayyan.ai/">Rayyan</
 - Registros excluidos: 58
 - Registros incluidos: 59 (se pueden consultar en `screening/corpus_title_abstract_20260412.csv`)
 
-> **Nota:** Rayyan no incluyó o excluyó ningún registro automáticamente, todo fue realizado por el usuario. Se empleó el modelo de lenguaje Sonnet 4.6 como asistente adicional en algunas decisiones. Al realizar el cribado con un único revisor, se asumen errores en la clasificación de registros durante esta fase, lo cual se intentó mitigar parcialmente incluyendo citas y referencias de los artículos más relevantes del corpus final.
+> **Nota:** Rayyan no incluyó o excluyó ningún registro automáticamente, luego todas las decisiones recayeron en el revisor. Adicionalmente, se empleó el modelo de lenguaje Claude Sonnet 4.6 como asistente adicional en algunas decisiones. Al realizar el cribado mediante un único revisor, se asumen errores en la clasificación de registros durante esta fase. Esto se intentó mitigar parcialmente incluyendo citas y referencias de los artículos más relevantes del corpus final.
 
 
 ### Fase 3: Cribado por lectura de texto completo
@@ -149,7 +149,7 @@ Para mitigar posibles fallos en la clasificación de artículos durante el criba
 
 ### Búsqueda hacia delante
 
-Se identificaron todas las citaciones disponibles en Scopus de cada registro, y se aplicaron los filtros iniciales y la cadena de búsqueda booleana descritos en la sección 3. A los registros restantes se les aplicó un cribado por título y abstract, siguiendo los criterios de inclusión y exclusión previamente definidos.
+Se identificaron todas las citaciones disponibles en Scopus de cada registro, y se aplicaron los filtros iniciales y la cadena de búsqueda booleana descritos en la sección 3. A los registros restantes se les aplicó un cribado por título y resumen, siguiendo los criterios de inclusión y exclusión previamente definidos.
 
 | Registro | Citaciones evaluadas | Citaciones incluidas al corpus |
 |---|---|---|
@@ -159,7 +159,7 @@ Se identificaron todas las citaciones disponibles en Scopus de cada registro, y 
 
 ### Búsqueda hacia atrás
 
-En este caso se analizaron todas las referencias de los artículos, aplicándoles un cribado por título y abstract con los criterios de inclusión y exclusión ya definidos.
+En este caso se analizaron todas las referencias de los artículos, aplicándoles un cribado por título y resumen con los criterios de inclusión y exclusión ya definidos.
 
 | Registro | Referencias evaluadas | Referencias incluidas al corpus |
 |---|---|---|
@@ -167,7 +167,7 @@ En este caso se analizaron todas las referencias de los artículos, aplicándole
 | R3 | 63 | 6 |
 | R4 | 40 | 0 |
 
-> **Nota:** El proceso de búsqueda hacia atrás fue concluido al analizar dos registros consecutivos (R2 y R4) sin ninguna referencia nueva relevante. Dado que el objetivo inicial de un corpus de 50 artículos se había superado, se dio por conluida la RSL en este punto.
+> **Nota:** El proceso de búsqueda hacia atrás se dio por concluido debido a que (1) se analizaron dos registros consecutivos (R2 y R4) sin añadir ninguna referencia nueva y (2) varias referencias de los registros ya estaban incluidas en el corpus.
 
 ### Resultados
 
