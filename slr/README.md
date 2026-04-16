@@ -106,7 +106,7 @@ Se utilizó la herramienta de software <a href="https://new.rayyan.ai/">Rayyan</
 
 - Registros totales antes de la deduplicación: 150 (110 Scopus y 40 WoS)
 - Duplicados detectados por Rayyan: 33
-- Registros únicos tras la eliminación de duplicados: 117 (se pueden consultar en `screening/corpus_deduplicated_20260408.csv`)
+- Registros únicos tras la eliminación de duplicados: 117 → Se pueden consultar en `screening/corpus_deduplicated_20260408.csv`
 
 > **Nota:** Rayyan únicamente identificó registros duplicados, pero todas las decisiones fueron comprobadas por el revisor.
 
@@ -114,7 +114,7 @@ Se utilizó la herramienta de software <a href="https://new.rayyan.ai/">Rayyan</
 
 - Registros sometidos a cribado por título y resumen: 117
 - Registros excluidos: 58
-- Registros incluidos: 59 (se pueden consultar en `screening/corpus_title_abstract_20260412.csv`)
+- Registros incluidos: 59 → Se pueden consultar en `screening/corpus_title_abstract_20260412.csv`
 
 > **Nota:** Rayyan no incluyó o excluyó ningún registro automáticamente, luego todas las decisiones recayeron en el revisor. Adicionalmente, se empleó el modelo de lenguaje Claude Sonnet 4.6 como asistente adicional en algunas decisiones. Al realizar el cribado mediante un único revisor, se asumen errores en la clasificación de registros durante esta fase. Esto se intentó mitigar parcialmente incluyendo citas y referencias de los artículos más relevantes del corpus final.
 
@@ -123,7 +123,7 @@ Se utilizó la herramienta de software <a href="https://new.rayyan.ai/">Rayyan</
 
 - Registros sometidos a cribado por lectura de texto completo: 59
 - Registros excluidos: 16
-- Registros incluidos: 43 (se pueden consultar en `screening/corpus_fulltext_20260414.csv`)
+- Registros incluidos: 43 → Se pueden consultar en `screening/corpus_fulltext_20260414.csv`
 
 > **Nota:** Durante esta fase se identificó un registro duplicado que no fue detectado por Rayyan previamente.
 
@@ -173,7 +173,7 @@ En este caso se analizaron todas las referencias de los artículos, aplicándole
 
 - Registros adicionales identificados de otras fuentes: 122 referencias y 97 citaciones
 - Registros excluidos: 115 referencias y 91 citaciones
-- Registros incluidos: 13 (las referencias y citaciones incluidas se pueden consultar en `search_references_20260415.csv` y `search_citations_20260415.csv`)
+- Registros incluidos: 13 → Las referencias y citaciones incluidas se pueden consultar en `search_references_20260415.csv` y `search_citations_20260415.csv`
 
 <br> 
 
@@ -182,7 +182,7 @@ En este caso se analizaron todas las referencias de los artículos, aplicándole
 
 - Registros incluidos mediante bases de datos: 43
 - Registros incluidos mediante otras fuentes: 13
-- Total de registros incluidos en el corpus: 56
+- Total de registros incluidos en el corpus: 56 → El corpus final se puede consultar en `final/corpus_final_20260415.csv`
 
 <br>
 
