@@ -15,7 +15,7 @@ En el repositorio de trabajo de Google Drive se incluyen adicionalmente las carp
 
 * `corpus/papers/` →  registros descargados en formato .pdf
 * `corpus/raw/` →  archivos .txt con el texto extraído de cada registro
-* `corpus/preprocessed/` →  archivos .txt con el texto final preprocesado de cada registro
+* `corpus/preprocessed/` →  archivos .json con el texto final preprocesado y algunos metadatos de cada registro
 
 No obstante, no se han incluido en este repositorio por las restricciones de licencia de las editoriales.
 
@@ -38,7 +38,7 @@ El pipeline de procesamiento de los textos de `notebooks/02_preprocessing.ipynb`
 | paper_44 | 17 | 7 | Referencias y apéndices |
 | paper_52 | 91 | 81 | Material suplementario |
 
-En estos casos, se editaron manualmente los archivos .txt con el texto preprocesado de cada registro para eliminar el contenido adicional no filtrado por el pipeline.
+En estos casos, se editaron manualmente los contenidos de los archivos .json con el texto preprocesado de cada registro para eliminar el contenido adicional no filtrado por el pipeline.
 
 ### Inclusión de ruido adicional
 
