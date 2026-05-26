@@ -27,19 +27,40 @@ Puede encontrarse en la ruta `slr/final/corpus_final_20260415.csv` de este repos
 
 ### Secciones extensas no filtradas automáticamente
 
-El pipeline de procesamiento de los textos de `notebooks/02_preprocessing.ipynb` no consiguió eliminar de forma automática las referencias y apéndices en los siguientes registros, debido a que los encabezados no siguen estructuras estándar:
+El pipeline de procesamiento de los textos de `notebooks/02_preprocessing.ipynb` no consiguió eliminar de forma automática secciones extensas en algunos registros, ya que los enabezados no siguen estructuras estándar:
 
 | Paper ID | Páginas totales | Páginas extra | Secciones no eliminadas |
 |---|---|---|---|
-| paper_08 | 43 | 33 | Referencias y apéndices |
-| paper_14 | 45 | 35 | Referencias y apéndices |
-| paper_17 | 34 | 24 | Referencias y apéndices |
-| paper_41 | 15 | 2 | Referencias y biografías de autores |
+| paper_08 | 43 | 33 | Apéndices |
+| paper_14 | 45 | 35 | Apéndices |
+| paper_17 | 34 | 24 | Apéndices |
 | paper_44 | 17 | 7 | Referencias y apéndices |
 | paper_52 | 91 | 81 | Material suplementario |
 
-En estos casos, se editaron manualmente los contenidos de los archivos .json con el texto preprocesado de cada registro para eliminar el contenido adicional no filtrado por el pipeline.
+Adicionalmente, en otros registros el pipeline falló al eliminar los bloques iniciales de los registros (título + información de los autores + cabeceras editoriales) u otras secciones algo más reducidas:
+
+| Paper ID | Secciones no eliminadas |
+|---|---|
+| paper_01 | Bloque inicial |
+| paper_15 | Bloque inicial |
+| paper_18 | Bloque inicial |
+| paper_19 | Bloque inicial |
+| paper_25 | Bloque inicial |
+| paper_35 | Bloque inicial |
+| paper_41 | Referencias y biografías de autores |
+| paper_48 | Bloque inicial |
+
+En ambos casos, se editaron manualmente los contenidos de los archivos .json con el texto preprocesado de cada registro para eliminar el contenido adicional no filtrado por el pipeline.
+
+### Abstract eliminado incorrectamente
+
+En los siguientes registros el pipeline eliminó incorrectamente el abstract junto al bloque inicial al no identificar correctamente el inicio de la sección:
+
+* paper_32
+* paper_38
+
+En ambos casos se restauró el abstract manualmente empleando el texto extraído crudo disponible en `corpus/raw/`, adaptando su formato a los requerimientos del preprocesado.
 
 ### Inclusión de ruido adicional
 
-Además de las secciones de referencias y apéndices que no fueron eliminados por el pipeline, en la mayoría de registros preprocesados no se pudo eliminar con éxito las marcas editoriales y cabeceras. No obstante, dado que la proporción de estas partes es mínima con respecto a la totalidad de los artículos, se optó por incluirlas y aceptarlas como ruido adicional.
+Además de las secciones de referencias y apéndices que no fueron eliminados por el pipeline, en algunos registros preprocesados no se pudo eliminar con éxito las marcas editoriales y cabeceras en secciones intermedias del artículo. No obstante, representan una parte marginal de la longitud total del artículo, luego se optó por incluirlas y aceptarlas como ruido adicional.
