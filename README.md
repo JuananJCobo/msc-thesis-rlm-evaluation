@@ -83,3 +83,10 @@ Zhang, A. L., Kraska, T., & Khattab, O. (2026). *Recursive Language Models*. arX
 
 Repositorio oficial de la biblioteca RLM:
 https://github.com/alexzhang13/rlm
+
+## Licencia
+
+- El código de este repositorio está bajo licencia [MIT](LICENSE).
+
+- La memoria del TFM (`docs/memoria.pdf`) está bajo licencia 
+[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Se permite compartir con atribución, sin uso comercial y sin modificaciones.
