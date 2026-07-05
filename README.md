@@ -4,25 +4,45 @@ Trabajo de Fin de Máster - Máster Universitario en Inteligencia Artificial - U
 
 **Autor:** Juan Antonio Jiménez Cobo
 
-**Director:** Daniel Fernández Fernández
-
-🚧 **Estado en desarrollo** — Fase experimental en curso (abril 2026)
+**Director:** Pablo Manuel Berná Larrosa
 
 ---
 
 ## Descripción
 
-Este repositorio contiene el código, metodología, datos y resultados del componente práctico del Trabajo de Fin de Máster, el cual consiste en una evaluación experimental de tres sistemas para tareas de procesamiento largo aplicadas al análisis de literatura científica. Los sistemas evaluados son:
+Este repositorio contiene el código, datos y resultados del componente práctico del Trabajo de Fin de Máster, el cual consiste en el diseño e implementació de un sistema de evaluación experimental de tres sistemas para tareas de procesamiento de contexto largo largo aplicadas al análisis de literatura científica. Los sistemas evaluados son:
 
-- **Recursive Language Models (RLM)** - Metodología propuesta por Zhang et al., 2025.
-- **Large Language Models (LLM)** - LLM tradicionales que se emplean como baseline.
-- **Retrieval Augmented Generation (RAG)**
+- **Large Language Models (LLM)** - Se implementan mediante llamadas directas a la API. Procesan el contexto completo en cada llamada.
+- **Retrieval Augmented Generation (RAG)** - Implementado con LlamaIndex y ChromaDB como almacén vectorial, ajustado con los parámetros `top_k=5, chunk_size=512`.
+- **Recursive Language Models (RLM)** - Metodología propuesta por Zhang et al. (2025).
 
-La evaluación se realiza sobre diferentes corpus de artículos académicos, cuyos volúmenes varían de 10 a 25 artículos, empleando un dataset de consultas anotadas manualmente clasificadas en tres niveles de complejidad: extracción factual, comparación metodológica y síntesis e identificación de lagunas.
+Cada sistema fue implementado utilizando dos modelos de lenguaje: GPT-5-4 mini y Gemini 2.5 Flash. En el caso de los RLM, se emplearon GPT-5.4 nano y Gemini 2.5 Flash-Lite como modelos para las sub-llamadas recursivas.
 
-**Hipótesis inicial:** Se parte desde la premisa de que los RLM ofrecen ganancias significativas en tareas de procesamiento de contexto largo frente a modelos base y alternativas como RAG que justifican su mayor complejidad arquitectónica.
+## Diseño experimental
 
-**Objetivo final:** Se espera identificar el umbral en la longitud del contexto a partir del cual los resultados obtenidos por RLM mejoran significativamente al resto de alternativas empleadas, restringiendo el dominio al de literatura científica. Asimismo, se espera identificar limitaciones prácticas de los RLM en las tareas evaluadas.
+El sistema experimental cuenta con las siguientes características:
+
+- Un corpus de 55 artículos académicos sobre el comportamiento estratégico de LLM en entornos de teoría de juegos, construido mediante una Revisión Sistemática de Literatura siguiendo el protocolo PRISMA.
+- 4 subconjuntos del corpus con tamaño creciente: C1 (~210.000 tokens), C2 (~280.000 tokens), C3 (~360.000 tokens), C4 (~520.000 tokens).
+- 40 consultas con sus respectivas respuestas de referencia anotadas manualmente y divididas en 3 niveles de complejidad:
+  - Extracción factual (16 consultas): Requieren extraer un dato específico del contexto
+  - Comparación (14 consultas): Requieren identificar dos artículos del corpus y comparar las diferencias entre cada enfoque
+  - Síntesis (10 consultas): Requieren identificar patrones comunes entre todos los registros del corpus, agregarlos y sintetizar la información.
+
+- Cada ejecución fue repetida 2 veces para obtener resultados más robustos desde un punto de vista estadístico. El número total de ejecuciones realizadas fue de 1.760 ejecuciones.
+- Para la evaluación de las respuestas se empleó la metodología *LLM-as-judge*, en donde un LLM juez (GPT-5.4 mini) evaluó la calidad de las respuestas, comparándolas con las respuestas de referencia y asignándoles una puntuación en la escala discreta 1-5.
+
+## Resultados principales
+
+- Los LLM base obtienen el mayor rendimiento global en todos los tipos de consultas, sin mostrar degradación a medida que la longitud del contexto aumenta.
+- RLM GPT-5.4 mini permite aumentar considerablemente la cantidad de contexto procesado por el LLM base, el cual cuenta con una ventana de contexto de 272.000 tokens. La ventana de contexto de Gemini 2.5 Flash es de 1 millón de tokens, luego RLM no muestra una mejora en la escala de los experimentos (el contexto total es de 520.000 tokens)
+- RLM muestran un potencial en tareas de comparación de síntesis, obteniendo resultados similares a LLM base y superiores a RAG. No obstante, su rendimiento se ve limitado por 3 patrones de fallo:
+  1. Errores de saturación de la API que no fueron detectados por el pipeline de experimentación.
+  2. Alucinaciones del modelo de sub-llamadas Gemini 2.5 Flash-Lite.
+  3. Fallos de interacción con el entorno REPL por parte de RLM GPT-5.4 mini.
+- El análisis coste-calidad sitúa a RLM GPT-5.4 mini en la frontera de Pareto al excluir los fallos de interacción con el REPL.
+- Un experimento de ablación para ajustar el prompt raíz redujo en un 38,81% el número de ejecucuiones de RLM GPT-5.4 mini que mostraban fallos de ejecución con el REPL.
+
 
 ## Estructura del repositorio
 
@@ -44,8 +64,7 @@ docs/ →  diario de progreso y protocolo de anotación de las consultas
 
 ## Referencias
 
-Zhang, A. L., et al. (2025). *Recursive Language Models*. arXiv:2512.24601.
-https://arxiv.org/abs/2512.24601
+Zhang, A. L., Kraska, T., & Khattab, O. (2026). *Recursive Language Models*. arXiv:2512.24601. https://arxiv.org/abs/2512.24601
 
-Repositorio oficial de la librería RLM:
+Repositorio oficial de la biblioteca RLM:
 https://github.com/alexzhang13/rlm
