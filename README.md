@@ -46,14 +46,7 @@ El sistema experimental cuenta con las siguientes características:
 
 ## Estructura del repositorio
 
-```
-data/ → corpus de artículos según su volumen y dataset de consultas anotadas manualmente
-src/ →  código fuente para la implementación de los sistemas y métricas empleadas
-notebooks/ →  Google Colab Notebooks con el procesamiento de texto crudo, pilotos de experimentos y análisis de resultados
-experiments/ →  configuraciones y resultados de los experimentos
-outputs/ →  figuras y tablas para su uso en la memoria del trabajo
-docs/ →  diario de progreso y protocolo de anotación de las consultas
-```
+
 
 ## Reproducibilidad
 
