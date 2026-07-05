@@ -46,7 +46,28 @@ El sistema experimental cuenta con las siguientes características:
 
 ## Estructura del repositorio
 
-
+```
+proyect/
+├── corpus/                           
+│   ├── extraction_report.csv         # Estadísticas de extracción de cada artículo
+│   └── preprocessing_report.csv      # Estadísticas del preprocesamiento de cada artículo
+├── subsets/                          # Registros de cada subconjunto del corpus
+│   ├── subset1_metadata.csv
+│   ├── subset2_metadata.csv
+│   ├── subset3_metadata.csv
+│   └── subset4_metadata.csv
+├── docs/
+│   └── TFM_Juan_Antonio_Jimenez_Cobo.pdf       # Memoria del trabajo
+├── experiments/
+│   ├── results/                      # Registros de las ejecuciones de los experimentos            │   ├── rlm_logs/                     # Registros de las trayectorias de razonamiento de los sistemas RLM
+│   └── experiment_summary.csv        # Informe de las ejecuciones de los experimentos
+├── figures/                          # Figuras empleadas en la memoria
+├── notebooks/                        # Libretas de Google Colab con el código fuente del proyecto
+├── queries/
+│   └── queries.json                  # Listado de las consultas empleadas en los experimentos y sus respuestas de referencia
+├── slr/                              # Guía para reproducir la revisión Sistemática de Literatura empleada para la creación del corpus
+└── README.md
+```
 
 ## Reproducibilidad
 
