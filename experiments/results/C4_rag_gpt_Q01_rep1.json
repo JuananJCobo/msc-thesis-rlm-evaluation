@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q01",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T22:39:23.722963",
+  "response": "The five games evaluated were:\n\n1. Prisoner’s Dilemma  \n2. Stag Hunt  \n3. Chicken game  \n4. Head-tail game  \n5. Battle of the Sexes",
+  "latency_s": 1.05,
+  "input_tokens": 2580,
+  "output_tokens": 42,
+  "cost_usd": 0.002124,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists the five games from Table 2. Minor capitalization and wording differences (e.g., \"Chicken game\" vs. \"Chicken Game\") do not affect correctness.",
+  "judge_cost_usd": 0.000475,
+  "total_cost_accumulated_usd": 8.8641,
+  "chunks": [
+    {
+      "paper_id": "paper_06",
+      "score": 0.486
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.4837
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.4659
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.4655
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4643
+    }
+  ]
+}

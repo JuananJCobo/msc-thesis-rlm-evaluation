@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q31",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T22:47:20.252002",
+  "response": "The main strategies can be grouped into a few complementary ways of making the action space manageable:\n\n1. **Replace direct action selection with structured code generation**  \n   Instead of asking an LLM to choose every move explicitly, the model generates a **bot or agent implementation**. This shifts the problem from optimizing over a huge sequence of game actions to optimizing over a more structured software artifact. The resulting policy is easier to evaluate, compare, and iterate on.\n\n2. **Use search and self-play over candidate strategies rather than over raw moves**  \n   Rather than exploring every possible action in the game, the system explores a smaller set of **candidate strategies or code variants**. These candidates compete against each other in self-play or other game-theoretic competitions, which compresses the strategic search into a tractable comparison among a limited number of learned policies.\n\n3. **Apply game-theoretic optimization on compressed policy representations**  \n   The approach is not to solve the full action-level game directly, but to perform optimization over the space of **generated agents**. This turns an intractable action-space problem into a smaller strategic-space problem where equilibrium-like competition can be run more feasibly.\n\n4. **Use structured methods instead of unconstrained prompting**  \n   Direct prompting can produce inconsistent or weak play. A more structured setup narrows the effective decision space by making the LLM output code under constraints, which helps stabilize behavior and reduces the combinatorial burden of reasoning about every possible move.\n\nOverall, these methods compress the environment by **abstracting from individual actions to higher-level policies, code, or agent designs**. That reduction makes game-theoretic optimization feasible because the system compares a manageable set of candidate strategies rather than searching across the full vast action space of the game.",
+  "latency_s": 5.392,
+  "input_tokens": 2580,
+  "output_tokens": 360,
+  "cost_usd": 0.003555,
+  "judge_score": 3,
+  "judge_justification": "The response captures the broad idea of compressing the search from raw actions to higher-level strategy/policy/code representations and mentions self-play and game-theoretic optimization over a smaller candidate set. However, it misses the key literature-specific mechanisms in the reference answer: latent abstraction for open-ended communication, depth-limited search with LLM value evaluation for structured games, and statistical downsampling/heuristic pruning of low-value actions in domains like poker. It is therefore only a partial synthesis of the evaluated papers.",
+  "judge_cost_usd": 0.001137,
+  "total_cost_accumulated_usd": 15.1101,
+  "chunks": [
+    {
+      "paper_id": "paper_36",
+      "score": 0.5257
+    },
+    {
+      "paper_id": "paper_36",
+      "score": 0.5256
+    },
+    {
+      "paper_id": "paper_36",
+      "score": 0.5256
+    },
+    {
+      "paper_id": "paper_36",
+      "score": 0.5256
+    },
+    {
+      "paper_id": "paper_36",
+      "score": 0.5256
+    }
+  ]
+}

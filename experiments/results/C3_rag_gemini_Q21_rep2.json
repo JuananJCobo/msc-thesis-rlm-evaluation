@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T13:54:49.325250",
+  "response": "The EAI framework integrates predefined emotions into large language models (LLMs) before gameplay. These emotions, such as 'anger', 'sadness', 'happiness', 'disgust', and 'fear', are combined with a game description to form the initial system prompt presented to the LLM. This methodology aims to assess how emotions influence LLM decision-making in various settings, including ethical dilemmas and one-shot bargaining games like the Dictator Game. The framework minimizes other contextual information and avoids setting specific personality traits to clearly evaluate the impact of emotions.\n\nInformation regarding the MAgIC framework's method of injecting belief tracking to reason about others is not available in the provided text.",
+  "latency_s": 5.2,
+  "input_tokens": 2591,
+  "output_tokens": 138,
+  "cost_usd": 0.001122,
+  "judge_score": 3,
+  "judge_justification": "The response accurately describes the EAI framework’s emotional prompt injection and its purpose, but it fails to compare it against MAgIC in any substantive way. It explicitly says information about MAgIC is unavailable, so it misses the key synthesis about belief tracking / reasoning about others versus emotional priming. Thus it partially answers the question but lacks the central comparative element.",
+  "judge_cost_usd": 0.000843,
+  "total_cost_accumulated_usd": 20.803,
+  "chunks": [
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4339
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4339
+    }
+  ]
+}

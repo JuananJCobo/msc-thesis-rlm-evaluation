@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q01",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-23T14:41:48.607038",
+  "response": "prisoner’s dilemma\nstag hunt\nchicken game\nhead-tail game\nbattle of the sexes",
+  "latency_s": 15.449,
+  "input_tokens": 10135,
+  "output_tokens": 457,
+  "cost_usd": 0.004183,
+  "judge_score": 4,
+  "judge_justification": "The response lists the five games correctly and directly. The only minor issue is a wording variation: 'battle of the sexes' instead of 'The battle of sexes,' which is conceptually equivalent.",
+  "judge_cost_usd": 0.000473,
+  "total_cost_accumulated_usd": 2.6552,
+  "n_iterations": 5,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C2_gemini/rlm_2026-06-23_14-41-31_e7638983.jsonl"
+}

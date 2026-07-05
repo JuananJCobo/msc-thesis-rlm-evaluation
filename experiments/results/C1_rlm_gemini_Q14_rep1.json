@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q14",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-23T14:16:06.010452",
+  "response": "Error: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+  "latency_s": 30.743,
+  "input_tokens": 8853,
+  "output_tokens": 1216,
+  "cost_usd": 0.005696,
+  "judge_score": 1,
+  "judge_justification": "The system response does not answer the question at all; it only reports a 503 error message instead of listing the five negotiation states.",
+  "judge_cost_usd": 0.000493,
+  "total_cost_accumulated_usd": 1.2548,
+  "n_iterations": 4,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C1_gemini/rlm_2026-06-23_14-15-33_6048631c.jsonl"
+}

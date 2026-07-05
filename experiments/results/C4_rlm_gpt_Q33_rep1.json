@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q33",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:48:46.298883",
+  "response": "Across the corpus, injecting human-like psychological attributes makes LLMs less like stable optimizers and more like behaviorally contingent agents. The papers repeatedly show that synthetic personalities, emotional framing, and pretraining-language biases change outcomes in strategic settings: payoffs shift in zero-sum and repeated games when agents are assigned cooperative vs. selfish personalities; emotions can materially alter cooperation rates and ethical choices; and model behavior varies with language, size, and alignment, revealing embedded emotional and cultural biases.\n\nThis compromises objective rationality in several ways. First, the models stop acting as context-invariant payoff maximizers: the same game can yield different actions and payoffs once a personality or emotional state is injected. Second, behavior becomes sensitive to irrelevant or extraneous prompts, such as language choice or agent persona, which should not affect formal game-theoretic logic. Third, the models exhibit asymmetric and sometimes unexpected deviations—e.g., positive emotion can still reduce cooperation, and stronger alignment can increase rationality while reducing human-like emotional conformity. Fourth, these attributes expose latent biases from training data, so the model’s “reasoning” is no longer purely mathematical but partly a reflection of learned human affect and social stereotypes.\n\nOverall, behavioral anthropomorphism compromises mathematical logic by introducing non-logical state dependence, reducing internal consistency across equivalent formulations, and causing departures from deterministic utility-based behavior. In the literature here, the core pattern is that anthropomorphic cues may improve realism or human-likeness, but they do so at the cost of predictable, formally rational decision-making.",
+  "latency_s": 24.258,
+  "input_tokens": 45060,
+  "output_tokens": 1399,
+  "cost_usd": 0.040091,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main literature-level pattern: adding personas, emotions, and bias-like prompts makes LLM behavior less purely utility-maximizing and more state-dependent, context-sensitive, and human-like. It also captures key consequences for rationality, including deviations from payoff maximization, sensitivity to irrelevant prompts, and the influence of latent training biases. However, it is somewhat less specific than the reference about the exact ways anthropomorphism distorts logic (e.g., the negotiation/personality trade-off, negative-emotion effects in ethical reasoning, and the explicit stochastic-choice bias examples), so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001239,
+  "total_cost_accumulated_usd": 20.6831,
+  "n_iterations": 13,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C4_gpt/rlm_2026-06-23_00-48-18_36f8cd70.jsonl"
+}

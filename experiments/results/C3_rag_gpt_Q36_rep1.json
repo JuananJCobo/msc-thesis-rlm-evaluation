@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q36",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T22:48:38.836967",
+  "response": "Recent frameworks use a combination of **game-theoretic modeling, prompt-based reasoning, and private internal deliberation** to help LLM agents operate under imperfect information.\n\nA useful synthesis is:\n\n- **Partial observability game formalization**: Model the interaction as a partially observable stochastic game so the agent explicitly treats some state variables as hidden and updates beliefs from observed history rather than assuming full visibility.\n\n- **In-context learning over interaction history**: Use the conversation and action history as the main evidence source so the agent can reconstruct likely concealed states from past moves and responses.\n\n- **Chain-of-thought style reasoning**: Let the agent reason through possible opponent types, future responses, and payoff consequences step by step, rather than selecting actions from surface cues alone.\n\n- **Private deliberation**: Add a hidden reasoning channel where the agent can think about past/future interactions and candidate actions without exposing those thoughts to the opponent. This supports strategic planning while preventing internal information leakage.\n\n- **Opponent-type inference and action distribution estimation**: Track the opponent’s likely strategy class and choose actions from a distribution suited to the current game, aiming for near-optimal behavior instead of fixed deterministic play.\n\n- **Deception-aware planning**: Maintain separate public and private behavior so the agent can preserve strategic ambiguity, avoid revealing intentions, and exploit competitive settings while still performing well in cooperative ones.\n\n- **Improved probabilistic sampling**: Since generating diverse random numbers and sampling from prior distributions can be weak, strengthening stochastic sampling helps the agent better explore action choices and approximate Bayesian-style decision making.\n\nTogether, these methods let an LLM agent **infer hidden variables from partial evidence, plan under uncertainty, and preserve deception by keeping internal deliberation concealed from the opponent**.",
+  "latency_s": 3.444,
+  "input_tokens": 2504,
+  "output_tokens": 353,
+  "cost_usd": 0.003466,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main ideas: partial observability as a hidden-state inference problem, use of history/belief updating and opponent modeling, and the need for private deliberation or separate public/private channels to avoid leaking internal information. It also captures deception-aware planning. However, it is somewhat generic and misses some of the more specific methodological diversity implied by the reference (e.g., explicit sampling/inference from restricted observations and the dialogue-based inference of concealed thresholds/budgets), so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001178,
+  "total_cost_accumulated_usd": 15.1524,
+  "chunks": [
+    {
+      "paper_id": "paper_01",
+      "score": 0.5547
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5547
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5547
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5547
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5547
+    }
+  ]
+}

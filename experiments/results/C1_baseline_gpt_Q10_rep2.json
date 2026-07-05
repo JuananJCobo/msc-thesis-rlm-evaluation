@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q10",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:22:48.735706",
+  "response": "The reasoning trace is qualitatively classified into:\n\n- **Short-Term Gain**\n- **Long-Term Strategy**\n- **Ambiguous**",
+  "latency_s": 11.051,
+  "input_tokens": 192698,
+  "output_tokens": 29,
+  "cost_usd": 0.144654,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all three qualitative categories: Short-Term Gain, Long-Term Strategy, and Ambiguous. It is complete and directly answers the question with only trivial wording differences.",
+  "judge_cost_usd": 0.000461,
+  "total_cost_accumulated_usd": 2.9068
+}

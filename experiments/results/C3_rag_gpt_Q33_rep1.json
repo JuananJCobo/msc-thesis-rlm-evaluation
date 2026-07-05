@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q33",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T22:48:10.833771",
+  "response": "Injecting human-like psychological attributes into LLMs shifts them away from purely goal-driven, mathematically consistent behavior and toward decision patterns that resemble human irrationality.\n\nThe literature indicates several ways this happens:\n\n- **Emotional states alter strategic choices**: When LLMs are placed in different emotional conditions, their behavior changes in both ethical dilemmas and game-theoretic settings. These changes can shift decisions away from the option that would be selected by a strictly rational optimizer.\n\n- **Human-like bias introduces irrationality**: Since human decisions are often emotional and not fully rational, aligning models to human behavior can also import those same non-logical tendencies. This can make LLMs more likely to behave inconsistently across similar situations.\n\n- **Strategic robustness weakens**: In games and ethical benchmarks, emotional or psychological prompting can change the model’s strategy, reducing stability and predictability. That means the same model may not preserve a fixed decision rule under different affective or cognitive framings.\n\n- **Behavior becomes more anthropomorphic than optimal**: Instead of maximizing objective consistency, the model may adopt patterns resembling aggression, deception, or other human-like departures from strict truthfulness and principled reasoning.\n\nIn short, behavioral anthropomorphism can compromise mathematical logic by making the model’s outputs more dependent on subjective, human-like internal states rather than on stable optimization. This undermines deterministic reasoning, consistency, and predictable decision-making, especially in autonomous-agent settings where exactness and robustness matter.",
+  "latency_s": 3.682,
+  "input_tokens": 2642,
+  "output_tokens": 301,
+  "cost_usd": 0.003336,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main idea that anthropomorphic prompting (emotions, human-like biases, psychological framing) pushes LLMs away from objective rationality and toward human-like irrational behavior. It captures the key impacts on strategic choice stability, ethical reasoning, and consistency. However, it is somewhat generic and misses some specific literature-grounded details from the reference, such as the negotiation/persona trade-off, the distinction between particular emotions like anger/disgust, and the concrete example of biased stochastic choice (e.g., preference for salient options over uniform distributions).",
+  "judge_cost_usd": 0.001162,
+  "total_cost_accumulated_usd": 15.1279,
+  "chunks": [
+    {
+      "paper_id": "paper_17",
+      "score": 0.4891
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    }
+  ]
+}

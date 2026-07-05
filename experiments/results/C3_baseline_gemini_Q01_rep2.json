@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q01",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:37:02.919308",
+  "response": "Based strictly on Table 2 from the article on private deliberation, the five games evaluated in the experiments are:\n1. Prisoner’s Dilemma\n2. Stag Hunt\n3. Chicken game\n4. Head-tail game\n5. The battle of sexes",
+  "latency_s": 2.222,
+  "input_tokens": 359049,
+  "output_tokens": 54,
+  "cost_usd": 0.10785,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists all five games from Table 2: Prisoner’s Dilemma, Stag Hunt, Chicken game, Head-tail game, and The battle of sexes. Minor capitalization differences are trivial.",
+  "judge_cost_usd": 0.000527,
+  "total_cost_accumulated_usd": 14.7692
+}

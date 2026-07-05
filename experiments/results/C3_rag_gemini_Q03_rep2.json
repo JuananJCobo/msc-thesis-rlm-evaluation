@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q03",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:40:07.552543",
+  "response": "The GOVSIM benchmark uses the following metrics to evaluate the collective outcome:\n\n*   Survival Time (m)\n*   Survival Rate (q)\n*   Total Gain for Each Agent (Ri)\n*   Efficiency (u)",
+  "latency_s": 5.565,
+  "input_tokens": 2546,
+  "output_tokens": 49,
+  "cost_usd": 0.000886,
+  "judge_score": 2,
+  "judge_justification": "The response identifies only 4 of the 6 metrics and omits (In)equality and Over-usage. It is partially correct but incomplete.",
+  "judge_cost_usd": 0.000452,
+  "total_cost_accumulated_usd": 15.0981,
+  "chunks": [
+    {
+      "paper_id": "paper_14",
+      "score": 0.4913
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4148
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.414
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.406
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.3942
+    }
+  ]
+}

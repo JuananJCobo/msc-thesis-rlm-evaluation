@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q11",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T19:55:39.376016",
+  "response": "The 'Latent Space Policy Optimization (LSPO)' framework, used to train agents in the Werewolf game, consists of three main steps or components in each iteration:\n\n1.  **Latent Space Construction**: This step involves generating language actions through LLM self-play and then clustering these free-form utterances into a finite, discrete latent strategy space. This is done by embedding discussion actions into vector representations and applying a k-means clustering algorithm to group them into distinct latent strategies.\n2.  **Policy Optimization in Latent Space**: After constructing the discrete latent strategy space, the original game is reformulated as an abstracted game with a finite latent strategy space. Game-theoretic methods, such as Counterfactual Regret Minimization (CFR), are then applied to learn a near-optimal policy in this latent space, aiming to overcome intrinsic biases in action distribution.\n3.  **Latent Space Expansion**: This component fine-tunes the LLM to align its open-ended language outputs with the learned latent space policy. Direct Preference Optimization (DPO) is used for this alignment, leveraging game trajectories to create a preference dataset. The fine-tuned LLM is then used to re-generate and expand the latent strategy space for the next iteration, enabling further exploration of potential strategies.\n\n(Source: \"Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization (Xu, Z. et al., 2025)\", Abstract, Section 3)",
+  "latency_s": 5.723,
+  "input_tokens": 199556,
+  "output_tokens": 305,
+  "cost_usd": 0.060629,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the three LSPO iteration components: latent space construction/optimization, policy optimization in latent space, and latent space expansion. It is conceptually aligned with the reference answer, with only minor wording differences and extra detail.",
+  "judge_cost_usd": 0.000776,
+  "total_cost_accumulated_usd": 1.0974
+}

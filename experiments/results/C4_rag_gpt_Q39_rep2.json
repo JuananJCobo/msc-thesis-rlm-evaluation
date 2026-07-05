@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q39",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-23T00:42:04.739356",
+  "response": "Recent work describes a shift from asking an LLM to output single moves toward asking it to generate an entire strategy. Within that setup, several prompting methodologies are highlighted:\n\n- **Game-theoretic language prompts**: using explicit strategic wording to encourage stronger tactical behavior.\n- **Prose prompts**: phrasing the task in a more natural-language, narrative form.\n- **Refine prompts**: iteratively improving or sharpening an initially generated strategy.\n\nThese prompting styles were paired with an additional operational privilege: the model was allowed to **create strategies rather than just individual actions**, which gives it much more room to encode contingencies for different opponent types and changing situations.\n\nThe main effect of these interventions is that they can **override baseline zero-shot behavior** by moving the model away from generic, often cooperative default responses and toward more specialized behavior. In particular:\n\n- **Game-theoretic prompts** increased the ability to generate **effective aggressive strategies**, especially for ChatGPT-4o.\n- **Refine prompts** improved aggressive-strategy performance without similarly boosting cooperative or neutral strategies, narrowing the gap between them.\n- **Prose prompts** improved performance under noisy conditions for Claude 3.5 Sonnet, but also made behavior across attitudes more homogenized.\n\nOverall, these interventions act as a form of strategic steering: they give the model extra expressive power and framing that can produce more adaptive, asymmetric, or aggressive play than plain zero-shot prompting would typically yield.",
+  "latency_s": 3.465,
+  "input_tokens": 2093,
+  "output_tokens": 296,
+  "cost_usd": 0.002902,
+  "judge_score": 2,
+  "judge_justification": "The response is only partially aligned with the question. It discusses prompting styles and an added privilege of generating strategies, but it misses the key literature-specific interventions in the reference answer: probabilistic posterior injection for dynamic opponents, persona prompting via a 'Game Expert' role, and explicit rule-breaking privileges such as bypassing mulligan/setup constraints for asymmetric roles like DDA. It also introduces some unsupported claims about aggressive/cooperative behavior that are not the main synthesis requested.",
+  "judge_cost_usd": 0.001094,
+  "total_cost_accumulated_usd": 20.4448,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5171
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5171
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": null,
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    }
+  ]
+}

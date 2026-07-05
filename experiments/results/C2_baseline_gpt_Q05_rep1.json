@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:53:57.902222",
+  "response": "Intrinsic bias and positional bias.",
+  "latency_s": 17.364,
+  "input_tokens": 261338,
+  "output_tokens": 9,
+  "cost_usd": 0.196044,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the two main biases: intrinsic bias and positional bias. This matches the reference answer conceptually and directly.",
+  "judge_cost_usd": 0.000424,
+  "total_cost_accumulated_usd": 8.0758
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T22:24:53.077709",
+  "response": "According to the study on the Rock-Paper-Scissors game by Guo, Z. et al. (2025), the two main types of biases that cause the 'cognition-behavior gap' in LLM randomness are:\n\n1.  **Intrinsic biases in pre-training corpora**: These biases stem from token frequencies in the LLMs' training data, which can systematically skew their outputs.\n2.  **Positional bias**: This bias refers to the tendency of LLMs to favor answer options based on their placement within the prompt.",
+  "latency_s": 8.603,
+  "input_tokens": 540085,
+  "output_tokens": 112,
+  "cost_usd": 0.162305,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the two main biases: intrinsic biases from pre-training corpora and positional bias. This matches the reference answer and directly addresses the question.",
+  "judge_cost_usd": 0.000532,
+  "total_cost_accumulated_usd": 7.0562
+}

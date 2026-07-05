@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q17",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T11:45:13.239097",
+  "response": "In **Secret Hitler** (Hansteen Izora & Teuscher, 2025), the final-round behavior is **socially strategic and temporally adaptive**: agents shift from early information-gathering to late-game exploitation, build and repair trust over time, and use deception, implicit coordination, and theory-of-mind reasoning to shape group perception. The paper specifically describes Fascist agents timing betrayals after earning trust, then trying to recover credibility, and coordinating implicitly with teammates through narrative control and social misdirection.\n\nIn **GAMA-Bench’s Battle Royale** (Huang et al., 2025), the failure is an **optimization failure in target selection**: agents “rarely target the player with the highest hit rate” and also neglect “intentionally missing” as a tactical option. The paper frames this as poor strategic reasoning in a sequential game, where the agents do not follow the optimal targeting policy even when the game structure makes that choice important.\n\n**Contrast:**  \n- **Secret Hitler:** agents exhibit **context-sensitive, multi-round social strategy**—trust management, deception, and implicit coordination.  \n- **Battle Royale:** agents show **missed tactical optimization**—they fail to execute a specific best-response action (targeting the highest hit-rate player), indicating weaker exploitation of game-state information.",
+  "latency_s": 31.193,
+  "input_tokens": 261340,
+  "output_tokens": 270,
+  "cost_usd": 0.19722,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two papers: Secret Hitler is described as showing adaptive, socially strategic late-game behavior (trust management, deception, coordination), while GAMA-Bench Battle Royale is described as a failure to optimize target selection by not focusing on the highest hit-rate player and missing other tactical options. This captures the key comparative synthesis requested and is well grounded in the literature.",
+  "judge_cost_usd": 0.000907,
+  "total_cost_accumulated_usd": 8.2446
+}

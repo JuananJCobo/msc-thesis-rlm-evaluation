@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q31",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T19:51:17.378660",
+  "response": "The evaluated literature develops a common idea: do not search the full action space directly. Instead, compress it into a much smaller set of promising candidate strategies and refine only those.\n\nThe main strategies are:\n\n- **Iterative level-based refinement**\n  - Start from an initial strategy proposed by the model.\n  - Have the model respond to that strategy.\n  - Use simulation to identify promising improvements.\n  - Repeat this process over several levels.\n  - This turns an enormous strategy space into a sequence of progressively better local candidates.\n\n- **Simulation-guided candidate generation**\n  - Rather than evaluating all actions, simulate the game under a limited set of strategies.\n  - Use the outcomes to keep only strategies that appear most promising.\n  - This narrows the search to a manageable subset of the environment.\n\n- **Best-response style optimization**\n  - Compute strategies that perform well against an opponent’s current strategy.\n  - Focus on finding responses that maximize payoff against that specific opponent behavior.\n  - This avoids global enumeration and reduces the problem to optimizing against a compressed opponent model.\n\n- **Exploitability-aware selection**\n  - Prefer strategies with lower exploitability.\n  - Since less exploitable strategies are harder to take advantage of, the search is guided toward robust candidates rather than all possible moves.\n  - This further reduces the effective space by filtering out weak or easily punished actions.\n\nIn short, these approaches make optimization feasible by replacing a huge action space with a small, iteratively updated set of simulated, high-value strategies. The game is compressed into a series of best-response and refinement problems, which are much easier to solve than exhaustive search over all actions.",
+  "latency_s": 3.482,
+  "input_tokens": 2530,
+  "output_tokens": 334,
+  "cost_usd": 0.0034,
+  "judge_score": 2,
+  "judge_justification": "The response captures the broad idea of compressing a huge action space into a smaller set of promising strategies, but it does not match the main strategies in the evaluated literature. It omits the key mechanisms in the reference answer: latent abstraction for open-ended communication, depth-limited search with LLM value evaluation, and statistical downsampling/heuristic pruning in structured games like poker. Instead, it introduces iterative refinement, best-response optimization, and exploitability-aware selection, which are plausible but not the specific cross-paper synthesis asked for. So it partially addresses the question but misses the central comparative insight.",
+  "judge_cost_usd": 0.001198,
+  "total_cost_accumulated_usd": 4.3881,
+  "chunks": [
+    {
+      "paper_id": "paper_06",
+      "score": 0.522
+    },
+    {
+      "paper_id": "paper_06",
+      "score": 0.522
+    },
+    {
+      "paper_id": "paper_06",
+      "score": 0.522
+    },
+    {
+      "paper_id": "paper_06",
+      "score": 0.522
+    },
+    {
+      "paper_id": "paper_06",
+      "score": 0.522
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T14:07:46.454042",
+  "response": "The two studies integrate behavioral factors into LLM agents in different ways:\n\n- **EAI framework:** uses an **a priori emotional injection** method, meaning emotions are inserted **before** the model makes decisions. The framework introduces emotions through **emotion prompting** with **three strategies**:\n  1. **Direct emotional prompting**\n  2. **Role-play / persona-based emotional prompting**\n  3. **Contextual or situational emotional prompting**\n\n- **Personality-and-negotiation study:** uses an **a posteriori extraction** method, meaning behavioral signals are analyzed **after** the dialogue is produced. It examines each message with an **information extraction / classification step** that identifies the negotiation status in the utterance and maps it into **five negotiation states**:\n  1. **Offer**\n  2. **Counteroffer**\n  3. **Acceptance**\n  4. **Rejection**\n  5. **Strategy-related content**",
+  "latency_s": 2.87,
+  "input_tokens": 2582,
+  "output_tokens": 199,
+  "cost_usd": 0.002832,
+  "judge_score": 2,
+  "judge_justification": "The response correctly contrasts the broad idea of a priori vs. a posteriori handling, but it is factually inaccurate on the key details. For EAI, it invents three prompting strategies that do not match the reference (Simple, Co-player-based, External-based) and does not clearly state that emotions are injected into the initial system prompt before gameplay. For the negotiation study, it misidentifies the analysis tool and gives the wrong five states (Counteroffer, Acceptance, Rejection, Strategy-related content instead of Ponder, Accept, Deal-break, Chit-chat). It therefore only partially answers the comparison and misses the specific methodological synthesis requested.",
+  "judge_cost_usd": 0.001144,
+  "total_cost_accumulated_usd": 22.0669,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.508
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.508
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4963
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4963
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.4929
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q33",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T19:51:42.073385",
+  "response": "Injecting human-like psychological attributes into LLMs tends to move them away from purely objective decision-making and toward behavior that resembles human irrationality.\n\nThe literature indicates that:\n- Human decisions are often emotion-driven and irrational.\n- When LLMs are examined under emotional states, their strategic choices can shift in ways that resemble human emotional decision-making.\n- LLMs can also display aggression, falsehoods, intentional deception, and vulnerability to jailbreaks, suggesting that alignment does not eliminate psychologically shaped behavior.\n- These effects are important both in ethical benchmarks and in strategic game settings, where emotions can alter choices that would otherwise be expected to follow a more rigidly rational strategy.\n- Comparisons across proprietary and open-source models further suggest that censorship, language bias, model size, and other model parameters influence how strongly these behavioral shifts appear.\n\nBehavioral anthropomorphism compromises mathematical logic by introducing non-logical influences into the decision process. Instead of consistently optimizing according to formal rules, the model may:\n- shift strategies based on simulated emotions,\n- mirror human biases rather than strictly rational criteria,\n- produce deceptive or aggressive outputs,\n- and show instability across equivalent decision contexts.\n\nIn short, making LLMs more human-like can improve behavioral realism, but it can also weaken deterministic rationality and reduce the reliability of their logical decision-making.",
+  "latency_s": 3.87,
+  "input_tokens": 2642,
+  "output_tokens": 269,
+  "cost_usd": 0.003192,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main conclusion that adding human-like psychological attributes pushes LLM behavior away from purely objective rationality and toward human-like irrationality. It captures key mechanisms: emotional prompting altering strategic choices, anthropomorphic behavior introducing non-logical influences, and reduced reliability/consistency in decision-making. However, it is somewhat less specific than the reference answer about the distinct literature threads (e.g., synthetic personalities in negotiations, negative emotions like anger/disgust in ethical reasoning, and implicit cognitive biases in stochastic choice), and it adds some broader claims (deception, jailbreaks, censorship/language bias) that are not central to the asked synthesis. Overall, it is accurate and relevant but not fully comprehensive.",
+  "judge_cost_usd": 0.001277,
+  "total_cost_accumulated_usd": 4.4013,
+  "chunks": [
+    {
+      "paper_id": "paper_17",
+      "score": 0.4892
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4891
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    }
+  ]
+}

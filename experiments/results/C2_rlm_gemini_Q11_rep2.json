@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q11",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-23T14:47:19.846838",
+  "response": "Error: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+  "latency_s": 7.787,
+  "input_tokens": 3380,
+  "output_tokens": 300,
+  "cost_usd": 0.001764,
+  "judge_score": 1,
+  "judge_justification": "The system response does not answer the question at all; it only reports a 503 error message instead of describing the three LSPO components.",
+  "judge_cost_usd": 0.000501,
+  "total_cost_accumulated_usd": 2.7309,
+  "n_iterations": 2,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C2_gemini/rlm_2026-06-23_14-47-10_73c523b6.jsonl"
+}

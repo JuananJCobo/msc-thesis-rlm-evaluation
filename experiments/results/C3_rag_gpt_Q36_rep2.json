@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q36",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T22:48:43.947753",
+  "response": "Recent frameworks address imperfect information by combining several complementary methods:\n\n- **Partially observable game modeling**: The interaction is framed as a partially observable stochastic game, so the agent reasons under uncertainty rather than assuming full state visibility.\n- **In-context learning and chain-of-thought prompting**: These are formalized to let the agent use observed history to support step-by-step reasoning about past events, likely future moves, and latent opponent behavior.\n- **Private deliberation**: A key augmentation lets the agent perform internal contemplation about past and future interactions while keeping those thoughts hidden from the opponent, preserving strategic secrecy.\n- **Action-distribution analysis from conversation history**: The agent studies patterns in the dialogue/history to identify actions that are more favorable over the long run, effectively reconstructing concealed state information from observable evidence.\n- **Opponent-type inference**: Although performance here is limited, the goal is to infer hidden opponent characteristics from observed play.\n- **Sampling-based decision making**: The framework highlights the need for better sampling from diverse probability distributions and using near-optimal action-selection distributions, which would support more reliable inference under uncertainty.\n- **Deception-aware modeling**: The discussion points to developing formal deception models, including structures based on degradation, corruption, denial, and subversion, to represent how hidden information can be manipulated without exposing internal reasoning.\n\nTogether, these methods let an LLM agent reason over partial observations, infer unobserved variables from history, and preserve private strategic plans so that internal deliberation does not leak to the opponent.",
+  "latency_s": 3.449,
+  "input_tokens": 2504,
+  "output_tokens": 311,
+  "cost_usd": 0.003278,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main ideas: reasoning under partial observability, inferring hidden opponent state from observed history, using private/internal deliberation to avoid leaking information, and deception-aware modeling. It also captures sampling-based inference and opponent-type inference. However, it is somewhat generic and less specific than the reference about the distinct methodologies across recent frameworks (e.g., explicit reconstruction of concealed states from restricted observations and the separation of private memory from public actions), so it is strong but not fully complete.",
+  "judge_cost_usd": 0.00112,
+  "total_cost_accumulated_usd": 15.1568,
+  "chunks": [
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5544
+    }
+  ]
+}

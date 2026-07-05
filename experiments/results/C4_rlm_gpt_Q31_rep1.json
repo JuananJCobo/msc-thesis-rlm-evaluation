@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q31",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:47:21.224537",
+  "response": "The evaluated literature reduces intractable game action spaces mainly by turning the full game into a much smaller, approximate decision problem before search.\n\n1. Candidate-action compression\nIn PokéChamp (Karten, Nguyen, and Jin, 2025), the agent does not search over all legal Pokémon actions. Instead, the LLM is prompted to sample a small set of viable actions from the current infoset, and the tree is expanded only over those candidates. This is the most direct compression strategy: the enormous legal action set is collapsed into a handful of plausible moves and switches.\n\n2. Heuristic pruning with approximate game transition\nPokéChamp also uses one-step lookahead and an approximate simulator to estimate the consequences of actions. The model computes admissible heuristics such as likely knock-out speed / turns-to-KO, which filters the action set before deeper search. This compresses the environment by replacing exact dynamics with a cheaper surrogate.\n\n3. Opponent-action compression under partial observability\nBecause the opponent’s state and action choices are hidden, PokéChamp uses historical data plus LLM-based prediction to infer likely opponent stats and sample likely opponent actions. Rather than considering all possible hidden states and responses, it narrows them to a small posterior set of plausible opponent behaviors.\n\n4. Leaf-value abstraction\nInstead of searching to terminal states, PokéChamp cuts off the tree at shallow depth and uses an LLM-generated value function to score leaf nodes. This converts long-horizon planning into evaluation of a compressed state representation, making minimax computation feasible in real time.\n\n5. Strategy-level abstraction in other game-like prompting papers\nThe other strategy/negotiation papers in the corpus do not tackle a massive move-action space in the same way as PokéChamp, but they use a related form of compression: they ask the LLM to produce high-level natural-language strategies, structured CoT plans, or scratchpads, and then convert those into executable game policies. This reduces complexity by moving from detailed action enumeration to abstract strategy generation.\n\nOverall pattern\nAcross the corpus, the common way to make game-theoretic optimization feasible is to replace the raw environment with a lower-dimensional proxy:\n- prune the legal action set to a few LLM-suggested candidates,\n- use heuristics or one-step lookahead to approximate transition outcomes,\n- infer hidden opponent states and likely responses from data,\n- and stop search early by using value estimates instead of full rollouts.\n\nSo the environment is compressed along three axes: action space, opponent uncertainty, and horizon depth. That is what turns an intractable exhaustive search into a workable approximate minimax or policy-selection problem.",
+  "latency_s": 25.869,
+  "input_tokens": 68027,
+  "output_tokens": 2276,
+  "cost_usd": 0.061262,
+  "judge_score": 4,
+  "judge_justification": "The response gives a largely correct synthesis of how the literature compresses large action spaces: candidate-action pruning, heuristic/one-step lookahead filtering, opponent-state/action narrowing under partial observability, and shallow search with LLM value estimates. It captures the core idea that these methods replace exhaustive search with a smaller approximate decision problem. However, it is somewhat narrower than the reference answer and leans heavily on PokéChamp, while the question asks for the main strategies across the evaluated literature more broadly. It also adds some details not clearly central to the comparison, but overall it is accurate and well-reasoned.",
+  "judge_cost_usd": 0.001365,
+  "total_cost_accumulated_usd": 20.5693,
+  "n_iterations": 8,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C4_gpt/rlm_2026-06-23_00-46-51_a9d745fc.jsonl"
+}

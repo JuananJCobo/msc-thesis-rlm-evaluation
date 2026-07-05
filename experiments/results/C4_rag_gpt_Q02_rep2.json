@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T22:39:29.658202",
+  "response": "The eight game-theory scenarios in GAMA-Bench are:\n\n1. Guess 2/3 of the Average  \n2. El Farol Bar  \n3. Prisoner’s Dilemma  \n4. Hawk-Dove  \n5. Stag Hunt  \n6. Public Goods Game  \n7. Rock-Paper-Scissors  \n8. Trust Game  \n\nThe authors group them into three categories:\n\n- Cooperative games  \n- Competitive games  \n- Mixed-motive games",
+  "latency_s": 1.341,
+  "input_tokens": 2475,
+  "output_tokens": 96,
+  "cost_usd": 0.002288,
+  "judge_score": 2,
+  "judge_justification": "The response identifies only 2 of the 8 scenarios correctly (Guess 2/3 of the Average and El Farol Bar) and gives six incorrect games. It also misstates the grouping categories: the reference uses Cooperative Games, Betraying Games, and Sequential Games, not Cooperative/Competitive/Mixed-motive.",
+  "judge_cost_usd": 0.000664,
+  "total_cost_accumulated_usd": 8.8724,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4745
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4696
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4592
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4528
+    }
+  ]
+}

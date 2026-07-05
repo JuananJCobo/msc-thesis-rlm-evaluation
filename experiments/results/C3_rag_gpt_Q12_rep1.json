@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q12",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:38:49.208549",
+  "response": "The three main dialogue clusters are:\n\n1. **Information**\n   - Information Sharing: disseminating facts among participants\n   - Problem Identification: highlighting challenges needing collective attention and resolution\n   - Solution Proposing: offering ideas or actions to address identified issues\n\n2. **Negotiation**\n   - Persuasion: attempting to influence others to achieve a desired outcome\n   - Consensus Seeking: aiming to align group members on a decision or action plan\n   - Expressing Disagreement: articulating opposition to proposals or existing conditions, with or without offering alternatives\n\n3. **Relational**\n   - Excusing Behavior: justifying one’s actions or decisions, especially when they deviate from group norms or expectations\n   - Punishment: imposing consequences for perceived wrongdoings or failures to adhere to norms",
+  "latency_s": 1.458,
+  "input_tokens": 2485,
+  "output_tokens": 164,
+  "cost_usd": 0.002602,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all three high-level clusters—Information, Negotiation, and Relational—and includes the correct subcategories under each. The added descriptive phrases do not change the factual content.",
+  "judge_cost_usd": 0.000624,
+  "total_cost_accumulated_usd": 15.057,
+  "chunks": [
+    {
+      "paper_id": "paper_14",
+      "score": 0.5376
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.5298
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.466
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4558
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4541
+    }
+  ]
+}

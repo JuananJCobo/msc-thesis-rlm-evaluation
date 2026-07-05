@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q08",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:40:49.404458",
+  "response": "The AmazonHistoryPrice dataset contains 930 products across 18 categories.",
+  "latency_s": 1.92,
+  "input_tokens": 2645,
+  "output_tokens": 17,
+  "cost_usd": 0.000836,
+  "judge_score": 5,
+  "judge_justification": "The response correctly states that AmazonHistoryPrice contains 930 products and 18 categories, matching the reference answer.",
+  "judge_cost_usd": 0.000389,
+  "total_cost_accumulated_usd": 15.1127,
+  "chunks": [
+    {
+      "paper_id": "paper_16",
+      "score": 0.484
+    },
+    {
+      "paper_id": "paper_16",
+      "score": 0.4394
+    },
+    {
+      "paper_id": "paper_16",
+      "score": 0.433
+    },
+    {
+      "paper_id": "paper_16",
+      "score": 0.4099
+    },
+    {
+      "paper_id": "paper_21",
+      "score": 0.394
+    }
+  ]
+}

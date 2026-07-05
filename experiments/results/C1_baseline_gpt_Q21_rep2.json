@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T10:24:33.393654",
+  "response": "MAgIC injects a **probabilistic graphical model (PGM)** to structure multi-agent reasoning, so the model explicitly forms and updates beliefs about other players’ roles, intentions, and perspectives before deciding. In the paper, this is described as a **PGM-aware agent** that estimates variables such as other players’ states and uses those inferred beliefs in decision-making; the framework is aimed at judgment, reasoning, deception, self-awareness, cooperation, coordination, and rationality.\n\nBy contrast, the EAI framework injects **explicit emotional prompts** into the initial system prompt **before** the LLM makes an economic decision. It does not build a belief model of others; instead, it conditions the model with predefined emotions such as anger, sadness, happiness, disgust, and fear, using strategies like **simple**, **co-player-based**, and **external-based** emotional prompting. In the Dictator Game, these emotional prompts are applied prior to asking the model to make the offer/share decision.\n\nSo, in short:\n\n- **MAgIC:** injects **belief tracking / theory-of-mind style inference** about other agents via PGM.\n- **EAI:** injects **emotion cues** via prompting to influence the model’s subsequent economic choice in the Dictator Game.",
+  "latency_s": 9.16,
+  "input_tokens": 192705,
+  "output_tokens": 263,
+  "cost_usd": 0.145712,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two frameworks: MAgIC uses a probabilistic graphical model to inject belief tracking / theory-of-mind style reasoning about other agents, while EAI injects explicit emotional prompts before an economic decision in the Dictator Game. It also accurately notes the emotion categories and the prompting strategies used by EAI. The comparison is complete, accurate, and well synthesized.",
+  "judge_cost_usd": 0.000954,
+  "total_cost_accumulated_usd": 1.4715
+}

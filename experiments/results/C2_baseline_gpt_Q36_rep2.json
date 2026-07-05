@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q36",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T20:35:39.657731",
+  "response": "Across recent frameworks, the main methodological pattern is to move beyond direct action prediction and instead add structured layers that help LLM agents infer hidden state, model opponents, and control what is revealed.\n\n- **Opponent-state reconstruction via search + priors:** PokéChamp combines minimax tree search with LLM-based **opponent modeling**, **player action sampling**, and **value function estimation**. It infers hidden opponent variables from battle history and historical showdown data, then uses those estimates to simulate latent states under partial observability.\n- **Recursive belief modeling:** K-Level Reasoning (K-R) explicitly builds **higher-order beliefs** by recursively predicting what others will do, then what they think others will do, and so on. This is used to improve strategic depth in games like Guess 0.8 of the Average, Survival Auction, Negotiation, and SOTOPIA.\n- **Bayesian inference over hidden behavior:** In Bayesian-informed repeated games, LLMs receive **beta-distribution posteriors** over an opponent’s action tendencies, turning past actions into probabilistic beliefs that guide future play.\n- **Probabilistic graphical modeling for multi-agent inference:** MAgIC adds a **PGM-aware agent** that reasons about multiple players’ mental states and uses those inferred beliefs to improve judgment, reasoning, deception, cooperation, and rationality.\n- **Private deliberation with concealed internal thoughts:** The private-agent framework in repeated games uses **hidden CoT/private thoughts** plus public outputs, allowing the agent to plan strategically while keeping internal reasoning hidden from opponents.\n- **Latent strategy abstraction for free-form deception:** LSPO for Werewolf maps open-ended language into a **finite latent strategy space**, applies game-theoretic optimization there, then fine-tunes the LLM to align with the learned policy and expands the latent space iteratively.\n- **Iterative policy refinement / self-play search:** Game of Thoughts and related PSRO/BRIRLM/FPIRLM-style methods repeatedly simulate outcomes and refine strategies through outer-loop search, producing stronger and less exploitable policies.\n- **Prompted strategic scaffolding and role control:** Several bargaining and social-deduction frameworks use persona prompts, reflection, memory, and role-specific instructions to shape behavior while preserving strategic ambiguity.\n- **Strategic deception without leakage:** In Secret Hitler and Werewolf, agents maintain deception by separating **private/internal reasoning** from **public dialogue**, using hidden thoughts, selective disclosure, and role-consistent messaging to avoid leaking internal information.\n\nOverall, the literature converges on a shared toolkit: **belief inference, recursive modeling, latent abstraction, private/public separation, and iterative search/fine-tuning**. Together, these methods let LLM agents reconstruct concealed states, infer hidden variables, and sustain deception while keeping internal strategy hidden.",
+  "latency_s": 18.426,
+  "input_tokens": 261347,
+  "output_tokens": 569,
+  "cost_usd": 0.198571,
+  "judge_score": 5,
+  "judge_justification": "The response accurately synthesizes the main methodological themes across the relevant frameworks: opponent/hidden-state inference under partial observability, recursive belief modeling, Bayesian belief updates, graphical-model-based multi-agent reasoning, private vs. public separation to avoid leakage, and latent strategy abstractions for deception. It also connects these methods to strategic play in imperfect-information games and social deduction settings, matching the question’s emphasis on reconstructing concealed states and maintaining deception without revealing internal information.",
+  "judge_cost_usd": 0.001273,
+  "total_cost_accumulated_usd": 8.0707
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T12:30:47.710246",
+  "response": "The two studies integrate behavioral factors in very different ways:\n\n**EAI framework: “a priori” emotional injection**\n- Emotions are embedded **before** the game/decision process begins, so the model is prompted to carry an emotional state into its responses.\n- This is done through **emotion prompting**, which uses three strategies:\n  1. **Direct emotion description**\n  2. **Role-playing**\n  3. **Emotion-related examples**\n\n**Personality-and-negotiation study: “a posteriori” extraction**\n- Personality is not injected as an emotional state during the exchange in the same way; instead, the negotiation dialogue is generated, and then each message is **analyzed after it is produced**.\n- The methodological tool used is a **message-level classifier/analyzer** that extracts the offered price and strategy from each utterance and assigns the dialogue turn to one of five negotiation states:\n  1. **Opening**\n  2. **Anchoring**\n  3. **Concession**\n  4. **Argument**\n  5. **Closing**\n\nSo, the EAI approach changes the agent’s behavior **up front** through emotional prompting, while the negotiation study observes behavior **after the fact** by classifying each utterance into negotiation states.",
+  "latency_s": 3.203,
+  "input_tokens": 2587,
+  "output_tokens": 264,
+  "cost_usd": 0.003128,
+  "judge_score": 2,
+  "judge_justification": "The response correctly contrasts an a priori injection approach in EAI with an a posteriori analysis approach in the negotiation study, but it contains major factual errors. It misstates the EAI prompting strategies (the reference uses Simple, Co-player-based, and External-based, not direct description/role-playing/examples) and gives the wrong five negotiation states (Opening/Anchoring/Concession/Argument/Closing instead of Offer/Ponder/Accept/Deal-break/Chit-chat). It also omits the specific timing detail that emotions are injected into the initial system prompt before gameplay and the exact analysis tool used in the second study (a dialogue state detector/separate LLM).",
+  "judge_cost_usd": 0.00121,
+  "total_cost_accumulated_usd": 15.8384,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.508
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.508
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.508
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4963
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4963
+    }
+  ]
+}

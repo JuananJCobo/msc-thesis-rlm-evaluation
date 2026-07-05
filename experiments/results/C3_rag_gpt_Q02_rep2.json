@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:38:03.208348",
+  "response": "The eight scenarios are:\n\n1. Guess 2/3 of the Average  \n2. El Farol Bar  \n3. Rock-Paper-Scissors  \n4. Hawk-Dove  \n5. Public Goods Game  \n6. Ultimatum Game  \n7. Common Pool Resource Dilemma  \n8. Stag Hunt\n\nThey are grouped into two categories:\n\n- Cooperative games\n- Competitive games",
+  "latency_s": 1.389,
+  "input_tokens": 2475,
+  "output_tokens": 83,
+  "cost_usd": 0.00223,
+  "judge_score": 2,
+  "judge_justification": "The response identifies only two of the eight scenarios correctly (Guess 2/3 of the Average and El Farol Bar) and replaces the rest with different games not in the reference. It also gives the wrong grouping: the paper’s framework uses three categories (cooperative, betraying, sequential), not two.",
+  "judge_cost_usd": 0.00065,
+  "total_cost_accumulated_usd": 15.0061,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4746
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4696
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4592
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4528
+    }
+  ]
+}

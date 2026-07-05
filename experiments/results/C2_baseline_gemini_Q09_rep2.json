@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T21:04:29.264103",
+  "response": "In the evaluation of the Secret Hitler game, LLM agents exhibited a strategic behavior transition from early rounds to final rounds characterized by a shift from exploratory behavior to exploitative decision-making. In the early rounds, agents engaged in information-gathering behaviors, such as probing uncertain actors and nominating untested players to gather behavioral data. As the game progressed to later rounds, this behavior declined significantly, with agents increasingly relying on previously acquired information and favoring familiar, trusted collaborators, thus shifting towards information-exploitation behaviors. This pattern reflects increasing risk aversion in later rounds, where agents prioritize leveraging known quantities over continued exploration.",
+  "latency_s": 4.393,
+  "input_tokens": 271393,
+  "output_tokens": 120,
+  "cost_usd": 0.081718,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the transition from exploratory behavior in early rounds to exploitative decision-making in later/final rounds, including the move toward familiar and trusted collaborators. This matches the reference answer conceptually and is complete.",
+  "judge_cost_usd": 0.000607,
+  "total_cost_accumulated_usd": 1.2452
+}

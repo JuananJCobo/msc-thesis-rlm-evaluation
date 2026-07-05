@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q37",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T20:36:16.032506",
+  "response": "Across the papers, the main trade-off is between preserving rich game history for strategic reasoning and staying within the context window.\n\n**History summarization**\n- In **DO LLM AGENTS HAVE REGRET?** (Park et al., 2025), summarizing history was used to extend horizons to **T = 500** by providing “the summation of the history loss associated with each action.”\n- But the paper reports that in an adversarial setting, **summary-based history input performed worse than raw-history-based input**. In **Example 2**, the summarized-history GPT-4 agent had **much larger regret** than the raw-history agent, and the difference was highly significant (**p = 1.2 × 10−157**).\n- The authors explain this as a loss of trend information: when history is aggregated, the resulting loss vectors “no longer reflect the trend,” so the model’s performance drops.\n- This contrasts with the earlier claim that summary-based input was useful in an **i.i.d. stochastic bandit** setting, showing that summarization is not universally beneficial.\n\n**Raw context accumulation**\n- Raw accumulation preserves the full sequence of past losses/actions, which helps LLMs detect patterns and trends.\n- In **Park et al. (2025)**, raw history enabled better performance on predictable sequences and sometimes even **negative regret**, because the model could infer the next loss from the detailed trajectory.\n- However, raw accumulation has a cost: the paper notes that API costs **scale quadratically with horizon T**, and long histories eventually become impractical.\n- In **Effect of Private Deliberation** (Poje et al., 2024), increasing recall iterations improved decision-making, but once the context became too large for GPT-4-0613, the model began to **miss crucial information or hallucinate**, harming reasoning.\n- In **Exploring the Potential of LLMs to Simulate Social Group Dynamics: Secret Hitler** (Hansteen Izora & Teuscher, 2025), once the thread exceeded the **128,000-token context window**, earlier messages had to be summarized and deleted; this preserved continuity but introduced **“imperfect memory”**.\n- In **PokéChamp** (Karten et al., 2025), battle logs were included because of context limits, but the authors note that **crucial information may be omitted** when using summaries, and this contributed to context/continuity problems.\n\n**Overall synthesis**\n- **Raw context** is better when the game contains exploitable temporal structure, because it preserves trends, opponent patterns, and fine-grained history.\n- **Summarization** is useful for scaling to longer horizons, but it can remove exactly the information needed for strategic adaptation, leading to worse regret or weaker reasoning.\n- The papers collectively show that context-window management is not just a memory issue: it directly changes the agent’s strategic quality, with summarization trading fidelity for scalability and raw accumulation trading scalability for performance.",
+  "latency_s": 16.909,
+  "input_tokens": 261350,
+  "output_tokens": 612,
+  "cost_usd": 0.198767,
+  "judge_score": 5,
+  "judge_justification": "The response accurately synthesizes the core trade-off between history summarization and raw context accumulation in extended multi-agent/game settings. It correctly notes that summarization helps fit longer horizons but can erase trend and tactical information, leading to higher regret or weaker reasoning, while raw histories preserve patterns and improve performance but eventually hit context-window and computational limits. It also grounds the comparison in relevant papers and includes the key degradation mechanisms, making it a complete and well-reasoned answer.",
+  "judge_cost_usd": 0.001318,
+  "total_cost_accumulated_usd": 8.47
+}

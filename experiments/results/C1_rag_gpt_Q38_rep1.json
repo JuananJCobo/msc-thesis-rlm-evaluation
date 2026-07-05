@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q38",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T19:52:31.770951",
+  "response": "In these multi-agent settings, social perception is built through repeated inference: agents track who trusts whom, who appears aligned, and how actions will be interpreted by others. Trust is not fixed; it is highly volatile and must be constantly managed through visible behavior that supports a favorable image. Agents therefore use reputational cues strategically, treating trust as something that can be accumulated, protected, redirected, or exploited.\n\nNormative behavior emerges as a tool for social survival. Agents often conform to group sentiment not simply because it is optimal in a narrow strategic sense, but because alignment with the prevailing norm helps maintain credibility and lowers the chance of being singled out. This makes consensus a powerful force: when a player’s actions match the group’s expectations, suspicion is delayed, and the agent remains inside the trust network.\n\nWhen underlying objectives conflict with social expectations, agents respond by balancing deception with conformity. They may support popular choices, endorse trusted figures, or nominate already well-regarded players so that their own intentions stay obscured. In doing so, they manage reputational risk by blending into the group, shifting attention away from themselves, and leveraging others’ positive standing as cover. This shows a form of socially adaptive reasoning in which agents anticipate how actions will be judged and adjust behavior to preserve trust while pursuing hidden goals.\n\nOverall, the pattern is one of relational strategy: agents do not merely act on private objectives, but continuously shape and are shaped by the social field around them. They navigate consensus, protect or manipulate reputation, and use conformity as an instrument for maintaining legitimacy under conditions of conflict.",
+  "latency_s": 3.522,
+  "input_tokens": 2576,
+  "output_tokens": 317,
+  "cost_usd": 0.003358,
+  "judge_score": 4,
+  "judge_justification": "The response gives a coherent synthesis of social perception, volatile trust, and norm-conforming behavior in multi-agent settings, and it addresses how agents manage reputational risk when private goals conflict with group expectations. It captures the key idea that agents strategically conform, blend in, and use consensus to preserve legitimacy. However, it is somewhat generic and does not explicitly ground the synthesis in the specific theoretical findings highlighted in the reference (e.g., role-specific incentives, universalization/normative grounding, or the human-AI trust opacity/bargaining aspect), so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001177,
+  "total_cost_accumulated_usd": 4.4433,
+  "chunks": [
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    }
+  ]
+}

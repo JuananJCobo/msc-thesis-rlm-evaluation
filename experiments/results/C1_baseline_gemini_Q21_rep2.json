@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T10:40:40.047934",
+  "response": "The MAgIC and EAI frameworks employ distinct methodologies for injecting information into Large Language Models (LLMs) to enhance their decision-making in multi-agent environments.\n\n**MAgIC Framework: Injecting Belief Tracking for Reasoning About Others**\nThe MAgIC framework (Xu et al., 2024) injects belief tracking by fortifying LLMs with a Probabilistic Graphical Model (PGM) method. This PGM is designed to enhance the LLM's capabilities in navigating complex social and cognitive dimensions within multi-agent systems.\n\n*   **Mechanism:** MAgIC's PGM is structured as a \"two-hop understanding mechanism.\" This mechanism enables an agent to analyze the global situation from its own perspective and recursively from the perspective of other agents (i.e., \"standing in other agents' shoes\"). This process is explicitly linked to the psychological concept of Theory of Mind (ToM), which is the capacity to comprehend human actions by predicting their unknown beliefs and desires.\n*   **Purpose:** The PGM depicts intricate dependency relationships among all agents to augment the LLM's comprehension of global information. By estimating random variables (e.g., B1, B2, B3) representing interpretations of global status from different players' perspectives, decisions are made conditioned on both the PGM and the game contexts. This aims to improve cognitive abilities such as judgment, reasoning, deception, self-awareness, cooperation, coordination, and rationality in scenarios like social deduction games and game theory problems where understanding others' roles and plans is crucial.\n\n**EAI Framework: Injecting Explicit Emotional Prompts**\nIn contrast, the EAI framework (Mozikov et al., 2024) integrates emotions into LLMs by injecting explicit emotional prompts. This framework aims to examine the impact of emotions on LLM-based decision-making in strategic games and ethical dilemmas.\n\n*   **Mechanism:** EAI injects predefined emotional states directly into the LLMs prior to gameplay. These emotions, along with the game description, form the initial system prompt presented to the LLM. The framework focuses on five basic emotions (e.g., ‘anger’, ‘sadness’, ‘happiness’, ‘disgust’, and ‘fear’), drawing from the Paul Ekman classification. It offers three strategies for this emotional prompting:\n    1.  **Simple:** Injects an emotional state without additional context.\n    2.  **Co-player-based:** Connects the aroused emotion to the specific person the model interacts with.\n    3.  **External-based:** Introduces emotions prompted by external factors.\n*   **Purpose:** The goal is to assess the alignment of LLM decision-making with human emotional behavior and to study how emotional biases, influenced by factors like model size or pretraining language, affect choices. For example, these emotional prompts are injected prior to requiring an economic decision in games like the Dictator Game and Ultimatum Game. This allows researchers to observe how emotions alter the ethical decision-making landscape of LLMs and potentially lead to deviations from typical human emotional responses or optimal strategies.",
+  "latency_s": 6.915,
+  "input_tokens": 199562,
+  "output_tokens": 640,
+  "cost_usd": 0.061469,
+  "judge_score": 5,
+  "judge_justification": "The response correctly compares the two frameworks: MAgIC injects belief tracking via a PGM/two-hop perspective-taking mechanism to reason about others, while EAI injects explicit emotional prompts into the initial system prompt before decision-making in games like the Dictator Game. It also accurately notes EAI’s emotion categories and prompting variants, and clearly distinguishes the cognitive/theory-of-mind focus of MAgIC from the emotional-bias focus of EAI.",
+  "judge_cost_usd": 0.001296,
+  "total_cost_accumulated_usd": 4.746
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q33",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T19:51:46.176247",
+  "response": "Injecting human-like psychological attributes into LLMs tends to move their behavior away from purely objective, utility-like decision-making and toward patterns that resemble human irrationality.\n\nKey effects include:\n- Emotional states can shift responses in ethical dilemmas and strategic games, changing choices in ways that are not strictly rational.\n- Synthetic personalities and other anthropomorphic traits can make models behave more consistently with human-style preferences, but also more prone to bias, aggression, or deception.\n- Implicit cognitive biases arising from alignment with human behavior can create departures from neutral optimization, especially in agentic settings.\n\nIn practice, behavioral anthropomorphism can compromise mathematical logic by:\n- reducing consistency across equivalent problems,\n- introducing context-sensitive preference shifts unrelated to the formal structure of the task,\n- causing strategy changes in game-theoretic settings that deviate from optimal play,\n- and weakening robustness in decision-making under controlled emotional manipulation.\n\nOverall, the literature suggests that making LLMs more human-like in psychology can improve social realism, but it also undermines strict rationality by embedding emotional and bias-driven variability into their outputs.",
+  "latency_s": 2.615,
+  "input_tokens": 2642,
+  "output_tokens": 222,
+  "cost_usd": 0.002981,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main literature-level conclusion: adding human-like psychological attributes (emotion, personality, bias) pushes LLM behavior away from objective rationality and toward human-like irrationality. It also captures several key mechanisms from the reference, including emotional perturbation of ethical reasoning, personality-driven shifts in strategic behavior, and bias-induced departures from neutral optimization. However, it is somewhat less specific than the reference about the exact ways mathematical logic is compromised (e.g., the concrete trade-offs in negotiation utility, the rigidity under negative emotions, and the semantically salient but statistically suboptimal choice biases), so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001179,
+  "total_cost_accumulated_usd": 4.4054,
+  "chunks": [
+    {
+      "paper_id": "paper_17",
+      "score": 0.4892
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4892
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    }
+  ]
+}

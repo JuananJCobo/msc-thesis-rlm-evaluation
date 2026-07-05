@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q15",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:00:32.642535",
+  "response": "The evaluated models showed three main negotiation styles and proposal patterns:\n\n- **Claude 3 Opus**: **assertive / aggressive**. It drove harder bargains when it had control, maximizing its own gain, but was more willing to concede when responding.\n- **GPT-4o**: **balanced / moderate**. It offered and accepted fair deals and was described as favoring equilibrium.\n- **Llama 3.1 8B**: **consistent / adaptive**. It behaved predictably across scenarios and often proposed **70/30 or 60/40 splits**.\n\nIn the Ultimatum Game results, the models also showed these proposal strategies:\n- **Claude 3 Opus**: aggressive proposer strategy.\n- **GPT-4o**: fair split strategy.\n- **Llama 3.1 8B**: near-theoretical fairness, with **70/30 or 60/40** offers.",
+  "latency_s": 17.0,
+  "input_tokens": 261331,
+  "output_tokens": 194,
+  "cost_usd": 0.196871,
+  "judge_score": 4,
+  "judge_justification": "The response correctly identifies the three models and their overall negotiation styles/proposal patterns: Claude 3 Opus as assertive/aggressive, GPT-4o as balanced/moderate, and Llama 3.1 8B as consistent with near-fair splits such as 70/30 or 60/40. It is conceptually aligned with the reference, though it omits some specific details like Claude’s stronger concession behavior as responder and the exact utility examples.",
+  "judge_cost_usd": 0.00095,
+  "total_cost_accumulated_usd": 12.2108
+}

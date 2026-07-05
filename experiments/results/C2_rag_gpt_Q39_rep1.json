@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q39",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T21:25:31.951147",
+  "response": "Recent work describes several prompting methods that deliberately expand what an LLM can do in gameplay, moving it beyond simple one-shot action selection.\n\n### Prompting methodologies\n- **Game-theoretic language prompts**: prompts framed in strategic, opponent-aware terms. These were especially effective at improving the model’s ability to produce **aggressive strategies**.\n- **Prose prompts**: prompts written in a more natural, explanatory style. These improved performance under **noisy conditions**, though they also made behavior across different attitudes more similar.\n- **Refine prompts**: prompts that explicitly encourage revision and optimization of an initial strategy. These notably boosted **aggressive strategy performance** without materially changing cooperative or neutral performance.\n\n### Operational privileges\n- The main operational shift is from asking the model to output **individual moves** to asking it to **create an entire strategy**.\n- This gives the model greater strategic latitude: it can encode contingencies, opponent adaptation, and asymmetric roles into the strategy itself rather than reacting move by move.\n\n### How these interventions override baseline zero-shot behavior\n- In baseline zero-shot behavior, the model tends to show **similar performance for neutral and cooperative attitudes**, suggesting a cooperative bias or difficulty distinguishing between them.\n- The prompting interventions override this by:\n  - **Increasing strategic specificity**, especially for aggressive play.\n  - **Making retaliation or exploitation plans more viable**, particularly when opponents are also aggressive.\n  - **Weakening the default convergence to cooperative or neutral-like behavior**, especially when Refine or game-theoretic prompts are used.\n- Under noise, some prompts also alter how the model interprets intentions, which can further shift behavior away from a simple zero-shot response pattern and toward more context-sensitive strategy generation.\n\nIn short, these methods work by giving the model a richer strategic role—strategy author rather than move predictor—while specialized prompts can selectively strengthen aggressive or noise-robust behaviors that are much less pronounced in ordinary zero-shot play.",
+  "latency_s": 3.621,
+  "input_tokens": 2578,
+  "output_tokens": 397,
+  "cost_usd": 0.00372,
+  "judge_score": 2,
+  "judge_justification": "The response discusses prompting methods and some behavioral effects, but it does not identify the key interventions from the reference answer: probabilistic posterior injection for opponent adaptation, persona prompting with a 'Game Expert' role, or explicit rule-breaking privileges for asymmetric roles like DDA. Instead, it substitutes different prompt types and a generic strategy-vs-move framing, so it only partially addresses the synthesis and misses the main comparative insight.",
+  "judge_cost_usd": 0.001133,
+  "total_cost_accumulated_usd": 11.5719,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    }
+  ]
+}

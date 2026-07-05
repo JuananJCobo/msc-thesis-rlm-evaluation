@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q04",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:02:21.094691",
+  "response": "Beta distribution.",
+  "latency_s": 0.927,
+  "input_tokens": 2544,
+  "output_tokens": 6,
+  "cost_usd": 0.001935,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the beta distribution, which is the statistical distribution used as both prior and posterior in the reference answer.",
+  "judge_cost_usd": 0.000384,
+  "total_cost_accumulated_usd": 12.8763,
+  "chunks": [
+    {
+      "paper_id": "paper_19",
+      "score": 0.593
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5781
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5674
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5658
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5577
+    }
+  ]
+}

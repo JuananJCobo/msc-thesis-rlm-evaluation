@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T12:21:37.535850",
+  "response": "The EAI framework and the study on personality traits in negotiation employ distinct methodologies for integrating and analyzing behavioral factors in LLM agents.\n\n**EAI Framework: 'A Priori' Emotional Injection**\nThe EAI framework, as described by Mozikov et al. (2024), integrates emotions into LLM agents using an 'a priori' emotional injection technique. Emotions are injected \"before gameplay\" as part of \"the initial system prompt presented to the LLM at the beginning of the game.\" The framework utilizes five basic emotions: 'anger', 'sadness', 'happiness', 'disgust', and 'fear'. It employs three distinct prompting strategies for this emotional injection:\n*   **\"Simple\" strategy:** Injects an emotional state \"without additional context.\"\n*   **\"Co-player-based\" strategy:** Connects \"the aroused emotion to the person the model interacts with.\"\n*   **\"External-based\" strategy:** Introduces \"emotions prompted by external factors.\"\n\n**Study on Personality Traits in Negotiation: 'A Posteriori' Extraction**\nIn contrast, the study by Huang and Hadfi (2024) focuses on the 'a posteriori' extraction of negotiation-related behavioral information from LLM agent outputs. While the study itself endows LLM agents with personality traits (Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism) via \"in-context learning\" using \"personality-describing adjectives\" to influence their behavior, the specified 'a posteriori' technique involves analyzing the agents' generated messages.\n\nThe methodological tool employed to analyze each message is a \"dialogue state detector,\" which is implemented as a \"third, separate LLM.\" This detector takes each utterance and its prior context as input to extract specific negotiation-related information. The detector classifies the negotiation state into one of five categories:\n*   Offer\n*   Ponder\n*   Accept\n*   Deal-break\n*   Chit-chat",
+  "latency_s": 7.672,
+  "input_tokens": 271451,
+  "output_tokens": 411,
+  "cost_usd": 0.082463,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two methodologies: it identifies the EAI framework’s a priori emotional injection before gameplay via the initial system prompt, and accurately lists the three prompting strategies (Simple, Co-player-based, External-based). It also correctly describes the second study’s a posteriori extraction using a separate dialogue state detector LLM to analyze each utterance with context, and it names the five negotiation states (Offer, Ponder, Accept, Deal-break, Chit-chat).",
+  "judge_cost_usd": 0.001136,
+  "total_cost_accumulated_usd": 15.2506
+}

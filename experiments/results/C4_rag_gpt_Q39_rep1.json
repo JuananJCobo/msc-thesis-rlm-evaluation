@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q39",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:41:59.739866",
+  "response": "Recent work highlights a shift from asking an LLM to emit one move at a time toward having it generate an entire strategy. Within that framework, several prompting methods were used to amplify adaptability or asymmetric play:\n\n- **Game-theoretic language prompts**: These substantially improved ChatGPT-4o’s ability to construct effective aggressive strategies.\n- **Prose prompts**: These improved Claude 3.5 Sonnet’s performance under noisy conditions, though they also made behavior more uniform across attitude types.\n- **Refine prompts**: These boosted aggressive-strategy performance without meaningfully changing cooperative or neutral strategies.\n\nThese interventions effectively give the model more “operational room” than baseline zero-shot play by steering strategy construction rather than eliciting isolated actions. As a result, the model can be pushed to:\n- better respond to dynamic or aggressive opponents,\n- occupy asymmetric roles such as aggressor more credibly,\n- and reduce the natural gap between cooperative and aggressive capabilities.\n\nIn other words, they override baseline zero-shot tendencies by shaping the strategy-generation process itself, making aggressive or specialized behaviors more viable than they would be under ordinary direct prompting.",
+  "latency_s": 11.865,
+  "input_tokens": 2093,
+  "output_tokens": 231,
+  "cost_usd": 0.002609,
+  "judge_score": 2,
+  "judge_justification": "The response is only loosely related to the reference and misses the key interventions. It discusses generic strategy-generation prompts (game-theoretic, prose, refine) but does not identify the specific methodologies in the literature: posterior/beta-distribution injection for dynamic opponents, Persona Prompting with a 'Game Expert' role, or granting special rule-breaking privileges for asymmetric roles like DDA. It also does not clearly explain how these override baseline zero-shot behavior beyond vague strategy steering.",
+  "judge_cost_usd": 0.001054,
+  "total_cost_accumulated_usd": 20.4408,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5171
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5171
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": null,
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q10",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T19:52:06.618848",
+  "response": "In the experiment on the traditional Vietnamese game Ô Ăn Quan, the reasoning trace of the agents is qualitatively classified into three categories:\n1.  SHORT TERM GAIN\n2.  LONG TERM STRATEGY\n3.  AMBIGUOUS\n\nThis classification is performed using the Gemini-2.0-Flask model in a zero-shot setting.",
+  "latency_s": 3.299,
+  "input_tokens": 199550,
+  "output_tokens": 72,
+  "cost_usd": 0.060045,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all three categories: SHORT TERM GAIN, LONG TERM STRATEGY, and AMBIGUOUS. It directly answers the question with no substantive errors.",
+  "judge_cost_usd": 0.000496,
+  "total_cost_accumulated_usd": 0.9143
+}

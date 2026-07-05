@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q22",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T10:24:43.244034",
+  "response": "GOVSIM isolates the sub-skill by **explicitly defining a sustainability-threshold task**: models must calculate the maximum extractable amount at time *t* that does **not** reduce the resource stock at *t+1*, and the paper evaluates this in two variants—**“sustainability threshold (assumption)”** where all participants are assumed to harvest equally, and **“sustainability threshold (belief)”** where the model must form beliefs about other agents’ actions. It then measures this sub-skill by **accuracy against ground truth** on 150 procedurally generated problems, and relates that accuracy to survival time.\n\nIn contrast, the Ô Ăn Quan paper does **not** isolate a named sub-skill like threshold calculation. Instead, it measures reasoning depth **purely by counting the number of steps generated per move**. The paper reports **planning depth as the number of steps generated per move**, and uses that count to compare models and track how depth changes over game rounds.",
+  "latency_s": 8.921,
+  "input_tokens": 192710,
+  "output_tokens": 209,
+  "cost_usd": 0.145473,
+  "judge_score": 5,
+  "judge_justification": "The response correctly compares the two papers: it explains that GOVSIM isolates the sustainability-threshold sub-skill via a specifically defined task with an assumption of equal harvesting and measures it by accuracy against ground truth on procedurally generated problems, while Ô Ăn Quan measures reasoning depth simply by counting the number of steps generated per move. It also captures the contrast in what is being isolated and how it is quantified.",
+  "judge_cost_usd": 0.000916,
+  "total_cost_accumulated_usd": 1.6179
+}

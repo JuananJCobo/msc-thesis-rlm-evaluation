@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q01",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:51:37.332003",
+  "response": "Prisoner’s Dilemma; Stag Hunt; Chicken game; Head-tail game; Battle of the sexes.",
+  "latency_s": 16.394,
+  "input_tokens": 261333,
+  "output_tokens": 27,
+  "cost_usd": 0.196121,
+  "judge_score": 5,
+  "judge_justification": "The response lists the same five games as the reference answer, with only trivial wording/capitalization differences ('Chicken game' vs 'Chicken Game', 'Battle of the sexes' vs 'The battle of sexes').",
+  "judge_cost_usd": 0.000503,
+  "total_cost_accumulated_usd": 6.6988
+}

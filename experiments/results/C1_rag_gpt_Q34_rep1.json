@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T19:51:51.194561",
+  "response": "Across the evaluated studies, LLM agents move away from the mathematical optimum when two things happen at once: information is incomplete, and opponents do not behave in a perfectly predictable way.\n\nWhen communication is constrained, agents lose the kind of publicly shared, perfectly observed information that would otherwise let all players condition their decisions on the same state of the game. In that setting, an agent only sees past actions and payoffs, not the full picture of what others know or intend. That makes it hard to infer whether an opponent is risk-taking, risk-averse, rational, or irrational, so a strategy that is optimal under full information can become poorly matched to the actual situation.\n\nAlgorithmic irrationality compounds the problem. If an opponent does not respond in a fully consistent or utility-maximizing way, then the agent’s inference about future behavior becomes unreliable. Even with repeated interaction, the agent may update beliefs from limited evidence, but uncertainty about behavior type remains. As a result, the agent can choose actions that are locally reasonable yet still produce regret over time because they are based on imperfect beliefs rather than the true strategic structure.\n\nTogether, these forces create a gap between the theoretical best response and the behavior that emerges in practice: limited communication weakens state knowledge, and irrational or heterogeneous behavior weakens predictability. The combined effect is that LLM agents often settle for approximate, belief-driven decisions instead of the exact equilibrium action profile implied by the fully informed model.",
+  "latency_s": 3.639,
+  "input_tokens": 2539,
+  "output_tokens": 294,
+  "cost_usd": 0.003227,
+  "judge_score": 3,
+  "judge_justification": "The response captures the broad idea that limited communication/incomplete information and irrational or heterogeneous behavior can push LLM agents away from equilibrium. However, it misses the specific cross-paper synthesis in the reference: it does not mention the concrete findings about overly cautious extraction limits in shared-resource negotiation, timing-dependent voting shifts in social deduction, or the poker/GTO result showing over-aggressive vs over-passive deviations. It is directionally correct but too generic and not well grounded in the evaluated studies.",
+  "judge_cost_usd": 0.001084,
+  "total_cost_accumulated_usd": 4.4097,
+  "chunks": [
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q37",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T20:35:57.846926",
+  "response": "Across the papers, the main trade-off is between preserving rich game history for strategic reasoning and staying within the context window.\n\n**History summarization**\n- In **DO LLM AGENTS HAVE REGRET?** (Park et al., 2025), summarizing history was used to extend horizons to **T = 500** by providing the **summation of the history loss associated with each action**.\n- The paper reports that this can work well in some settings, but it also shows a clear downside: in an adversarial counterexample, **summary-based history input performed worse than raw-history-based input**, with a very large difference in regret. The authors explicitly note that the summarized history **“no longer reflect[s] the trend,”** which hurts performance.\n- So summarization reduces prompt length and makes longer horizons feasible, but it can erase temporal structure that the model needs to detect patterns.\n\n**Raw context accumulation**\n- The same paper shows that with **raw history**, GPT-4 could exploit predictable loss patterns and even achieve **lower regret than FTRL and FTPL** in some cases.\n- However, raw accumulation scales poorly: the authors state that because the full history must be fed back each round, **API costs scale quadratically with horizon T**.\n- In **Effect of Private Deliberation** (Poje et al., 2024), increasing recall iterations caused the context to become too large for GPT-4-0613, leading it to **miss crucial information or hallucinate**, which **negatively impacted reasoning**.\n- In **Secret Hitler** (Hansteen Izora & Teuscher, 2025), the same issue appears at larger scale: once the thread exceeded the **128,000-token context window**, earlier messages had to be summarized and deleted, creating **“imperfect memory.”**\n\n**Synthesis**\n- **Raw context** preserves the detailed temporal signal needed for pattern recognition, belief refinement, and strategic adaptation, but it becomes expensive and eventually breaks down under context limits.\n- **Summarization** makes long-horizon interaction tractable, but it can flatten or distort the very trends that drive good decisions, causing worse regret or weaker strategic performance.\n- The literature suggests that the best-performing systems often need a compromise: enough history to preserve strategic structure, but not so much raw context that the model loses key information or exceeds its memory budget.",
+  "latency_s": 16.93,
+  "input_tokens": 261350,
+  "output_tokens": 487,
+  "cost_usd": 0.198204,
+  "judge_score": 5,
+  "judge_justification": "The response accurately synthesizes the core trade-off: summarization helps fit long histories into context but can erase temporal structure and worsen regret, while raw history preserves strategic signal but scales poorly and can exceed context limits or degrade reasoning. It also grounds the comparison in relevant papers and notes the practical costs and failure modes of both approaches.",
+  "judge_cost_usd": 0.001098,
+  "total_cost_accumulated_usd": 8.27
+}

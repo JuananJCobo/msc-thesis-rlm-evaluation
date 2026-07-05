@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q13",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:59:21.477504",
+  "response": "The **Mistral family**.",
+  "latency_s": 15.946,
+  "input_tokens": 261325,
+  "output_tokens": 11,
+  "cost_usd": 0.196043,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the Mistral family as the language model family that exhibited hallucination problems in the Pokémon VGC AI environment.",
+  "judge_cost_usd": 0.000434,
+  "total_cost_accumulated_usd": 11.4217
+}

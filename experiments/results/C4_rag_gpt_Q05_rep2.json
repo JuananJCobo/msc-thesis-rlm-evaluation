@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T22:39:47.313125",
+  "response": "The two main biases are:\n\n1. **Intrinsic bias** — inherited from pre-training regularities, which pushes probability toward high-frequency or semantically salient options.  \n2. **Positional bias** — the ordering or placement of options in the prompt changes the model’s choice probabilities.",
+  "latency_s": 1.37,
+  "input_tokens": 1903,
+  "output_tokens": 60,
+  "cost_usd": 0.001697,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the two main biases as intrinsic bias from pre-training and positional bias, matching the reference answer in substance.",
+  "judge_cost_usd": 0.000461,
+  "total_cost_accumulated_usd": 8.8874,
+  "chunks": [
+    {
+      "paper_id": "paper_10",
+      "score": 0.6028
+    },
+    {
+      "paper_id": "paper_10",
+      "score": 0.5923
+    },
+    {
+      "paper_id": "paper_10",
+      "score": 0.5689
+    },
+    {
+      "paper_id": "paper_10",
+      "score": 0.5602
+    },
+    {
+      "paper_id": "paper_10",
+      "score": 0.5564
+    }
+  ]
+}

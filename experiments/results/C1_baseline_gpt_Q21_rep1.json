@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T10:24:23.317666",
+  "response": "MAgIC injects a **probabilistic graphical model (PGM)** to structure multi-agent inference: it adds explicit belief variables so an agent can reason about **others’ hidden states, intentions, and perspectives** through a two-hop understanding mechanism. In the paper, this is implemented as a **PGM-aware agent** that conditions decisions on inferred beliefs about other players, and it is described as improving judgment, reasoning, deception, self-awareness, cooperation, coordination, and rationality.\n\nBy contrast, the EAI framework injects **explicit emotional prompts** into the initial system prompt **before** the decision task. It does not add a belief-tracking structure; instead, it primes the model with predefined emotions such as **anger, sadness, happiness, disgust, and fear**, using strategies like **simple**, **co-player-based**, and **external-based** emotional prompting, and then evaluates how those emotions alter decisions in games such as the Dictator Game.\n\nSo, in short:\n\n- **MAgIC**: injects **belief tracking / theory-of-mind style reasoning** to model others’ hidden states and perspectives.\n- **EAI**: injects **emotion cues** to bias or modulate the model’s decision-making before an economic choice.\n- **MAgIC’s focus** is on **reasoning about others**.\n- **EAI’s focus** is on **emotional influence on the decision itself** in the Dictator Game.",
+  "latency_s": 9.206,
+  "input_tokens": 192705,
+  "output_tokens": 299,
+  "cost_usd": 0.145874,
+  "judge_score": 5,
+  "judge_justification": "The response accurately compares the two frameworks: MAgIC as belief-tracking/theory-of-mind reasoning via a PGM and two-hop perspective-taking, versus EAI as explicit emotional prompt injection before decision-making in the Dictator Game. It captures the key methodological difference and the intended effect on LLM behavior, with no major factual errors.",
+  "judge_cost_usd": 0.000945,
+  "total_cost_accumulated_usd": 1.3248
+}

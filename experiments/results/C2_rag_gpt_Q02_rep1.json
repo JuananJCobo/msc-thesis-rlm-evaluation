@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:02:10.590900",
+  "response": "The eight game-theory scenarios are:\n\n- Guess 2/3 of the Average\n- El Farol Bar\n- Battle of the Sexes\n- Prisoner’s Dilemma\n- Chicken\n- Public Goods Game\n- Stag Hunt\n- Minority Game\n\nThey are grouped into three categories:\n\n- Cooperative games\n- Competitive games\n- Mixed-motive games",
+  "latency_s": 1.407,
+  "input_tokens": 2475,
+  "output_tokens": 79,
+  "cost_usd": 0.002212,
+  "judge_score": 2,
+  "judge_justification": "The response identifies only 2 of the 8 correct GAMA-Bench scenarios (Guess 2/3 of the Average and El Farol Bar) and replaces the rest with unrelated classic games. It also gives incorrect category groupings; the reference categories are Cooperative Games, Betraying games, and Sequential games, not Cooperative/Competitive/Mixed-motive.",
+  "judge_cost_usd": 0.000687,
+  "total_cost_accumulated_usd": 12.8653,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4746
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.47
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4592
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4528
+    }
+  ]
+}

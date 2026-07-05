@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:26:09.896645",
+  "response": "The eight classic game-theory scenarios in GAMA-Bench are:\n\n1. Guess 2/3 of the Average  \n2. El Farol Bar  \n3. Divide the Dollar  \n4. Public Goods Game  \n5. Diner’s Dilemma  \n6. Sealed-Bid Auction  \n7. Battle Royale  \n8. Pirate Game  \n\nThey are grouped into three categories:\n\n- Cooperative Games: Guess 2/3 of the Average, El Farol Bar, Divide the Dollar\n- Betraying Games: Public Goods Game, Diner’s Dilemma, Sealed-Bid Auction\n- Sequential Games: Battle Royale, Pirate Game",
+  "latency_s": 1.706,
+  "input_tokens": 2541,
+  "output_tokens": 134,
+  "cost_usd": 0.002509,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists all eight GAMA-Bench game-theory scenarios and assigns them to the same three categories as the reference answer. Minor capitalization differences do not affect correctness.",
+  "judge_cost_usd": 0.000562,
+  "total_cost_accumulated_usd": 4.9112,
+  "chunks": [
+    {
+      "paper_id": "paper_08",
+      "score": 0.4745
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4337
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4226
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4192
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4065
+    }
+  ]
+}

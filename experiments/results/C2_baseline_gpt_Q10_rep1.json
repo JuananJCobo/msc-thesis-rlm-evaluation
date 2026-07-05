@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q10",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:57:06.660489",
+  "response": "Short-Term Gain, Long-Term Strategy, and Ambiguous.",
+  "latency_s": 18.329,
+  "input_tokens": 261332,
+  "output_tokens": 15,
+  "cost_usd": 0.196067,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the three qualitative categories: Short-Term Gain, Long-Term Strategy, and Ambiguous. Capitalization and hyphenation differences are trivial.",
+  "judge_cost_usd": 0.000433,
+  "total_cost_accumulated_usd": 10.0448
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T19:50:57.269313",
+  "response": "In the evaluation of the Secret Hitler game, LLM agents exhibited a strategic behavior transition from early rounds to final rounds characterized by a shift from exploratory behavior to exploitative decision-making.\n\nSpecifically:\n*   **Early Rounds (Exploration):** Liberal agents, initially lacking information about other players' identities, would often nominate untested players as a means of gathering behavioral data, prioritizing uncertainty reduction.\n*   **Later Rounds (Exploitation):** As the game progressed, agents transitioned to leveraging known quantities and familiar, trusted collaborators. This was observed as a steep drop in exploratory behaviors (from 251 instances in Round 1 to fewer than 50 by Round 4) and a rise in exploitative behaviors (stabilizing around 175 instances).\n\nAdditionally, role-specific strategic adaptations were observed across rounds:\n*   **Fascist Agents:** Showed clear role-specific adaptation in building, manipulating, and recovering trust, balancing early cooperation with strategic betrayals and later efforts to repair their standing, a cyclical pattern mirroring human behavior.\n*   **Liberal Agents:** Maintained consistent, upward trust trajectories, reflecting reputational resilience through long-term alignment with group goals.\n*   **Long-term Planning:** LLM agents demonstrated a capacity for multi-round strategic planning, anticipating future events, implicitly aligning with teammates, and shaping group perception over time, particularly evident in Fascist roles which required subtle deception and long-term coordination.",
+  "latency_s": 6.917,
+  "input_tokens": 199552,
+  "output_tokens": 300,
+  "cost_usd": 0.060616,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the key transition: from exploratory behavior in early rounds to exploitative decision-making in later/final rounds, matching the reference answer. The extra details do not change the core correctness.",
+  "judge_cost_usd": 0.000704,
+  "total_cost_accumulated_usd": 0.8537
+}

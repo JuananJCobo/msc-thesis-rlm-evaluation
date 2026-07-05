@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T12:30:14.954366",
+  "response": "MAgIC and EAI differ in what they inject and what that injection is meant to model.\n\n- **MAgIC** injects **belief tracking** to help the model reason about other agents’ mental states and likely intentions. The emphasis is on inferring and updating what others believe so the model can reason about their behavior.\n- **EAI** injects **explicit emotions** before the decision is made. A predefined emotion such as anger, sadness, happiness, disgust, or fear is included in the initial prompt together with the game description, and then the model is asked to make an economic choice, such as in the Dictator Game.\n\nSo, in short:\n- **MAgIC = reasoning about others via belief states**\n- **EAI = influencing decision-making via explicit emotional state prompts**\n\nMAgIC is about **cognitive inference about other agents**, while EAI is about **how an imposed emotional condition affects the model’s own decision-making**.",
+  "latency_s": 2.164,
+  "input_tokens": 2513,
+  "output_tokens": 199,
+  "cost_usd": 0.00278,
+  "judge_score": 5,
+  "judge_justification": "The response correctly compares the two frameworks: it identifies MAgIC as injecting belief tracking to model others’ mental states and EAI as injecting explicit emotions before an economic decision. It captures the key contrast between cognitive/other-reasoning versus emotional influence on decision-making, which is the central synthesis requested. It is accurate and relevant, though slightly less detailed than the reference.",
+  "judge_cost_usd": 0.000897,
+  "total_cost_accumulated_usd": 15.797,
+  "chunks": [
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4339
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4339
+    }
+  ]
+}

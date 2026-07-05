@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q39",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T21:25:36.597674",
+  "response": "Recent work introduces a shift from asking an LLM to emit single moves to having it **generate full strategies**. The main prompting methodologies mentioned are:\n\n- **Game-theoretic language prompts**: prompts that explicitly frame the task in strategic terms. These were found to make one model better at forming effective aggressive strategies.\n- **Prose prompts**: a more natural-language framing that improved performance under noisy conditions, though it also made behavior more similar across different stances.\n- **Refine prompts**: prompts that specifically boosted aggressive-strategy performance without materially changing cooperative or neutral performance.\n\nThese prompting styles effectively give the model an **operational privilege**: they let it reason over longer-horizon strategy design rather than defaulting to immediate, baseline responses. That means the model is no longer simply producing zero-shot actions in isolation; it is being steered to construct an adaptive policy that can better respond to opponent classes and, in asymmetric settings, support stronger aggressive roles.\n\nHow they override baseline zero-shot behavior:\n\n- They **expand the decision scope** from action selection to strategy synthesis.\n- They **reframe the interaction** so the model can infer opponent intent, retaliation opportunities, and payoff structure.\n- They can **amplify aggressive competence**—especially with game-theoretic language or refinement—making aggressive strategies more viable than they would be under ordinary zero-shot prompting.\n- In noisy settings, they can also **alter robustness**, either improving performance or homogenizing behavior across attitudes.\n\nIn short, these interventions bias the model away from its default cooperative/neutral tendency and toward **more adaptive, strategically differentiated behavior**, especially when aggressive or opponent-sensitive play is desired.",
+  "latency_s": 3.031,
+  "input_tokens": 2578,
+  "output_tokens": 338,
+  "cost_usd": 0.003455,
+  "judge_score": 2,
+  "judge_justification": "The response is only loosely related to the reference and misses the key interventions asked about. It discusses generic prompting styles (game-theoretic language, prose, refine prompts) and claims they expand strategy synthesis, but it does not identify the specific methodologies in the reference: injecting opponent posterior/beta-distribution priors into prompts, persona prompting with a 'Game Expert' role, or granting asymmetric rule-breaking privileges such as bypassing mulligan/setup constraints for a DDA agent. It also does not clearly explain how these interventions override baseline zero-shot behavior in those concrete ways.",
+  "judge_cost_usd": 0.001224,
+  "total_cost_accumulated_usd": 11.5766,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    }
+  ]
+}

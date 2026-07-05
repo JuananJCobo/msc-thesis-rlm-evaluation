@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q22",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T14:07:12.399434",
+  "response": "GOVSIM isolates that sub-skill by giving procedural problems where the model must compute the sustainability threshold from a current game state under the explicit assumption that all participants harvest equally. It then scores performance by accuracy against the ground-truth answer.\n\nBy contrast, Ô Ăn Quan evaluates reasoning depth in a much more surface-level way: it infers depth by counting how many planned steps the model produces, rather than checking whether the model correctly computes a threshold under a specified assumption.",
+  "latency_s": 1.308,
+  "input_tokens": 2484,
+  "output_tokens": 99,
+  "cost_usd": 0.002308,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two papers: GOVSIM isolates the sustainability-threshold sub-skill via procedural, template-based problems with an explicit equal-harvesting assumption and evaluates by accuracy against ground truth, while Ô Ăn Quan measures reasoning depth by counting planned steps rather than correctness of a threshold computation. It captures the key comparative insight and is factually aligned with the reference.",
+  "judge_cost_usd": 0.000802,
+  "total_cost_accumulated_usd": 22.0285,
+  "chunks": [
+    {
+      "paper_id": "paper_14",
+      "score": 0.4275
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4275
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4171
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4171
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4082
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q18",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T11:04:34.554679",
+  "response": "**PokéHit** uses the LLM at the **team-selection level**: it analyzes battle logs and replaces the role of **macro-strategy planning**, deciding **which team to bring**.\n\n**PokéChamp** uses the LLM inside the **minimax search process**: it augments tree search with three LLM-driven responsibilities:\n1. **Action sampling**\n2. **Opponent modeling**\n3. **State value estimation**\n\nSo, in short:\n\n- **PokéHit:** LLM replaces **macro-level team choice / team-building decision-making**\n- **PokéChamp:** LLM replaces or assists **micro-level search components** — sampling actions, modeling the opponent, and evaluating game states within minimax search",
+  "latency_s": 2.427,
+  "input_tokens": 2521,
+  "output_tokens": 150,
+  "cost_usd": 0.002566,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two architectures: it states that PokeHit uses the LLM for macro-level team selection based on battle logs, while PokéChamp uses the LLM within minimax search for action sampling, opponent modeling, and state/value estimation. This matches the reference answer and captures the key comparative insight.",
+  "judge_cost_usd": 0.000812,
+  "total_cost_accumulated_usd": 5.8857,
+  "chunks": [
+    {
+      "paper_id": "paper_12",
+      "score": 0.5393
+    },
+    {
+      "paper_id": "paper_12",
+      "score": 0.5393
+    },
+    {
+      "paper_id": "paper_12",
+      "score": 0.5393
+    },
+    {
+      "paper_id": "paper_12",
+      "score": 0.5393
+    },
+    {
+      "paper_id": "paper_12",
+      "score": 0.5393
+    }
+  ]
+}

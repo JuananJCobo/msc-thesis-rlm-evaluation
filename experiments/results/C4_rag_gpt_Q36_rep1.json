@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q36",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:41:12.683344",
+  "response": "Recent frameworks for LLM agents in partially observable games combine several complementary methods:\n\n- **Private deliberation**: the agent is given an internal thought process to reflect on past and future interactions and choose actions privately, without revealing those thoughts to the opponent.\n- **Partially observable stochastic game modeling**: the interaction is formalized so that the agent reasons under hidden information rather than assuming full visibility.\n- **In-context learning and chain-of-thought prompting**: these are used to structure the agent’s reasoning over conversation history and available observations.\n- **Action-distribution analysis over history**: the agent examines how past dialogue patterns relate to likely actions, helping it reconstruct concealed states and choose more favorable moves.\n- **Opponent-type inference**: although performance here is limited, the framework explicitly includes attempts to infer hidden opponent types from observed behavior.\n- **Sampling from probability distributions**: improved sampling is identified as important for approximating prior distributions and supporting near-optimal action selection, including Bayesian-style decision making.\n- **Concealed reasoning for strategic deception**: private thoughts remain hidden, allowing the agent to maintain deception and competitive advantage without leaking internal planning.\n\nTogether, these methods let an agent infer hidden variables from partial evidence, reason strategically, and preserve secrecy in its internal deliberation.",
+  "latency_s": 2.72,
+  "input_tokens": 2035,
+  "output_tokens": 260,
+  "cost_usd": 0.002696,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main ideas: reasoning under partial observability, inferring hidden variables/opponent types from limited observations, using sampling/probabilistic inference, and preserving private deliberation to avoid leaking internal information. It also captures strategic deception via concealed reasoning. It is slightly less complete than the reference because it does not clearly emphasize the specific need to reconstruct concealed states from public interactions with statistical/heuristic priors, nor does it distinguish as sharply between internal state tracking and externally exposed actions.",
+  "judge_cost_usd": 0.001086,
+  "total_cost_accumulated_usd": 20.4176,
+  "chunks": [
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": null,
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5544
+    }
+  ]
+}

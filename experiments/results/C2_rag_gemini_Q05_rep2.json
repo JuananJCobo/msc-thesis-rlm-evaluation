@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:04:22.006994",
+  "response": "The 'cognition-behavior gap' in LLM randomness is primarily caused by two types of biases. The first is intrinsic bias, which stems from pre-training regularities and draws probability mass towards options that are high-frequency or semantically salient. The second is positional bias, which occurs when the arrangement of options within a prompt alters choice probabilities.",
+  "latency_s": 2.358,
+  "input_tokens": 1949,
+  "output_tokens": 71,
+  "cost_usd": 0.000762,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the two main biases: intrinsic bias and positional bias. It also accurately explains them in a way consistent with the reference, with no substantive errors or omissions.",
+  "judge_cost_usd": 0.000516,
+  "total_cost_accumulated_usd": 12.9636,
+  "chunks": [
+    {
+      "paper_id": "paper_10",
+      "score": 0.6028
+    },
+    {
+      "paper_id": "paper_10",
+      "score": 0.5923
+    },
+    {
+      "paper_id": "paper_10",
+      "score": 0.5693
+    },
+    {
+      "paper_id": "paper_10",
+      "score": 0.5602
+    },
+    {
+      "paper_id": "paper_10",
+      "score": 0.5564
+    }
+  ]
+}

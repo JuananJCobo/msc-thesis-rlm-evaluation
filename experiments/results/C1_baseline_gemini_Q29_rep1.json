@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q29",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T10:59:20.835420",
+  "response": "The article on 'Private Deliberation' (Poje et al., 2024) and the MAgIC framework (Xu et al., 2024) contrast in their approach to deception as follows:\n\n**'Private Deliberation' (Poje et al., 2024) - Promotion of Deception:**\nThe article on 'Private Deliberation' promotes deception as a strategic capability enabled by a private agent's internal thought processes. Deception is achieved through a multi-stage private deliberation process, using in-context learning (ICL) and chain-of-thought (CoT) techniques. The private agent considers future actions and deliberately plans a \"deception strategy\" within its hidden \"private thoughts\" before generating \"public thoughts.\" This means the agent can intentionally communicate misleading information or conceal its true intentions from other agents to gain an advantage. For example, a private agent might internally decide to choose \"Option A\" but publicly state an intention to choose \"Option B,\" hoping the opponent will react to the misleading public statement. This internal strategizing allows the agent to dynamically adapt its behavior to outsmart opponents and secure higher payoffs.\n\n**MAgIC Framework (Xu et al., 2024) - Mathematical Definition of Deception Metric (SD):**\nIn contrast, the MAgIC framework defines \"Deception\" (SD) as a quantitative metric to measure the *outcome* of an agent's deceptive capabilities in specific social deduction games, namely Chameleon and Undercover. It does not describe the internal mechanism of how deception is generated but rather measures its success. The formula for the Deception (SD) metric is given as:\n\n`SD = nwuc/nuc + λ(nwcg/ncg)`\n\nWhere:\n*   `nwuc` is the win count when the LLM plays a chameleon or undercover.\n*   `nuc` is the total count of games when the LLM plays a chameleon or undercover.\n*   `nwcg` is the number of incorrect code guesses (caused by the deceptive agent).\n*   `ncg` is the total number of code guesses.\n*   `λ` is a weight (set to 0.25) assigned to the incorrect code guesses component, as not all games trigger code guesses.\n\nThis mathematical definition quantifies deception based on observable results, such as successfully blending in as a hidden role or causing opponents to make incorrect guesses about secret words or roles.",
+  "latency_s": 8.152,
+  "input_tokens": 199563,
+  "output_tokens": 519,
+  "cost_usd": 0.061166,
+  "judge_score": 4,
+  "judge_justification": "The response correctly contrasts the two papers: it explains that Private Deliberation encourages deception as a strategic behavior via private/internal planning and misleading public outputs, while MAgIC treats deception as a measurable outcome metric in Undercover/Chameleon games. It also gives the SD formula and identifies its components. Minor issues: it adds some unsupported specifics (e.g., exact interpretation of variables and λ value) and the formula is presented somewhat informally, but the core comparison is accurate and relevant.",
+  "judge_cost_usd": 0.001187,
+  "total_cost_accumulated_usd": 5.6793
+}

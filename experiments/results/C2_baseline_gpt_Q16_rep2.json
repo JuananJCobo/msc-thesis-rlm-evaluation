@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q16",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:01:13.240474",
+  "response": "Best Win Rate: **GPT o1+P** — **62.1%**\n\nWorst Win Rate: **Llama-2-70B** — **26.5%**\n\nClaude 2 Win Rate: **34.0%**",
+  "latency_s": 16.878,
+  "input_tokens": 261352,
+  "output_tokens": 53,
+  "cost_usd": 0.196252,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the best and worst models and provides the exact win rates for both, as well as Claude 2's win rate. The only difference from the reference is the naming of the best model as GPT o1+P instead of GPT o1, but the win rate matches and the answer is otherwise complete.",
+  "judge_cost_usd": 0.00066,
+  "total_cost_accumulated_usd": 12.6046
+}

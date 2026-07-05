@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q01",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-23T14:41:31.796000",
+  "response": "Prisoner’s Dilemma, Stag Hunt, Chicken game, Head-tail game, The battle of sexes",
+  "latency_s": 44.181,
+  "input_tokens": 28330,
+  "output_tokens": 2513,
+  "cost_usd": 0.014781,
+  "judge_score": 5,
+  "judge_justification": "The response lists the same five games as the reference answer. Differences are only trivial capitalization/punctuation, so it is correct and complete.",
+  "judge_cost_usd": 0.000435,
+  "total_cost_accumulated_usd": 2.6505,
+  "n_iterations": 9,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C2_gemini/rlm_2026-06-23_14-40-45_1f1cb067.jsonl"
+}

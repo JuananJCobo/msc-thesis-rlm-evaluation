@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q03",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:02:16.864363",
+  "response": "The six main metrics are:\n\n1. Survival time\n2. Survival rate\n3. Total gain for each agent\n4. Efficiency\n5. Resource utilization / sustainability of the shared resource\n6. Collective outcome balance between reward maximization and preservation\n\nIf you want, I can also restate them in the exact notation used for the benchmark.",
+  "latency_s": 1.538,
+  "input_tokens": 2457,
+  "output_tokens": 73,
+  "cost_usd": 0.002171,
+  "judge_score": 3,
+  "judge_justification": "The response correctly identifies four of the six metrics in substance: survival time, survival rate, total gain per agent, and efficiency. However, it does not clearly name the remaining two benchmark metrics, (in)equality and over-usage, instead replacing them with broader paraphrases about sustainability and balance. So it is partially correct but incomplete.",
+  "judge_cost_usd": 0.000683,
+  "total_cost_accumulated_usd": 12.8712,
+  "chunks": [
+    {
+      "paper_id": "paper_14",
+      "score": 0.4913
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.415
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4141
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.406
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.3943
+    }
+  ]
+}

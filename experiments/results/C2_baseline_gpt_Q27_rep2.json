@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T11:51:36.931580",
+  "response": "The **EAI framework** uses an **a priori** emotional injection approach: emotions are injected **before gameplay**, as part of the **initial system prompt at the beginning of the game**. It defines **three prompting strategies**:\n1. **Simple** — injects an emotional state without additional context.\n2. **Co-player-based** — links the emotion to the person the model interacts with.\n3. **External-based** — introduces emotions prompted by external factors.\n\nThe **personality-traits-in-negotiation study** uses an **a posteriori** extraction approach: after each utterance is generated, a **dialogue state detector** is applied to the message and its context. The paper states that this detector is implemented using a **third, separate LLM**. It classifies each utterance into **five negotiation states**:\n1. **Offer**\n2. **Ponder**\n3. **Accept**\n4. **Deal-break**\n5. **Chit-chat**",
+  "latency_s": 16.973,
+  "input_tokens": 261389,
+  "output_tokens": 203,
+  "cost_usd": 0.196955,
+  "judge_score": 5,
+  "judge_justification": "The response accurately contrasts the two methodologies: it correctly identifies the EAI framework as using an a priori emotional injection before gameplay via the initial system prompt, and it correctly lists the three prompting strategies (Simple, Co-player-based, External-based). It also correctly describes the second study as using an a posteriori dialogue state detector applied to each utterance and its context, implemented as a separate LLM, and it names the five negotiation states (Offer, Ponder, Accept, Deal-break, Chit-chat).",
+  "judge_cost_usd": 0.001021,
+  "total_cost_accumulated_usd": 12.2084
+}

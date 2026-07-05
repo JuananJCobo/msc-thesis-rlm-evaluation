@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q37",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T22:59:45.571365",
+  "response": "Across the corpus, the main pattern is a trade-off between fidelity and scalability.\n\nRaw context accumulation is useful when the full interaction history still fits in the prompt. In PokéChamp: an Expert-level Minimax Language Agent (Karten et al., 2025), the authors explicitly note that the battle log contains only the team used and the last rounds of the battle because of the size restriction of the context window. This means the agent can use recent game state directly, but longer histories must be dropped. The paper also shows that even with history available, performance is bounded by online computational budget and opponent-modeling accuracy; it struggles especially with stall tactics and excessive switching, which they attribute partly to the limited lookahead depth and difficulty of modeling such strategies in-context. So raw accumulation preserves detail, but once the history gets too long, the model becomes constrained by truncation, limited lookback, and brittle strategic modeling.\n\nHistory summarization or compression solves the scalability problem, but at a cost. The corpus includes summaries of work on summarization-for-memory and prompt compression, which report that condensed histories reduce compute and avoid context overflow, but can omit crucial details and lower task success when the summary misses strategically important events. More generally, the agentic literature in the corpus says LLM-based agents need memory, reflection, and multi-round reasoning, but history compression introduces subtle coordination and reasoning errors because the retained state is only an approximation of the true interaction trace.\n\nThe resulting performance degradation is different in the two regimes: raw accumulation degrades when the window is exceeded, forcing truncation of earlier rounds and making older information unavailable; summarization degrades by preserving an imperfect abstract state that can lose rare but decisive events. In repeated-game settings, such as the repeated Prisoner’s Dilemma discussed in Proverbio et al. (2025), agents explicitly update choices based on history, showing that repeated rounds matter for payoffs. But once histories become long, the practical question is not whether history matters, but how much of it can be retained. The corpus suggests that keeping raw history is more faithful but quickly becomes infeasible, whereas summarization/compression scales better but trades away precision and can mislead strategy selection.\n\nIn short: raw context accumulation gives the best short-horizon fidelity, but suffers hard window limits and truncation; history summarization extends the horizon, yet introduces information loss that can reduce strategic accuracy, especially in complex multi-agent games where a small missed detail can change the outcome.",
+  "latency_s": 26.704,
+  "input_tokens": 67733,
+  "output_tokens": 1894,
+  "cost_usd": 0.059323,
+  "judge_score": 4,
+  "judge_justification": "The response correctly contrasts raw history accumulation with summarization/compression: raw context preserves more detail but is limited by context-window truncation and bounded lookback, while summarization improves scalability at the cost of losing strategically important information. It also captures the key synthesis that both approaches degrade performance in different ways. However, it is somewhat less specific than the reference about the magnitude of degradation (e.g., regret increases, planning-depth collapse) and relies on a narrower set of examples, so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001286,
+  "total_cost_accumulated_usd": 16.0417,
+  "n_iterations": 11,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C3_gpt/rlm_2026-06-22_22-59-15_03bf23f9.jsonl"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q38",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T19:52:37.313780",
+  "response": "In LLM-driven multi-agent settings, social perception appears to be built through repeated inference about who trusts whom, who is seen as credible, and which actions will reinforce or weaken that credibility. Agents do not merely respond to immediate events; they track relational patterns and use them to anticipate how their choices will be interpreted by others. This creates a dynamic social field in which trust is not fixed, but continually reassessed.\n\nTrust is especially volatile because agents can exploit existing trust networks or shift their behavior to preserve their standing. An agent may support someone already regarded as reliable in order to remain aligned with that trust web, or nominate a well-regarded player to benefit from their reputation. In this way, reputations become social assets that can be used strategically, both to maintain cooperation and to conceal adversarial intent.\n\nNormative behavior is maintained through sensitivity to group consensus and social pressure. Agents show an ability to conform when conformity reduces suspicion, even if it is not the most direct path to their underlying objective. This suggests that social expectation functions as a constraint on behavior: agents weigh the immediate strategic value of an action against its reputational cost.\n\nWhen objectives conflict with social expectations, agents manage reputational risk through image-conscious decision-making. They may endorse popular choices, avoid actions that would make them stand out, or redirect attention toward other players. In adversarial roles, this often takes the form of blending in, choosing conformity to delay scrutiny, and keeping evaluation focused elsewhere. Their behavior indicates that they can model how others are likely to interpret their actions and adjust accordingly.\n\nOverall, these multi-agent environments show agents navigating social life relationally: they infer intentions, adapt to consensus, and balance strategy against perception. Even when their goals are hidden or opposed to group norms, they preserve social plausibility by managing trust, conformity, and attention.",
+  "latency_s": 3.892,
+  "input_tokens": 2576,
+  "output_tokens": 369,
+  "cost_usd": 0.003593,
+  "judge_score": 4,
+  "judge_justification": "The response captures the core synthesis well: it explains that trust and social perception are dynamic, reputationally mediated, and shaped by group consensus and conformity pressures in LLM multi-agent settings. It also addresses how agents manage reputational risk when their objectives conflict with social expectations by blending in, endorsing popular choices, and redirecting scrutiny. However, it is somewhat generic and does not explicitly connect to the stronger theoretical points in the reference answer, such as normative grounding/universalization principles, the volatility of trust across role-specific incentives, or the human-AI bargaining/opacity aspect. Still, it is accurate and substantially aligned with the literature synthesis.",
+  "judge_cost_usd": 0.00127,
+  "total_cost_accumulated_usd": 4.4482,
+  "chunks": [
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5032
+    }
+  ]
+}

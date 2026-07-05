@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T13:52:58.021489",
+  "response": "The two studies integrate behavioral factors into LLM agents in very different ways:\n\n- **EAI framework: “a priori” emotional injection**\n  - Emotions are introduced **before and during decision-making**, as part of the prompting setup.\n  - The framework uses **emotion prompting** with **three strategies**:\n    1. **Explicit emotion expression**  \n    2. **Implicit emotion expression**\n    3. **Internal emotion prompting**\n  - In this setup, emotional factors are embedded into the agent’s behavior **ahead of the game interaction**, shaping how the LLM reasons and acts in the task.\n\n- **Negotiation personality study: “a posteriori” extraction**\n  - Behavioral factors are not injected as emotions; instead, they are **analyzed after each utterance/message is produced**.\n  - The study uses **manual classification of each message** into negotiation states.\n  - It classifies messages into **five negotiation states**:\n    1. **Information-seeking**\n    2. **Questioning**\n    3. **Information-giving**\n    4. **Bargaining**\n    5. **No-op**\n  \nIn short, EAI **builds emotional factors into the prompt in advance**, while the negotiation study **extracts and labels behavioral states from generated dialogue afterward**.",
+  "latency_s": 2.304,
+  "input_tokens": 2587,
+  "output_tokens": 274,
+  "cost_usd": 0.003173,
+  "judge_score": 2,
+  "judge_justification": "The response correctly contrasts the broad idea of EAI as an a priori prompt-based emotional injection and the negotiation study as an a posteriori analysis after message generation, but it contains major factual errors. It gives the wrong three EAI prompting strategies and the wrong five negotiation states, and it also misstates the analysis tool as manual classification rather than a dialogue state detector/separate LLM. These inaccuracies undermine the requested comparison.",
+  "judge_cost_usd": 0.000993,
+  "total_cost_accumulated_usd": 20.7493,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4962
+    }
+  ]
+}

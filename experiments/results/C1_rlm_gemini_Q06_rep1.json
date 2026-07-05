@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q06",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-23T16:25:16.033290",
+  "response": "Error: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+  "latency_s": 16.223,
+  "input_tokens": 10234,
+  "output_tokens": 799,
+  "cost_usd": 0.005068,
+  "judge_score": 1,
+  "judge_justification": "The response does not answer the question at all; it only reports a 503 error message and provides no information about the OG-Narrator method or its components.",
+  "judge_cost_usd": 0.000539,
+  "total_cost_accumulated_usd": 6.2566,
+  "n_iterations": 4,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C1_gemini/rlm_2026-06-23_16-24-58_323ec450.jsonl"
+}

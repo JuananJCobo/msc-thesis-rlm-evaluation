@@ -16,11 +16,6 @@ build/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Datos pesados (no se suben, se documentan cómo reproducir)
-data/raw/
-data/processed/
-experiments/results/
-
 # Modelos descargados localmente
 models/
 *.bin

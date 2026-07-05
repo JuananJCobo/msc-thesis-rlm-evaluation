@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q10",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-23T15:58:11.649146",
+  "response": "Cooperative\nCompetitive\nAltruistic\nSelfish\nControl",
+  "latency_s": 51.468,
+  "input_tokens": 30624,
+  "output_tokens": 3624,
+  "cost_usd": 0.018247,
+  "judge_score": 1,
+  "judge_justification": "The response lists unrelated categories (Cooperative, Competitive, Altruistic, Selfish, Control) and does not match the paper’s qualitative classification of SHORT TERM GAIN, LONG TERM STRATEGY, and AMBIGUOUS.",
+  "judge_cost_usd": 0.000505,
+  "total_cost_accumulated_usd": 6.0664,
+  "n_iterations": 9,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C4_gemini/rlm_2026-06-23_15-57-17_f112eb30.jsonl"
+}

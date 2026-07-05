@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-23T00:49:53.215020",
+  "response": "Across the evaluated studies, LLM agents diverge from the game-theoretic optimum for two reinforcing reasons.\n\n1) Communication constraints and incomplete information: In LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation Games, agents operate in text-based negotiation settings with tunable sparsity, limited feasible solutions, and adversarial/greedy variants. The paper reports that when the game becomes harder or the set of feasible agreements shrinks, performance drops and the authors explicitly suggest that better communication and exploration paradigms are needed. In the repeated Prisoner's Dilemma setup from Can LLMs effectively provide game-theoretic-based scenarios for cybersecurity?, agents only have partial information over 10 rounds. Even in this constrained setting they do not reliably realize the theoretical cooperative optimum; instead they are sensitive to language, personality, and knowledge of repetition, showing that limited information exchange makes the equilibrium fragile.\n\n2) Algorithmic irrationality and bias: In A Novel Framework for Emotion Modeling in LLMs the models' strategic choices shift under emotions, and the authors find that emotions significantly alter decision-making. Larger aligned models such as GPT-4 are described as more rational and more optimal, but still not perfectly stable; they deviate under negative emotions, while smaller or open-source models show more uncertainty, weaker optimality, and even \"No Clear Strategy\" behavior. In Can LLMs effectively provide game-theoretic-based scenarios for cybersecurity?, the agents largely defect as game theory predicts, but there are dramatic inconsistencies across languages and personalities, indicating intrinsic biases. These biases and irrationalities cause deviations from the Nash-predicted behavior even when the payoff structure is clear.\n\nTaken together, the literature shows that constrained communication prevents agents from reliably coordinating on the best joint outcome, while algorithmic irrationality introduces additional instability in strategy selection. The result is not just noisy equilibrium play but systematic departures from the mathematical optimum: negotiation agents fail to reach all feasible deals, repeated-game agents shift with language/personality/round knowledge, and emotionally prompted agents trade off optimality for biased or human-like responses.",
+  "latency_s": 16.772,
+  "input_tokens": 45220,
+  "output_tokens": 1458,
+  "cost_usd": 0.040476,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes two main drivers of deviation from optimal play: communication constraints/incomplete information and algorithmic irrationality/bias. It cites relevant multi-agent negotiation and repeated-game settings, and it captures that limited communication makes coordination fragile while model-specific biases/emotional effects can distort strategy. However, it is somewhat less aligned with the reference’s specific cross-paper details (e.g., timing effects in social deduction, overly cautious extraction limits, and explicit GTO deviations in rigorous incomplete-information games), so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001233,
+  "total_cost_accumulated_usd": 20.7843,
+  "n_iterations": 7,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C4_gpt/rlm_2026-06-23_00-49-34_45c7a1f3.jsonl"
+}

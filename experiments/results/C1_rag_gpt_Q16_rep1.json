@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q16",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:27:19.254122",
+  "response": "The best Win Rate is achieved by **GPT o1** with **62.1%**.  \nThe worst Win Rate is **Cohere** with **27.3%**.  \nThe **Claude 2** model has a Win Rate of **34.0%**.",
+  "latency_s": 1.903,
+  "input_tokens": 2476,
+  "output_tokens": 62,
+  "cost_usd": 0.002136,
+  "judge_score": 2,
+  "judge_justification": "The response correctly identifies GPT o1 as the best model with 62.1% and gives the correct Claude 2 win rate of 34.0%, but it गलत identifies the worst model: it says Cohere with 27.3% instead of Llama-2-70B with 26.5%.",
+  "judge_cost_usd": 0.000671,
+  "total_cost_accumulated_usd": 4.9851,
+  "chunks": [
+    {
+      "paper_id": "paper_11",
+      "score": 0.3785
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.3784
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.3707
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.3678
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.3661
+    }
+  ]
+}

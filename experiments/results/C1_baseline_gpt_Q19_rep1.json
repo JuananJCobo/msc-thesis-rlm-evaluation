@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q19",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T10:23:39.148888",
+  "response": "**PokerBench vs. LSPO (Werewolf)**\n\n- **Goal of abstraction**\n  - **PokerBench** groups many concrete poker boards into a smaller set of **board textures** to make the enormous post-flop space tractable. It is a **hand-crafted game abstraction** over board states.  \n  - **LSPO** maps free-form dialogue actions into a **finite latent strategy space** so that game-theoretic optimization can be applied to Werewolf’s unbounded language actions. It is a **learned latent abstraction** over utterances.\n\n- **What is being grouped**\n  - **PokerBench:** similar **boards/flops** are grouped by shared structural properties into textures such as “single-broadway-dry.” The paper says similar boards like `{Kh,7d,2s}`, `{Kh,7d,4s}`, `{Ah,8d,3s}`, `{Qh,8d,2s}` are grouped together because the strategy is similar.\n  - **LSPO:** similar **discussion utterances** are embedded and clustered with k-means so each cluster becomes a latent strategy. The paper explicitly says free-form discussion actions are embedded and partitioned into clusters, each representing a distinct latent strategy.\n\n- **How the grouping is constructed**\n  - **PokerBench:** uses **manual domain knowledge** about poker board structure and then **randomly samples an equal number of flops from each texture**. It is designed to cover the most common flop situations while keeping evaluation manageable.\n  - **LSPO:** uses **LLM-generated candidate utterances**, then **sentence embeddings** and **k-means clustering** to discover latent strategies. The latent space is then used in an abstracted extensive-form game.\n\n- **Purpose in the overall method**\n  - **PokerBench:** the textures are used to **reduce the combinatorial explosion** of post-flop boards and create a benchmark that still covers diverse strategic situations.\n  - **LSPO:** the latent strategy clusters are used to **convert an unbounded language game into a finite game** so CFR can optimize policy in latent space, then DPO fine-tunes the LLM to match that policy.\n\n- **Relation to strategy**\n  - **PokerBench:** textures are tied to **board-dependent poker strategy**; the grouping assumes that boards in the same texture admit similar strategic treatment.\n  - **LSPO:** clusters are tied to **strategic language behavior**; the grouping is meant to capture recurring dialogue strategies like bluffing, defending, accusing, or coordinating.\n\n- **Key difference**\n  - **PokerBench** is primarily an **evaluation/benchmarking abstraction** for a fixed domain.\n  - **LSPO** is an **iterative learning and optimization abstraction** that is updated over iterations to expand the strategy space.\n\n- **Shared theme**\n  - Both methods compress a huge space into a smaller, more manageable set of categories to make strategic reasoning computationally feasible:\n    - PokerBench compresses **board-state complexity** into textures.\n    - LSPO compresses **language-action complexity** into latent strategies.",
+  "latency_s": 8.987,
+  "input_tokens": 192713,
+  "output_tokens": 635,
+  "cost_usd": 0.147392,
+  "judge_score": 5,
+  "judge_justification": "The response correctly compares the two abstraction techniques across domains: PokerBench’s hand-crafted grouping of similar boards into textures to reduce post-flop complexity, and LSPO’s embedding plus k-means clustering of free-form dialogue actions into finite latent strategies. It captures the shared theme of compressing large spaces for tractable reasoning and notes the key domain and methodological differences. Minor extra details do not undermine correctness.",
+  "judge_cost_usd": 0.00123,
+  "total_cost_accumulated_usd": 0.7349
+}

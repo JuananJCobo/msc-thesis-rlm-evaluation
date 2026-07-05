@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:56:47.251825",
+  "response": "They shifted from **early-game information gathering / exploratory play** to **late-game exploitation of known information**, relying more on previously acquired trust and behavioral data rather than continuing to probe uncertain players.",
+  "latency_s": 16.781,
+  "input_tokens": 261332,
+  "output_tokens": 41,
+  "cost_usd": 0.196184,
+  "judge_score": 5,
+  "judge_justification": "The response correctly captures the reported transition: from early exploratory information-gathering behavior to late-game exploitative play based on trusted/known actors. This matches the reference answer conceptually and directly.",
+  "judge_cost_usd": 0.000511,
+  "total_cost_accumulated_usd": 9.8483
+}

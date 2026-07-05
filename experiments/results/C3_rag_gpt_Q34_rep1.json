@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T22:48:23.039390",
+  "response": "LLM agents deviate from the mathematical optimum mainly because they lack reliable information about opponents and must act under uncertainty. In repeated settings, complete public information is often assumed, but here the agents only have access to historical actions and payoffs, not the true behavior type of the other player. That means they cannot directly tell whether an opponent is risk-taking, risk-averse, rational, or irrational, so they may choose a strategy that is well suited to the wrong type. This creates payoff regret and prevents them from consistently selecting the best response.\n\nCommunication limits worsen this problem because no referee-style full information is available to all players, so behavior must be inferred indirectly rather than observed. At the same time, algorithmic irrationality makes the environment less predictable: if an opponent does not act in a consistently rational way, then standard equilibrium-based expectations break down. The result is that LLM agents face both incomplete information and non-standard opponent behavior, and these two forces together push their decisions away from the ideal payoff-maximizing solution.",
+  "latency_s": 2.449,
+  "input_tokens": 2539,
+  "output_tokens": 209,
+  "cost_usd": 0.002845,
+  "judge_score": 3,
+  "judge_justification": "The response captures the broad idea that incomplete information and non-rational opponent behavior push LLM agents away from equilibrium, but it misses the key comparative synthesis in the reference. It does not mention the specific communication-driven deviations across studies (e.g., negotiation leading to overly cautious extraction limits, timing effects in social deduction, or distinct over-aggressive/over-passive GTO deviations in poker-like settings). It also frames the issue mainly as uncertainty about opponent type rather than the combined effects of communication constraints and algorithmic irrationality highlighted in the question.",
+  "judge_cost_usd": 0.001074,
+  "total_cost_accumulated_usd": 15.1365,
+  "chunks": [
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    }
+  ]
+}

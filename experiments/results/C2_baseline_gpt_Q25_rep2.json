@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q25",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T11:50:14.730449",
+  "response": "In **MAgIC**, the LLM-DDA prompt injects the goal:\n\n**“Balance your life points with your opponent’s. Aim to make the difference as close to zero as possible”**\n\nIn **PokerBench**, models are evaluated against **game theory optimal (GTO) poker** strategy.",
+  "latency_s": 20.789,
+  "input_tokens": 261369,
+  "output_tokens": 65,
+  "cost_usd": 0.196319,
+  "judge_score": 2,
+  "judge_justification": "The response correctly identifies that PokerBench evaluates models against a game-theory-optimal (GTO) strategy, which matches the reference. However, the Magic/LLM-DDA prompt goal is not accurately reproduced: the reference specifies the exact injected text about making the opponent's round win rate 50 percent and includes historical plays and life values, whereas the response paraphrases it as balancing life points and making the difference close to zero. This misses the key exact goal and the difficulty-adjustment framing.",
+  "judge_cost_usd": 0.000916,
+  "total_cost_accumulated_usd": 11.417
+}

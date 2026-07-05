@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T11:04:49.893904",
+  "response": "MAgIC injects belief tracking as part of its reasoning process about other agents, helping the model maintain and update beliefs about others during decision-making. In contrast, the EAI framework does not add belief-tracking machinery; instead, it primes the model with explicit emotions before the game begins, and then asks it to make an economic choice in the Dictator Game setting. So, MAgIC emphasizes reasoning about others through tracked beliefs, while EAI emphasizes emotion-conditioned decision-making through upfront emotional prompting.",
+  "latency_s": 1.369,
+  "input_tokens": 2541,
+  "output_tokens": 104,
+  "cost_usd": 0.002374,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two frameworks: MAgIC uses belief tracking to reason about other agents, while EAI injects explicit emotions before a Dictator Game decision. It captures the key synthetic insight that both are prompt-based interventions on LLM decision-making but target different mechanisms (belief reasoning vs emotional priming).",
+  "judge_cost_usd": 0.000772,
+  "total_cost_accumulated_usd": 5.9047,
+  "chunks": [
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    }
+  ]
+}

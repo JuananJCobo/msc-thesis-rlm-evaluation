@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q35",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T22:51:52.644053",
+  "response": "To enhance the strategic reasoning capabilities of large language models (LLMs) beyond direct prompting, several algorithmic mechanisms and structural scaffoldings have been employed.\n\nOne approach involves guiding LLMs through a **Chain-of-Thought (CoT)** process, where they are prompted to think step by step, providing a structured path for reasoning. Building on this, **Self-Consistent CoT (SC-CoT)** further refines responses by generating multiple step-by-step thinking trajectories and then using majority voting to determine the final action, thereby introducing a mechanism for robust policy refinement.\n\nA more advanced method is **Tree-of-Thought (ToT)**, which enables LLMs to engage in exploration and deliberate decision-making, including self-evaluation. This framework allows for the consideration of various possibilities and the assessment of potential outcomes, which is crucial for anticipating actions and iteratively refining strategies.\n\nFurthermore, the design of **modular prompt templates** serves as a structural scaffolding. Specifically, reasoning prompts within these templates are crafted to instruct the LLM on *how* to think, independent of the specific game environment. This modularity allows these reasoning paradigms to be automatically adapted to new games, facilitating their application to complex strategic scenarios.",
+  "latency_s": 11.202,
+  "input_tokens": 2670,
+  "output_tokens": 248,
+  "cost_usd": 0.001421,
+  "judge_score": 2,
+  "judge_justification": "The response is relevant to strategic reasoning in LLMs, but it does not match the key mechanisms in the reference answer. It focuses on generic CoT, self-consistency, and Tree-of-Thought, whereas the question asks about external scaffolding for explicit opponent-state modeling, recursive anticipation, and iterative policy refinement in multi-agent settings. It misses the core literature-specific ideas of perspective-taking via probabilistic graphical models, hierarchical recursive reasoning over opponents’ hidden strategies, and equilibrium-based policy pool refinement.",
+  "judge_cost_usd": 0.001068,
+  "total_cost_accumulated_usd": 15.2243,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    }
+  ]
+}

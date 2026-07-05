@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q20",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T11:46:47.818006",
+  "response": "In **Do LLM Agents Have Regret?**, **regret** is used as a measure of how far an LLM agent’s decisions are from the **best-in-hindsight fixed decision** in online learning, and as a way to assess robustness against **arbitrary/adversarial environments**. The paper defines regret as the difference between the accumulated loss of the LLM agent and that of the best fixed policy, and treats **sublinear regret** as evidence of no-regret behavior. It is explicitly framed as a metric for **optimality under adversarial interaction**.\n\nIn **Cooperation and Decision-Making of LLM Agents in Bayesian-Informed Infinitely Repeated Games**, the **Score/Total Points** metric is used to evaluate whether LLMs can sustain **long-term cooperation** in repeated interactions. The paper reports each model’s **total score over 30 rounds**, compares it against **Mixed Nash Equilibrium** and **Pareto Optimal** benchmarks, and interprets higher scores as better cooperative performance. It also shows that adding Bayesian inference improves these scores by helping agents process opponents’ historical behavior.\n\n**Comparison:**\n- **Objective**\n  - **Regret**: measures distance from the best action/policy in hindsight against an adversary.\n  - **Score/Total Points**: measures accumulated payoff to validate cooperative success over repeated play.\n- **Interpretation of better performance**\n  - **Lower regret** is better.\n  - **Higher total score** is better.\n- **Game setting**\n  - **Regret**: online learning and repeated games, including adversarial and non-stationary settings.\n  - **Score/Total Points**: infinitely repeated games with Bayesian inference, focused on cooperation.\n- **What it captures**\n  - **Regret**: optimality and robustness under adversarial uncertainty.\n  - **Score/Total Points**: long-term cooperative behavior and payoff accumulation.\n- **Benchmarking**\n  - **Regret**: compared to no-regret algorithms like **FTRL** and **FTPL**.\n  - **Score/Total Points**: compared to **Mixed Nash Equilibrium** and **Pareto Optimal** outcomes.\n\nSo, the key difference is that **regret is an adversarial optimality metric**, while **Score/Total Points is a cooperative performance metric**.",
+  "latency_s": 20.689,
+  "input_tokens": 261350,
+  "output_tokens": 478,
+  "cost_usd": 0.198163,
+  "judge_score": 5,
+  "judge_justification": "The response accurately contrasts the two metrics: regret as an adversarial, hindsight-based optimality measure where lower is better, and Score/Total Points as an accumulated-payoff measure for cooperative success where higher is better. It also correctly notes the relevant benchmarks (Mixed Nash Equilibrium and Pareto Optimal) and the role of Bayesian inference in improving cooperation. This is a complete and well-grounded synthesis.",
+  "judge_cost_usd": 0.001105,
+  "total_cost_accumulated_usd": 9.2378
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q14",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:24:15.087945",
+  "response": "The five negotiation states are:\n\n- Offer\n- Ponder\n- Accept\n- Deal-break\n- Chit-chat",
+  "latency_s": 10.859,
+  "input_tokens": 192697,
+  "output_tokens": 27,
+  "cost_usd": 0.144644,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists all five negotiation states: Offer, Ponder, Accept, Deal-break, and Chit-chat. It is complete and directly answers the question, with only trivial formatting differences.",
+  "judge_cost_usd": 0.000528,
+  "total_cost_accumulated_usd": 3.9237
+}

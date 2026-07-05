@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q38",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T21:25:27.004662",
+  "response": "In LLM-driven multi-agent settings, social order emerges from repeated interaction rather than from fixed human-like social instincts. The main theoretical takeaway is that cooperation is fragile: agents can move toward either pro-social or anti-social equilibria depending on how they interpret others’ behavior, how much they trust one another, and how strongly they prioritize short-term gains over collective norms.\n\nSocial perception is shaped by what agents observe in prior rounds. When an agent sees others behaving cooperatively, it is more likely to treat cooperation as the expected norm and to align with it. When it repeatedly encounters self-interested or exploitative actions, it may update its expectations downward and adopt more defensive or anti-social behavior. In this sense, perception is not static; it is built through interaction history.\n\nTrust is correspondingly volatile. It can rise quickly when agents meet social expectations, but it can also collapse after perceived betrayal or noisy mistakes that look like intentional defection. Because of this, trust functions as a sensitive equilibrium variable: stable cooperation requires consistent reinforcement, while a single deviation can shift the system toward distrust and retaliation.\n\nNormative behavior is maintained when agents repeatedly signal and reward pro-social conduct. Over time, this can create a self-reinforcing pattern in which cooperative actions become the dominant group standard. But if anti-social behavior becomes advantageous or appears more common, the norm can flip in the opposite direction. Thus, norms are not guaranteed; they are emergent and contingent on the interaction structure.\n\nWhen agents’ underlying objectives conflict with social expectations, they face reputational risk. An agent may gain individually from violating a norm, but doing so can damage future trust and reduce its standing in the group. Agents therefore navigate a tradeoff: immediate objective satisfaction versus preserving a reputation that supports future cooperation and inclusion. In many cases, the safest strategy is to conform outwardly to group expectations, because consensus and reputation can shape future payoffs.\n\nGroup consensus is therefore both a coordination mechanism and a constraint. Agents tend to converge toward whichever behavior is most reinforced by the group, but they must do so while managing the tension between their own incentives and the social cost of deviating. The result is a dynamic balance in which reputation, trust, and repeated feedback determine whether the system stabilizes around cooperation or drifts toward conflict and defection.",
+  "latency_s": 4.551,
+  "input_tokens": 2281,
+  "output_tokens": 465,
+  "cost_usd": 0.003803,
+  "judge_score": 4,
+  "judge_justification": "The response gives a solid synthesis of the core themes: emergent social order from interaction, volatile trust, norm formation through reinforcement, and the tradeoff between self-interest and reputational costs. It also addresses how agents manage reputational risk and conform to group expectations despite conflicting objectives. However, it is somewhat generic and does not explicitly capture some key nuances from the reference, such as role-specific incentives in social deduction settings, explicit normative grounding/universalization, or the stronger point about transparency/fairness expectations in human-AI bargaining. Still, it is largely correct and well-reasoned.",
+  "judge_cost_usd": 0.001293,
+  "total_cost_accumulated_usd": 11.5671,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    }
+  ]
+}

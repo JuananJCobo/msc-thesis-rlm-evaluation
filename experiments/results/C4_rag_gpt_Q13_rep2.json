@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q13",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T22:40:19.580101",
+  "response": "The Mistral model family.",
+  "latency_s": 0.814,
+  "input_tokens": 2475,
+  "output_tokens": 10,
+  "cost_usd": 0.001901,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the Mistral model family as the one that showed hallucination problems when structuring teams in the Pokémon VGC AI environment.",
+  "judge_cost_usd": 0.000461,
+  "total_cost_accumulated_usd": 8.9321,
+  "chunks": [
+    {
+      "paper_id": "paper_11",
+      "score": 0.4869
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4847
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4751
+    },
+    {
+      "paper_id": "paper_12",
+      "score": 0.4748
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4585
+    }
+  ]
+}

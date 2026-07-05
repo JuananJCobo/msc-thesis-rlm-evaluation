@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-23T16:49:04.727314",
+  "response": "Error: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+  "latency_s": 11.254,
+  "input_tokens": 5853,
+  "output_tokens": 492,
+  "cost_usd": 0.002986,
+  "judge_score": 1,
+  "judge_justification": "The system response is an error message and does not answer the question about the two types of biases.",
+  "judge_cost_usd": 0.000434,
+  "total_cost_accumulated_usd": 6.4728,
+  "n_iterations": 3,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C4_gemini/rlm_2026-06-23_16-48-52_7a1e4ebe.jsonl"
+}

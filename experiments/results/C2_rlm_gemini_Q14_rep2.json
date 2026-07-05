@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q14",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-23T16:56:49.686205",
+  "response": "Offer\nPonder\nAccept\nDeal-break\nChit-chat",
+  "latency_s": 8.36,
+  "input_tokens": 8110,
+  "output_tokens": 545,
+  "cost_usd": 0.003795,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists all five negotiation states: Offer, Ponder, Accept, Deal-break, and Chit-chat. It is complete and directly answers the question.",
+  "judge_cost_usd": 0.000493,
+  "total_cost_accumulated_usd": 6.5551,
+  "n_iterations": 4,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C2_gemini/rlm_2026-06-23_16-56-33_354e63b2.jsonl"
+}

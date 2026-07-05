@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q08",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T22:42:22.159607",
+  "response": "The AmazonHistoryPrice dataset, collected for bargaining evaluations, includes 930 popular products across 18 categories.",
+  "latency_s": 1.668,
+  "input_tokens": 2645,
+  "output_tokens": 24,
+  "cost_usd": 0.000853,
+  "judge_score": 5,
+  "judge_justification": "The response correctly states both required facts: 930 products and 18 categories. It is complete and directly answers the question, with only trivial wording differences from the reference.",
+  "judge_cost_usd": 0.000448,
+  "total_cost_accumulated_usd": 8.9847,
+  "chunks": [
+    {
+      "paper_id": "paper_16",
+      "score": 0.4837
+    },
+    {
+      "paper_id": "paper_16",
+      "score": 0.4394
+    },
+    {
+      "paper_id": "paper_16",
+      "score": 0.433
+    },
+    {
+      "paper_id": "paper_16",
+      "score": 0.4099
+    },
+    {
+      "paper_id": "paper_21",
+      "score": 0.394
+    }
+  ]
+}

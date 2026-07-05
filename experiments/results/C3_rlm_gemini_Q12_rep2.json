@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q12",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-23T15:26:10.128645",
+  "response": "Error: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+  "latency_s": 123.32,
+  "input_tokens": 78506,
+  "output_tokens": 2806,
+  "cost_usd": 0.030567,
+  "judge_score": 1,
+  "judge_justification": "The system response does not answer the question at all; it only reports a 503 error and provides none of the requested clusters or subcategories.",
+  "judge_cost_usd": 0.0005,
+  "total_cost_accumulated_usd": 4.4522,
+  "n_iterations": 9,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C3_gemini/rlm_2026-06-23_15-24-04_55fef082.jsonl"
+}

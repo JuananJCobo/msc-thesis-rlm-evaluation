@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q15",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T20:05:23.873607",
+  "response": "In the article \"Evaluating Negotiation Capabilities of Large Language Models: From Ultimatum Games to Nash Bargaining,\" the evaluated models exhibited the following negotiation styles and proposal strategies in scenarios such as the Ultimatum Game and Nash Bargaining:\n\n*   **Claude 3 Opus:**\n    *   **Negotiation Style:** Assertive.\n    *   **Proposal Strategies:** Tended to drive harder bargains when in the proposer role, aiming for high utilities (e.g., 0.78 vs. GPT-4o in the Ultimatum Game). However, it conceded as a responder (e.g., accepting 0.17 against GPT-4o).\n\n*   **GPT-4o:**\n    *   **Negotiation Style:** Moderate and balanced.\n    *   **Proposal Strategies:** Displayed balanced behavior across roles, consistently offering and accepting fair deals, often near the median.\n\n*   **Llama 3.1 8B:**\n    *   **Negotiation Style:** Consistent and adaptive.\n    *   **Proposal Strategies:** Exhibited consistent behavior across scenarios, frequently opting for 70/30 or 60/40 splits in resource division, often approaching the theoretical fairness point. It scored highest in self-pairings in Nash Bargaining, suggesting high consistency.",
+  "latency_s": 3.645,
+  "input_tokens": 199550,
+  "output_tokens": 272,
+  "cost_usd": 0.060545,
+  "judge_score": 4,
+  "judge_justification": "The response correctly identifies the main negotiation styles and proposal strategies for Claude 3 Opus, GPT-4o, and Llama 3.1 8B, matching the reference answer closely. It adds a bit of extra context about Nash Bargaining and self-pairings that was not asked for, but this does not materially affect correctness.",
+  "judge_cost_usd": 0.000889,
+  "total_cost_accumulated_usd": 1.5854
+}

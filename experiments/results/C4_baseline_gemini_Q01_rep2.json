@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q01",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T22:16:08.880696",
+  "response": "Based strictly on Table 2 from the article \"Effect of Private Deliberation: Deception of Large Language Models in Game Play\" by Poje et al. (2024), the five games evaluated in the experiments are:\n\n*   Prisoner’s Dilemma\n*   Stag Hunt\n*   Chicken game\n*   Head-tail game\n*   The battle of sexes",
+  "latency_s": 3.349,
+  "input_tokens": 540080,
+  "output_tokens": 82,
+  "cost_usd": 0.162229,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists the five games from Table 2: Prisoner’s Dilemma, Stag Hunt, Chicken game, Head-tail game, and The battle of sexes. Minor capitalization differences do not affect correctness.",
+  "judge_cost_usd": 0.00054,
+  "total_cost_accumulated_usd": 5.9156
+}

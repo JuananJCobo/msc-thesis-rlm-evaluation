@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q04",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:20:29.393179",
+  "response": "Beta distribution.",
+  "latency_s": 11.467,
+  "input_tokens": 192691,
+  "output_tokens": 6,
+  "cost_usd": 0.144545,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the beta distribution, which is the statistical distribution used as both prior and posterior in the referenced Bayesian inference setup.",
+  "judge_cost_usd": 0.000393,
+  "total_cost_accumulated_usd": 1.1616
+}

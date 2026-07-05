@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q13",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T22:42:54.134461",
+  "response": "Mistral models demonstrated hallucination problems, leading to issues such as forming teams with Pokémon not on the roster or creating incomplete teams with fewer than three members.",
+  "latency_s": 2.113,
+  "input_tokens": 2598,
+  "output_tokens": 31,
+  "cost_usd": 0.000857,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies Mistral models as the family that showed hallucination problems and accurately describes the examples of malformed teams, matching the reference answer.",
+  "judge_cost_usd": 0.000466,
+  "total_cost_accumulated_usd": 9.0018,
+  "chunks": [
+    {
+      "paper_id": "paper_11",
+      "score": 0.4869
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4847
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4751
+    },
+    {
+      "paper_id": "paper_12",
+      "score": 0.4748
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4585
+    }
+  ]
+}

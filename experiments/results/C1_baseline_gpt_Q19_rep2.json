@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q19",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T10:23:49.162818",
+  "response": "**PokerBench vs. LSPO (Werewolf):**\n\n- **PokerBench** groups the enormous post-flop state space by **clustering similar boards into 11 board textures**. The goal is to make evaluation tractable by treating boards with similar strategic implications as one class. For example, boards like `{Kh,7d,2s}` and similar dry, single-broadway flops are grouped into the same texture because the strategy is expected to be similar. This is used to **cover the vast search space efficiently** while preserving strategic diversity.  \n  - Paper: **PokerBench: Training Large Language Models to Become Professional Poker Players**\n\n- **LSPO (Werewolf)** groups the unbounded free-form dialogue action space by **mapping utterances into a finite latent strategy space via embeddings and k-means clustering**. The goal is to turn open-ended language actions into a discrete abstract game so that game-theoretic methods like CFR can be applied. The latent space is then **iteratively expanded** by fine-tuning the LLM and reclustering newly generated actions.  \n  - Paper: **Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization**\n\n**Key comparison:**\n\n- **What is grouped**\n  - PokerBench: **boards / game states**\n  - LSPO: **dialogue actions / utterances**\n\n- **How grouping is done**\n  - PokerBench: **manual strategic abstraction into board textures**\n  - LSPO: **embedding-based clustering into latent strategies**\n\n- **Purpose**\n  - PokerBench: **reduce the combinatorial explosion of post-flop poker states for benchmarking and training**\n  - LSPO: **convert infinite language action space into a finite strategy space for policy optimization**\n\n- **Adaptivity**\n  - PokerBench: grouping is a **fixed abstraction**\n  - LSPO: grouping is **iterative and expandable**, with the latent space updated over iterations\n\n- **Game-theoretic role**\n  - PokerBench: supports **evaluation of optimal poker play**\n  - LSPO: enables **CFR-based optimization in an abstracted extensive-form game**",
+  "latency_s": 9.105,
+  "input_tokens": 192713,
+  "output_tokens": 439,
+  "cost_usd": 0.14651,
+  "judge_score": 5,
+  "judge_justification": "The response correctly compares the two techniques as abstractions that reduce large spaces to finite representations, and it accurately distinguishes their domains and methods: PokerBench groups poker boards into fixed board textures, while LSPO embeds dialogue actions and clusters them into latent strategies. It also captures the purpose of each abstraction and notes the iterative expansion in LSPO, which is a relevant additional detail. Overall, it is accurate, relevant, and synthesizes the comparison well.",
+  "judge_cost_usd": 0.001123,
+  "total_cost_accumulated_usd": 0.8825
+}

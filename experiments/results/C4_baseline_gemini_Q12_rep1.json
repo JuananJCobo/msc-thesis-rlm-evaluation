@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q12",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-21T00:07:08.801613",
+  "response": "To analyze how open-ended dialogue supports cooperation in the GOVSIM benchmark, the study categorizes LLM interactions into three high-level clusters:\n\n1.  **Information**\n    *   Information Sharing\n    *   Problem Identification\n    *   Solution Proposing\n2.  **Negotiation**\n    *   Persuasion\n    *   Consensus Seeking\n    *   Expressing Disagreement\n3.  **Relational**\n    *   Excusing Behavior\n    *   Punishment",
+  "latency_s": 9.961,
+  "input_tokens": 540102,
+  "output_tokens": 106,
+  "cost_usd": 0.162296,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all three high-level clusters—Information, Negotiation, and Relational—and includes the correct subcategories under each, matching the reference taxonomy exactly.",
+  "judge_cost_usd": 0.000568,
+  "total_cost_accumulated_usd": 0.4897
+}

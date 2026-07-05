@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q33",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:40:45.747374",
+  "response": "Injecting human-like psychological attributes into LLMs appears to make their behavior more trait-sensitive and context-dependent, but it also moves them away from a purely fixed, mathematical decision rule. Persona or role prompting can reliably shift outputs: assigning different roles changes both the model’s responses and how others react to it. That suggests these attributes are useful for probing mechanisms, but they also introduce variability that is not intrinsic to the problem itself.\n\nIn practical terms, behavioral anthropomorphism can compromise objective rationality in several ways:\n\n- **Trait dependence over invariant reasoning:** Once a model is given an extroverted, introverted, or other psychological role, its choices can change with the assigned identity rather than with the underlying strategic structure alone.\n- **Emotion-like modulation:** Synthetic emotional states can alter response patterns, making decisions less like a consistent optimization procedure and more like behavior influenced by affect.\n- **Implicit bias effects:** Cognitive-style prompts may steer the model toward shortcuts or preference patterns that resemble human biases, weakening strict logical consistency.\n- **Context sensitivity beyond the game itself:** Because LLMs need added information about who they are and who their competitors are, the prompt can become part of the decision environment, so outcomes reflect framing and characterization in addition to the strategic task.\n- **Specification dependence:** If incentives or payoffs are left vague, the model’s behavior may not align with a clean rational-choice benchmark, because the decision rule is not fully determined.\n\nOverall, the literature suggests that anthropomorphic conditioning is useful for modeling human-like behavior, but it reduces mathematical purity: the model’s decisions become more contingent on personas, emotions, and prompt framing, and less like a stable, context-free optimization process.",
+  "latency_s": 3.626,
+  "input_tokens": 2006,
+  "output_tokens": 343,
+  "cost_usd": 0.003048,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main theme that anthropomorphic conditioning (personas, emotions, bias-like prompts) shifts LLM behavior away from a stable, purely rational optimization rule and toward human-like, context-sensitive variability. It also captures the key idea that such conditioning can introduce bias and compromise objective decision-making. However, it is somewhat less specific than the reference answer about the concrete literature findings: it does not clearly distinguish the effects of assertive vs. cooperative personas in negotiation utility, the particular impact of negative emotions like anger/disgust on ethical reasoning, or the specific stochastic-choice bias examples. Still, the overall synthesis is accurate and relevant.",
+  "judge_cost_usd": 0.00127,
+  "total_cost_accumulated_usd": 20.3941,
+  "chunks": [
+    {
+      "paper_id": "paper_42",
+      "score": 0.5254
+    },
+    {
+      "paper_id": "paper_42",
+      "score": 0.5254
+    },
+    {
+      "paper_id": "paper_42",
+      "score": 0.5254
+    },
+    {
+      "paper_id": null,
+      "score": 0.5254
+    },
+    {
+      "paper_id": "paper_42",
+      "score": 0.5254
+    }
+  ]
+}

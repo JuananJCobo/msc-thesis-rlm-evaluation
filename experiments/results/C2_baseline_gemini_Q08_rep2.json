@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q08",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T21:02:06.786854",
+  "response": "The AmazonHistoryPrice dataset collected for bargaining evaluations contains 930 products across 18 categories.",
+  "latency_s": 4.523,
+  "input_tokens": 271388,
+  "output_tokens": 21,
+  "cost_usd": 0.081469,
+  "judge_score": 5,
+  "judge_justification": "The response correctly states the dataset size as 930 products and 18 categories, matching the reference answer. The wording is direct and conceptually accurate.",
+  "judge_cost_usd": 0.000427,
+  "total_cost_accumulated_usd": 1.0807
+}

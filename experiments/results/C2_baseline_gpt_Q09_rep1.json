@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:56:29.516489",
+  "response": "They shifted from **early-game information gathering/exploration** to **late-game exploitation of previously acquired trust and information**.",
+  "latency_s": 20.449,
+  "input_tokens": 261332,
+  "output_tokens": 28,
+  "cost_usd": 0.196125,
+  "judge_score": 4,
+  "judge_justification": "The response correctly captures the key transition from exploratory early rounds to exploitative late rounds based on trust/information. It is conceptually accurate and direct, though slightly less specific than the reference about probing uncertain actors and collaborating with familiar/trusted actors.",
+  "judge_cost_usd": 0.000546,
+  "total_cost_accumulated_usd": 9.6516
+}

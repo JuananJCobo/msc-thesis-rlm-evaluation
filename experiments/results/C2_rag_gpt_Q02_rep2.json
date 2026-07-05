@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:02:14.225893",
+  "response": "The GAMA-Bench framework uses eight classic game-theory scenarios:\n\n1. Guess 2/3 of the Average  \n2. El Farol Bar  \n3. Tic-Tac-Toe  \n4. Connect-4  \n5. Kuhn Poker  \n6. Breakthrough  \n7. Liar’s Dice  \n8. Blind Auction  \n\nThey are grouped into two categories:\n\n- Cooperative games: Guess 2/3 of the Average, El Farol Bar  \n- Competitive / general game settings: the remaining six games, which are also used to cover board strategy, bidding, bluffing, and related strategic reasoning tasks",
+  "latency_s": 1.784,
+  "input_tokens": 2475,
+  "output_tokens": 128,
+  "cost_usd": 0.002432,
+  "judge_score": 1,
+  "judge_justification": "The response lists a different set of eight games than the reference answer and gives incorrect categories. It does not identify the three groups in the reference (cooperative, betraying, sequential) or the correct games within them.",
+  "judge_cost_usd": 0.000598,
+  "total_cost_accumulated_usd": 12.8683,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4746
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.47
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4592
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4528
+    }
+  ]
+}

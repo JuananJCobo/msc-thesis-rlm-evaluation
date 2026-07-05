@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q07",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:55:30.102270",
+  "response": "K-level thinking is a recursive strategic reasoning framework in which an agent reasons about others’ reasoning at increasing depths.\n\n- **Level 1 thinking:** the agent decides based directly on the environment, without strategic anticipation.\n- **Level 2 or higher:** the agent simulates what others would do at the previous level, then chooses its own action based on those predicted actions; this continues iteratively to form higher-order beliefs.",
+  "latency_s": 15.89,
+  "input_tokens": 261353,
+  "output_tokens": 87,
+  "cost_usd": 0.196406,
+  "judge_score": 5,
+  "judge_justification": "The response correctly defines K-level thinking as recursive strategic reasoning and clearly distinguishes level 1 as direct/environment-based response from level 2+ as reasoning about others at the previous level. It is conceptually accurate and complete.",
+  "judge_cost_usd": 0.000602,
+  "total_cost_accumulated_usd": 9.062
+}

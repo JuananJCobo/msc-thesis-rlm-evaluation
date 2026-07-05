@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q03",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T22:39:39.388549",
+  "response": "The six main metrics are:\n\n1. **Survival Time** \\(m\\)\n2. **Survival Rate** \\(q\\)\n3. **Total Gain for Each Agent** \\(R_i\\)\n4. **Efficiency** \\(u\\)\n5. **Resource Sustainability / Collapse condition** based on whether the shared resource stays above the collapse threshold\n6. **Collective outcome across runs**, summarized by whether simulations reach the maximum survival time\n\nIf you want, I can also restate them in the exact form they are defined in the benchmark.",
+  "latency_s": 1.383,
+  "input_tokens": 2457,
+  "output_tokens": 115,
+  "cost_usd": 0.00236,
+  "judge_score": 2,
+  "judge_justification": "The response correctly identifies four of the six benchmark metrics: Survival Time, Survival Rate, Total Gain, and Efficiency. However, it replaces the missing metrics (inequality and over-usage) with unrelated descriptions about collapse conditions and summary across runs, so it is incomplete and partially incorrect.",
+  "judge_cost_usd": 0.000665,
+  "total_cost_accumulated_usd": 8.8782,
+  "chunks": [
+    {
+      "paper_id": "paper_14",
+      "score": 0.4914
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4149
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4141
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4061
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.3942
+    }
+  ]
+}

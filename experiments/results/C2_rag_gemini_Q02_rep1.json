@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:03:48.936967",
+  "response": "The GAMA-Bench evaluation framework incorporates eight classical game theory scenarios. Two of these scenarios are Guess 2/3 of the Average and El Farol Bar. These particular games are grouped under the category of Cooperative Games.",
+  "latency_s": 4.635,
+  "input_tokens": 2557,
+  "output_tokens": 45,
+  "cost_usd": 0.00088,
+  "judge_score": 2,
+  "judge_justification": "The response correctly identifies two of the eight games and places them in the Cooperative Games category, but it omits the remaining six games and the other two categories, so it is incomplete.",
+  "judge_cost_usd": 0.000505,
+  "total_cost_accumulated_usd": 12.9536,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4746
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4696
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4592
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4528
+    }
+  ]
+}

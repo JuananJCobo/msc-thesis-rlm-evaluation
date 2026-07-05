@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T21:46:16.438620",
+  "response": "In the evaluation of the Secret Hitler game, LLM agents exhibited a strategic behavior transition from early rounds to final rounds, characterized by a shift from exploration to exploitation.\n\nSpecifically:\n*   **Early Rounds:** Agents engaged in exploratory behaviors, such as probing uncertain actors and structured information-seeking, to gather data and reduce uncertainty. Liberal agents, in particular, nominated untested players to collect behavioral data, prioritizing uncertainty reduction.\n*   **Final Rounds:** As the game progressed, agents transitioned to exploitative decision-making, favoring familiar and trusted collaborators and leveraging known quantities rather than seeking new information. This was reflected in a steep decline in exploratory behaviors and a rise in exploitative behaviors.\n*   **Trust and Deception Cycles:** Fascist agents demonstrated role-specific adaptation by balancing cooperation and deception. They would earn credibility early in the game, strategically betray trust at opportune moments, and then work to repair their standing, exhibiting a cyclical pattern of trust-building, decline, and recovery.\n*   **Long-term Planning:** With more capable models like GPT-4o, agents showed a capacity for multi-round strategic planning, anticipating future events, implicitly aligning with teammates, and shaping group perception over time.",
+  "latency_s": 8.74,
+  "input_tokens": 359044,
+  "output_tokens": 247,
+  "cost_usd": 0.108331,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the key transition described in the reference: from exploratory behavior in early rounds to exploitative decision-making in the final rounds, including reliance on familiar and trusted collaborators. Extra detail does not change the correctness.",
+  "judge_cost_usd": 0.00069,
+  "total_cost_accumulated_usd": 4.0462
+}

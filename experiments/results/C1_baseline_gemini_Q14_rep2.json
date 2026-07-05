@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q14",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T20:03:02.085810",
+  "response": "According to the study \"How Personality Traits Influence Negotiation Outcomes? A Simulation based on Large Language Models\" by Huang, Y.J. and Hadfi, R. (2024), the dialogue state detector extracts five specific negotiation states from each interaction:\n\n1.  Offer\n2.  Ponder\n3.  Accept\n4.  Deal-break\n5.  Chit-chat",
+  "latency_s": 4.688,
+  "input_tokens": 199551,
+  "output_tokens": 83,
+  "cost_usd": 0.060073,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all five negotiation states: Offer, Ponder, Accept, Deal-break, and Chit-chat. It is complete and directly answers the question, with only trivial wording differences.",
+  "judge_cost_usd": 0.000582,
+  "total_cost_accumulated_usd": 1.4622
+}

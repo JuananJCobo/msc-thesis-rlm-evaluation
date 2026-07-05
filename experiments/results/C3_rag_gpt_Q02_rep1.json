@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:38:00.739227",
+  "response": "The eight game-theory scenarios are:\n\n1. Guess 2/3 of the Average  \n2. El Farol Bar  \n3. Traveler’s Dilemma  \n4. Public Goods Game  \n5. Centipede Game  \n6. Battle of the Sexes  \n7. Prisoner’s Dilemma  \n8. Stag Hunt  \n\nThey are grouped into these categories:\n\n- Cooperative games\n- Competitive games\n- Mixed games\n- Coordination games",
+  "latency_s": 1.419,
+  "input_tokens": 2475,
+  "output_tokens": 95,
+  "cost_usd": 0.002284,
+  "judge_score": 2,
+  "judge_justification": "The response identifies only one of the eight correct games (Guess 2/3 of the Average) and several listed games are not part of the GAMA-Bench framework. It also gives incorrect category groupings instead of the three categories in the reference (Cooperative, Betraying, Sequential).",
+  "judge_cost_usd": 0.000641,
+  "total_cost_accumulated_usd": 15.0032,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4746
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4696
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4592
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4528
+    }
+  ]
+}

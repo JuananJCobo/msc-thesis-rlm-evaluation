@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q35",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-23T00:41:08.576815",
+  "response": "The main external mechanisms and scaffoldings are:\n\n- **Contract-based communication**: agents are allowed to communicate so they can coordinate and form agreements that support cooperation.\n- **Automatic prompt generation**: prompts are built using extensive information about the game structure, including example strategies, to steer the model toward deliberate reasoning.\n- **Chain-of-thought scaffolding**: prompts ask the model to produce explicit step-by-step reasoning before deciding.\n- **Self-play generated training samples**: simulated interactions are used to collect trajectories, then the useful ones are selected and used to further fine-tune the agent for the specific game.\n- **Inference-time intervention on hidden representations**: rather than changing model parameters, the hidden states are manipulated or aligned after pre-training to shape behavior.\n\nTogether, these methods aim to move beyond plain zero-shot answers by forcing explicit reasoning, anticipation of others’ actions, and policy refinement through interaction or internal intervention.",
+  "latency_s": 2.332,
+  "input_tokens": 2073,
+  "output_tokens": 188,
+  "cost_usd": 0.002401,
+  "judge_score": 2,
+  "judge_justification": "The response is relevant in that it discusses external scaffolding beyond zero-shot prompting, but it does not capture the key mechanisms emphasized in the reference answer: explicit opponent perspective-taking via probabilistic graphical models, recursive level-k/ToM-style anticipation, and iterative equilibrium/policy-space refinement. Instead, it lists broader or different techniques (communication, prompt generation, chain-of-thought, self-play, hidden-state intervention) without clearly synthesizing how they force mapping of opponents’ cognitive states and recursive strategic reasoning. Significant mismatch and incomplete coverage.",
+  "judge_cost_usd": 0.001053,
+  "total_cost_accumulated_usd": 20.4138,
+  "chunks": [
+    {
+      "paper_id": "paper_47",
+      "score": 0.5424
+    },
+    {
+      "paper_id": "paper_47",
+      "score": 0.5422
+    },
+    {
+      "paper_id": "paper_47",
+      "score": 0.5422
+    },
+    {
+      "paper_id": null,
+      "score": 0.5422
+    },
+    {
+      "paper_id": "paper_47",
+      "score": 0.5422
+    }
+  ]
+}

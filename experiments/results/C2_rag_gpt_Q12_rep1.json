@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q12",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:02:57.552221",
+  "response": "The three main clusters are:\n\n1. **Information**\n   - Information Sharing\n   - Problem Identification\n   - Solution Proposing\n\n2. **Negotiation**\n   - Persuasion\n   - Consensus Seeking\n   - Expressing Disagreement\n\n3. **Relational**\n   - Excusing Behavior\n   - Punishment",
+  "latency_s": 1.104,
+  "input_tokens": 2485,
+  "output_tokens": 70,
+  "cost_usd": 0.002179,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all three high-level clusters—Information, Negotiation, and Relational—and includes the correct subcategories under each, matching the reference answer exactly in content.",
+  "judge_cost_usd": 0.00054,
+  "total_cost_accumulated_usd": 12.9185,
+  "chunks": [
+    {
+      "paper_id": "paper_14",
+      "score": 0.5376
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.5298
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.466
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4558
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4541
+    }
+  ]
+}

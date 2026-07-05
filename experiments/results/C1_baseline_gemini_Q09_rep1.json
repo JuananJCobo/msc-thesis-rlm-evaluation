@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T19:49:44.041049",
+  "response": "In the evaluation of the Secret Hitler game, LLM agents exhibited a strategic transition from exploratory behavior in the early rounds to exploitative decision-making in the final rounds.\n\nSpecifically:\n*   **Early Rounds**: Agents engaged in probing uncertain actors and gathering behavioral data.\n*   **Final Rounds**: They shifted to leveraging known quantities and favoring familiar, trusted collaborators. This transition was marked by a steep drop in exploratory behaviors and a rise in exploitative behaviors.\n*   **Role-specific Adaptation**: Fascist agents balanced cooperation and deception by earning credibility early, strategically betraying trust, and then working to repair their standing, a cyclical pattern.\n*   **Long-term Planning**: More powerful LLM agents demonstrated multi-round strategic planning, anticipating future events, implicitly coordinating with teammates, and shaping group perception over time.",
+  "latency_s": 5.163,
+  "input_tokens": 199552,
+  "output_tokens": 169,
+  "cost_usd": 0.060288,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the key transition: LLM agents moved from exploratory probing in early rounds to exploitative, trust-based collaboration in the final rounds. Extra details do not change the correctness.",
+  "judge_cost_usd": 0.000605,
+  "total_cost_accumulated_usd": 0.7924
+}

@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-23T14:57:29.773415",
+  "response": "intrinsic biases from pre-training corpora and positional bias",
+  "latency_s": 18.225,
+  "input_tokens": 65413,
+  "output_tokens": 847,
+  "cost_usd": 0.052871,
+  "judge_score": 4,
+  "judge_justification": "The response correctly identifies the two main biases: intrinsic biases from pre-training corpora and positional bias. It is direct and conceptually matches the reference, though it omits the extra nuance that intrinsic biases alone do not fully explain the gap.",
+  "judge_cost_usd": 0.00053,
+  "total_cost_accumulated_usd": 3.3102,
+  "n_iterations": 16,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C3_gpt/rlm_2026-06-23_14-57-07_16018035.jsonl"
+}

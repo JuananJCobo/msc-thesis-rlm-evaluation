@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q08",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:56:08.204601",
+  "response": "The AmazonHistoryPrice dataset contains **930 products** across **18 categories**.",
+  "latency_s": 19.939,
+  "input_tokens": 261327,
+  "output_tokens": 19,
+  "cost_usd": 0.196081,
+  "judge_score": 5,
+  "judge_justification": "The response correctly states the dataset size as 930 products and 18 categories, matching the reference answer exactly in substance.",
+  "judge_cost_usd": 0.000399,
+  "total_cost_accumulated_usd": 9.4549
+}

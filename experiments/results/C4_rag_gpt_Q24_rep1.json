@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q24",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T14:07:23.344612",
+  "response": "In **PSROLM**, the next strategy is added in a fairly direct oracle-style loop:\n\n- First, the algorithm computes a **Nash equilibrium mixed strategy** over the current support set.\n- Then it **samples a strategy from that equilibrium distribution**.\n- Next, it **prompts the LLM to produce a response/best response** to that sampled strategy.\n- The resulting strategy is then **added to the current strategy set**, expanding the support for the next round.\n\nIn **LSPO for Werewolf**, expansion happens differently:\n\n- The system first uses game trajectories gathered during latent space construction to build a **latent strategy space**.\n- It then fine-tunes the LLM with a **preference dataset** so that its outputs better match the near-optimal strategies in that abstracted game.\n- After fine-tuning, the model can generate a **broader distribution of discussion actions**.\n- That improved generation capability is used to **re-run latent strategy generation and clustering**, which expands the latent space for the next iteration.\n\nSo the key difference is:\n\n- **PSROLM** explicitly adds a new **best-response strategy** to a growing strategy set, driven by Nash equilibrium computation.\n- **LSPO** expands a **latent strategy space** by re-generating and clustering strategies from a fine-tuned LLM, using those outputs to explore previously unseen actions.\n\nPut simply: **PSROLM grows a strategy set via equilibrium-based best responses, while LSPO grows a latent action space via iterative fine-tuning and re-clustering of the model’s own language outputs.**",
+  "latency_s": 3.29,
+  "input_tokens": 2536,
+  "output_tokens": 325,
+  "cost_usd": 0.003364,
+  "judge_score": 4,
+  "judge_justification": "The response correctly contrasts the two mechanisms: PSROLM expands by computing a Nash equilibrium, sampling a strategy, prompting the LLM for a best response, and adding that strategy to the set; LSPO expands by improving the model via preference-based fine-tuning and then regenerating/clustering latent strategies to enlarge the latent space. It captures the key comparative idea well. Minor issue: it slightly simplifies PSROLM as an 'oracle-style loop' and does not emphasize the reference’s detail that the LLM is prompted on a randomly selected strategy from the previous mixed strategy and that the most frequently returned strategy is added, but the overall synthesis is accurate.",
+  "judge_cost_usd": 0.001233,
+  "total_cost_accumulated_usd": 22.0413,
+  "chunks": [
+    {
+      "paper_id": "paper_09",
+      "score": 0.5891
+    },
+    {
+      "paper_id": "paper_09",
+      "score": 0.5891
+    },
+    {
+      "paper_id": "paper_06",
+      "score": 0.5659
+    },
+    {
+      "paper_id": "paper_06",
+      "score": 0.5659
+    },
+    {
+      "paper_id": "paper_06",
+      "score": 0.5609
+    }
+  ]
+}

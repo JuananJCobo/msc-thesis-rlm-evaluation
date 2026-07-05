@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q13",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:03:02.258281",
+  "response": "Mistral models.",
+  "latency_s": 0.868,
+  "input_tokens": 2475,
+  "output_tokens": 8,
+  "cost_usd": 0.001892,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the language model family as Mistral models, which matches the reference answer and directly addresses the question.",
+  "judge_cost_usd": 0.000423,
+  "total_cost_accumulated_usd": 12.924,
+  "chunks": [
+    {
+      "paper_id": "paper_11",
+      "score": 0.4869
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4847
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4751
+    },
+    {
+      "paper_id": "paper_12",
+      "score": 0.4749
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4585
+    }
+  ]
+}

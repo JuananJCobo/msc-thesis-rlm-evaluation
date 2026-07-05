@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q38",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T22:49:03.819775",
+  "response": "In LLM-driven multi-agent environments, social outcomes emerge from how agents are evaluated, how they respond to uncertainty about others, and how strongly they align with shared norms.\n\n- **Social perception** is shaped by whether an agent’s behavior is read as cooperative or anti-social. Agents that repeatedly act in pro-social ways are more likely to be viewed favorably, while anti-social behavior can trigger negative reputational effects.\n- **Trust volatility** arises because these settings are not static: perceptions can shift as agents observe new actions, especially when mistakes or noisy actions occur. This makes trust fragile, since a single deviation may alter expectations about future conduct.\n- **Normative behaviors** are maintained when agents converge on strategies that are rewarded by the social setting. In such environments, cooperation can become a stable equilibrium if enough agents reinforce it, but anti-social equilibria can also emerge and persist.\n\nWhen an agent’s internal objective conflicts with social expectations, it faces a tradeoff between short-term advantage and long-term reputational loss. Agents must weigh whether to pursue self-serving actions that risk being penalized by others, or to conform to the group’s cooperative norms to preserve trust and collective stability. As a result, navigation of reputational risk depends on whether the environment favors pro-social alignment or permits anti-social strategies to remain viable. Group consensus, in turn, is reached when enough agents adapt their behavior toward the same equilibrium, even if that equilibrium is not inherently cooperative.",
+  "latency_s": 3.301,
+  "input_tokens": 2281,
+  "output_tokens": 295,
+  "cost_usd": 0.003038,
+  "judge_score": 4,
+  "judge_justification": "The response captures the main synthesis: social perception affects reputation, trust is volatile and updated by observed behavior, and normative behavior can stabilize through reinforcement of shared equilibria. It also addresses the core tradeoff when objectives conflict with social expectations, noting reputational risk versus conformity to group norms. However, it is somewhat generic and misses some key theoretical nuances from the reference, such as explicit normative grounding/universalization, the role of hidden roles and social deduction, and the stronger point that trust can be actively engineered and is especially fragile under opacity/fairness concerns in human-AI bargaining.",
+  "judge_cost_usd": 0.001156,
+  "total_cost_accumulated_usd": 15.174,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5067
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5067
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5066
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5066
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5066
+    }
+  ]
+}

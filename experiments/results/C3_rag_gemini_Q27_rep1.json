@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T13:56:03.982600",
+  "response": "The EAI framework and the study on personality traits in negotiation employ distinct methodologies for integrating behavioral factors into Large Language Model (LLM) agents.\n\nThe EAI framework utilizes an 'a priori' emotional injection technique. Emotions are integrated into LLMs through emotion prompting, which involves various strategies to embed emotional inputs directly into the models to influence their decision-making processes. This integration occurs before or during the LLM's engagement in scenarios like ethical dilemmas, one-shot bargaining games, and repeated games, aiming to evaluate how LLMs replicate or respond to human emotional cues. While the framework mentions encompassing various strategies for emotion prompting, the specific details of three distinct strategies are not provided.\n\nIn contrast, the study on personality traits in negotiation employs an 'a posteriori' extraction technique. This approach involves configuring LLM agents with synthetic personality profiles, based on the Big Five personality theory, using in-context learning. During the negotiation dialogue, which is a competitive bargaining scenario between a buyer and a seller, the offered price and any strategies employed are extracted from the dialogue utterances in each round. This extraction is performed for subsequent evaluation and analysis of behavioral patterns and negotiation outcomes. The context does not specify a particular methodological tool used for this extraction, nor does it classify five specific negotiation states. However, the analysis reveals intriguing behavioral patterns such as deceiving behaviors, emotional appeal, and take-it-or-leave-it strategies.",
+  "latency_s": 7.235,
+  "input_tokens": 2699,
+  "output_tokens": 286,
+  "cost_usd": 0.001525,
+  "judge_score": 2,
+  "judge_justification": "The response correctly contrasts the broad idea that EAI uses an a priori emotional injection approach while the negotiation study uses an a posteriori extraction approach. However, it misses key requested specifics: it does not identify the three EAI prompting strategies, gives an imprecise timing for emotion injection, and fails to name the methodological tool and the five negotiation states. It also adds some unsupported details about personality profiles and extraction of offered price/strategies that do not answer the question directly.",
+  "judge_cost_usd": 0.001057,
+  "total_cost_accumulated_usd": 20.8268,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4962
+    }
+  ]
+}

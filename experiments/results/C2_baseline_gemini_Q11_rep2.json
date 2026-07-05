@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q11",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T21:09:12.000096",
+  "response": "The \"Latent Space Policy Optimization (LSPO)\" framework used to train agents in the Werewolf game consists of three main steps or components in each iteration:\n\n1.  **Latent Space Construction**: This component involves generating language actions with the Large Language Model (LLM) and then clustering the vast language action space into a finite latent strategy space. For Werewolf, this primarily focuses on abstracting free-form discussion actions into discrete latent strategies.\n2.  **Policy Optimization in Latent Space**: The original game is reformulated as an abstracted game using the discrete latent strategy space. Game-theoretic methods, such as Counterfactual Regret Minimization (CFR), are then applied to learn an optimal policy within this latent space.\n3.  **Latent Space Expansion**: This step involves fine-tuning the LLM, specifically using Direct Preference Optimization (DPO), to align its open-ended language outputs with the learned latent space policy. The fine-tuned LLM is then used to re-generate and expand the latent strategy space for the next iteration.\n\n(Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization (Xu, Z. and Gu, W. and Yu, C. and Wu, Y. and Wang, Y., 2025))",
+  "latency_s": 5.744,
+  "input_tokens": 271397,
+  "output_tokens": 268,
+  "cost_usd": 0.082089,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the three LSPO iteration components: latent space construction/optimization, policy optimization in latent space, and latent space expansion. The wording differs slightly from the reference, but the concepts match and the answer is complete.",
+  "judge_cost_usd": 0.000745,
+  "total_cost_accumulated_usd": 1.5747
+}

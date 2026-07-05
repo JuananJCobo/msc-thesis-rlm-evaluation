@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-23T15:22:19.131101",
+  "response": "Error: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+  "latency_s": 17.443,
+  "input_tokens": 9326,
+  "output_tokens": 733,
+  "cost_usd": 0.00463,
+  "judge_score": 1,
+  "judge_justification": "The system response is an error message about service unavailability and does not answer the question about the strategic behavior transition in Secret Hitler.",
+  "judge_cost_usd": 0.000461,
+  "total_cost_accumulated_usd": 4.3861,
+  "n_iterations": 4,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C3_gemini/rlm_2026-06-23_15-22-00_89bc7896.jsonl"
+}

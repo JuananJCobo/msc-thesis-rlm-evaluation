@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q37",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:52:12.923976",
+  "response": "Across the corpus, the trade-off is clear: preserving long raw histories helps continuity but quickly overwhelms the model, while summarization or truncation keeps the game runnable but loses strategic detail.\n\n- In **LLM-Deliberation (Avalon)**, the authors say long discussion histories can reach about **5000 words**, which API LLMs “cannot handle.” They add recursive summarization because longer context can also “confine the ability of LLMs to reason and parse through noise.” So summarization is used to maintain feasibility and improve reasoning under long interactions, but it necessarily abstracts away the full dialogue and voting trace.\n\n- In the **negotiation benchmark**, the authors take the opposite engineering route: they **remove scratchpads from the shared history**, do **not** carry scratchpads across rounds, and restrict the prompt to a **history window of the last 6 interactions**. They explicitly observe that this can cause a **“discontinuation of thoughts”** and repeated proposals. They partially compensate by feeding back only the agent’s previous **plan**, not the full raw reasoning state.\n\nOverall:\n- **Raw context accumulation** preserves richer opponent modeling, commitments, and temporal dependencies, but it is fragile under context-window limits and can degrade reasoning through noise and truncation.\n- **Summarization / compression** makes extended multi-agent interaction feasible, but it risks omitting fine-grained details, weakening long-horizon coherence, and producing more repetitive or less adaptive behavior.\n\nSo the literature suggests that more history is not always better: once interaction traces get long, performance depends on compressing or trimming them, but that compression itself introduces behavioral degradation.",
+  "latency_s": 35.275,
+  "input_tokens": 226718,
+  "output_tokens": 3215,
+  "cost_usd": 0.184506,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main trade-off: raw history preserves more strategic information but becomes unwieldy and can overwhelm reasoning, while summarization/truncation keeps long interactions manageable at the cost of losing fine-grained tactical detail and causing degraded behavior. It also cites relevant examples from multi-agent deliberation and negotiation settings. The only minor limitation is that it is somewhat less explicit than the reference about quantified performance degradation (e.g., regret) and the specific contrast between summary-based inputs and raw histories in detecting adversarial trends.",
+  "judge_cost_usd": 0.001172,
+  "total_cost_accumulated_usd": 21.1279,
+  "n_iterations": 13,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C4_gpt/rlm_2026-06-23_00-51-34_9e8b188a.jsonl"
+}

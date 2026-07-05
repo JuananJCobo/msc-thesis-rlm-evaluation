@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q35",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:41:04.638777",
+  "response": "The main external mechanisms and scaffoldings proposed are:\n\n- **Contracts and communication protocols**: letting agents exchange information and coordinate explicitly to encourage cooperation.\n- **Chain-of-thought prompting**: structuring the prompt so the model reasons step by step instead of answering directly.\n- **Automatic prompt generation**: using detailed game structure to build prompts with example strategies and guided reasoning steps.\n- **Self-play–based sample generation**: producing interaction traces through self-play, then selecting high-reward reasoning chains and interactions to fine-tune the agent.\n- **Recursive opponent modeling structures**: prompting the agent to represent what others know, believe, and intend, then update its own plan accordingly across repeated steps.\n- **Iterative policy refinement through interaction traces**: using prior episodes and selected successful trajectories to progressively improve decision policies.\n\nA concise synthesis is that these methods try to move beyond plain zero-shot answers by adding **explicit reasoning traces, structured prompts, interaction-based coordination, and training on successful strategic rollouts** so the model can anticipate others and adapt its policy over time.",
+  "latency_s": 2.398,
+  "input_tokens": 2073,
+  "output_tokens": 218,
+  "cost_usd": 0.002536,
+  "judge_score": 3,
+  "judge_justification": "The response is relevant and captures some key ideas: recursive opponent modeling, explicit reasoning traces, and iterative policy refinement. However, it misses the main literature-specific mechanisms emphasized in the reference, especially explicit perspective-taking via probabilistic graphical models/text-represented probabilities and the Nash-equilibrium-based iterative strategy expansion. It also adds several generic or less central items (contracts, chain-of-thought, automatic prompt generation) that are not the primary scaffoldings asked for, so the synthesis is only partial.",
+  "judge_cost_usd": 0.00104,
+  "total_cost_accumulated_usd": 20.4103,
+  "chunks": [
+    {
+      "paper_id": "paper_47",
+      "score": 0.5424
+    },
+    {
+      "paper_id": "paper_47",
+      "score": 0.5422
+    },
+    {
+      "paper_id": "paper_47",
+      "score": 0.5422
+    },
+    {
+      "paper_id": null,
+      "score": 0.5422
+    },
+    {
+      "paper_id": "paper_47",
+      "score": 0.5422
+    }
+  ]
+}

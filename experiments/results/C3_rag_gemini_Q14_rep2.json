@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q14",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:41:29.536165",
+  "response": "The dialogue state detector extracts the following five negotiation states from each interaction: Offer, Ponder, Accept, Deal-break, and Chit-chat.",
+  "latency_s": 1.909,
+  "input_tokens": 2477,
+  "output_tokens": 30,
+  "cost_usd": 0.000818,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all five negotiation states: Offer, Ponder, Accept, Deal-break, and Chit-chat. It is complete and directly answers the question.",
+  "judge_cost_usd": 0.000504,
+  "total_cost_accumulated_usd": 15.1324,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.5029
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.4846
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.4839
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.477
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.4743
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T13:41:52.560677",
+  "response": "The methodology for integrating behavioral factors into LLM agents differs between the EAI framework and the study on personality traits in negotiation as follows:\n\nThe **EAI framework** (Mozikov et al., 2024) employs an **'a priori' emotional injection technique**. Emotions are injected *before* gameplay, forming part of the initial system prompt presented to the LLM at the beginning of the game. The framework utilizes three prompting strategies for this emotional injection:\n1.  **\"Simple\" strategy**: Injects an emotional state without additional context.\n2.  **\"Co-player-based\" strategy**: Connects the aroused emotion to the person the model interacts with.\n3.  **\"External-based\" strategy**: Introduces emotions prompted by external factors.\n\nIn contrast, the study on **personality traits in negotiation** (Huang and Hadfi, 2024) uses an **'a posteriori' extraction technique**. A separate LLM acts as a **dialogue state detector** to analyze each message. This methodological tool takes each generated utterance and its prior context as input to extract negotiation-related information. This detector classifies messages into five negotiation states:\n1.  **Offer**: The agent makes a price offer.\n2.  **Ponder**: The agent considers whether to accept or reject the other agent’s offer.\n3.  **Accept**: The agent accepts the current offer.\n4.  **Deal-break**: The agent refuses the last offer or walks away from the negotiation.\n5.  **Chit-chat**: The agent engages in chatting not directly related to the negotiation.",
+  "latency_s": 8.486,
+  "input_tokens": 359102,
+  "output_tokens": 338,
+  "cost_usd": 0.108576,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two methodologies: it identifies EAI as an a priori emotional injection into the initial system prompt before gameplay and accurately lists the three prompting strategies (Simple, Co-player-based, External-based). It also correctly describes the negotiation study as using an a posteriori extraction approach via a separate LLM dialogue state detector analyzing each message with context, and it names all five negotiation states (Offer, Ponder, Accept, Deal-break, Chit-chat).",
+  "judge_cost_usd": 0.001081,
+  "total_cost_accumulated_usd": 19.8916
+}

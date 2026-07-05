@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q32",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:40:35.171984",
+  "response": "Autonomous LLM agents face several recurring bottlenecks that keep them from behaving as perfectly rational game-theoretic players:\n\n- **Prompt sensitivity**: Their actions are produced through fixed prompt templates, so small wording or formatting changes can alter outcomes.\n- **Instruction-following failures**: They may generate **illegal actions**, showing that they do not always reliably adhere to the rules of the game.\n- **Weak strategic differentiation**: In some games, available actions or states may be too limited or too similar to be clearly distinguished by models at the same capability level.\n- **Inability to optimize long-horizon strategy robustly**: Measures like regret highlight that a model may not choose the strategy that would have been best in hindsight, indicating a gap between local action selection and globally rational play.\n- **No evidence of enhanced deceptive or defecting competence**: The work evaluates current abilities rather than training models to become better at bluffing, defecting, or negotiating, underscoring that these strategic behaviors remain limited rather than autonomous and optimized.\n\nThese limitations show up differently across game types:\n\n- **Negotiation and deception scenarios**: Models are especially constrained by concerns about autonomous objective formation, but the assessment indicates they are not being trained into reliably strategic bluffing or deception.\n- **Iterated Prisoner’s Dilemma**: The action space can be too restricted, making some strategies hard to separate clearly, while instruction-following issues can still yield invalid moves.\n- **Other popular game scenarios**: Even when the games are well-known, the model’s outputs can vary due to prompt design, and the generated actions may not always satisfy the game’s legality constraints.\n\nOverall, the bottleneck is a combination of **sensitivity to prompting, imperfect rule adherence, and insufficient strategic robustness**, which prevents consistent execution of perfectly rational strategies across complex interactive games.",
+  "latency_s": 4.016,
+  "input_tokens": 1361,
+  "output_tokens": 376,
+  "cost_usd": 0.002713,
+  "judge_score": 4,
+  "judge_justification": "The response captures several key bottlenecks documented in the literature: prompt sensitivity, illegal/instruction-breaking actions, weak strategic robustness, and limitations in bluffing/deception/negotiation. It also distinguishes how these issues appear across game types such as negotiation, deception, and iterated Prisoner’s Dilemma. However, it misses some of the more specific synthesis in the reference answer, especially the positional-order bias that undermines mixed-strategy rationality, the failure to maintain coherent internal game-state representations under dense/dynamic rules, and the conservative/risk-averse utility behavior in social dilemmas and bargaining. So it is broadly correct but not fully complete.",
+  "judge_cost_usd": 0.001309,
+  "total_cost_accumulated_usd": 20.386,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.5568
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5568
+    },
+    {
+      "paper_id": null,
+      "score": 0.5568
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5568
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5568
+    }
+  ]
+}

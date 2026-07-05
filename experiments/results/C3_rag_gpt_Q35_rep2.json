@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q35",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T22:48:34.021039",
+  "response": "The main external mechanisms are:\n\n- Direct prompting without extra reasoning steps\n- Chain-of-Thought, which makes the model think step by step\n- Self-Consistent Chain-of-Thought, which generates multiple step-by-step reasoning paths and uses majority voting\n- Tree-of-Thought, which adds exploration and deliberate decision-making, including self-evaluation\n\nThe structural scaffolding is modular prompting with four parts:\n\n- System Prompt\n- Head Prompt\n- Observation Prompt\n- Reasoning Prompt\n\nThis setup keeps the reasoning instruction separate from the game-specific environment, so it can be adapted across different games.",
+  "latency_s": 1.397,
+  "input_tokens": 2615,
+  "output_tokens": 124,
+  "cost_usd": 0.002519,
+  "judge_score": 2,
+  "judge_justification": "The response mentions some relevant external scaffolding methods (CoT, self-consistency, Tree-of-Thought, modular prompting), but it does not answer the specific question about mechanisms for explicit opponent modeling, recursive anticipation, and iterative policy refinement in multi-agent strategic reasoning. It also incorrectly includes 'direct prompting without extra reasoning steps' as a mechanism and omits the key literature themes in the reference answer, such as perspective-taking via probabilistic graphical models, recursive level-k/level-n style anticipation, and equilibrium-based iterative policy updates.",
+  "judge_cost_usd": 0.001001,
+  "total_cost_accumulated_usd": 15.1477,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.5286
+    }
+  ]
+}

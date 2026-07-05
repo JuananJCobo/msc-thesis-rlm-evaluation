@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T21:36:32.951535",
+  "response": "According to the study \"The Illusion of Randomness: How LLMs Fail to Emulate Stochastic Decision-Making in Rock-Paper-Scissors Games?\" (Guo, Z. et al., 2025), the two main types of biases that cause the 'cognition-behavior gap' in LLM randomness are:\n\n1.  **Intrinsic biases** inherited from pre-training corpora.\n2.  **Positional bias**.",
+  "latency_s": 8.925,
+  "input_tokens": 359048,
+  "output_tokens": 91,
+  "cost_usd": 0.107942,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the two main biases as intrinsic biases from pre-training corpora and positional bias, matching the reference answer conceptually and directly.",
+  "judge_cost_usd": 0.000506,
+  "total_cost_accumulated_usd": 3.175
+}

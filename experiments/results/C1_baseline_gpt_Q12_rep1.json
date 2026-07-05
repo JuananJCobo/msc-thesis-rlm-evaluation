@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q12",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:23:27.400493",
+  "response": "The taxonomy has three main clusters:\n\n1. **Information**\n   - Information Sharing\n   - Problem Identification\n   - Solution Proposing\n\n2. **Negotiation**\n   - Persuasion\n   - Consensus Seeking\n   - Expressing Disagreement\n\n3. **Relational**\n   - Excusing Behavior\n   - Punishment",
+  "latency_s": 11.832,
+  "input_tokens": 192716,
+  "output_tokens": 71,
+  "cost_usd": 0.144856,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all three high-level clusters—Information, Negotiation, and Relational—and includes the correct subcategories under each, matching the reference taxonomy.",
+  "judge_cost_usd": 0.000527,
+  "total_cost_accumulated_usd": 3.343
+}

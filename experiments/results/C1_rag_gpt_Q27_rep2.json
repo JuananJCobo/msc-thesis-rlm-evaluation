@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T11:05:27.365790",
+  "response": "The two approaches differ in *when* and *how* behavioral factors are introduced into the LLM interaction.\n\n### EAI framework: **a priori emotional injection**\nThis framework injects emotions **before or during generation**, so the model is conditioned with emotional context in advance. It uses three prompting strategies:\n1. **Direct emotion prompting**: explicitly tells the model to generate with a specific emotion.\n2. **Emotion-role prompting**: combines an emotional state with a role or identity for the agent.\n3. **Emotion-exemplar prompting**: provides emotional examples to steer the model’s behavior.\n\nSo, emotions are *preloaded into the prompt* as part of the agent’s setup.\n\n### Personality-and-negotiation study: **a posteriori extraction**\nThis study does the opposite: it first lets the negotiation unfold, and then analyzes each message **after it is produced**. The methodological tool used is **GPT-3.5** as a classifier to examine each message and identify its negotiation state.\n\nIt classifies messages into five negotiation states:\n1. **greeting**\n2. **offer**\n3. **counter-offer**\n4. **rejection**\n5. **acceptance**\n\n### In short\n- **EAI**: behavioral factor is **injected upfront** via prompting.\n- **Negotiation study**: behavioral factor is **extracted afterward** by classifying messages into negotiation states.",
+  "latency_s": 2.678,
+  "input_tokens": 2631,
+  "output_tokens": 289,
+  "cost_usd": 0.003274,
+  "judge_score": 2,
+  "judge_justification": "The response correctly contrasts upfront injection vs after-the-fact classification, but it contains major factual errors relative to the papers. The EAI prompting strategies are wrong (it should be Simple, Co-player-based, and External-based, not direct/emotion-role/emotion-exemplar), and the timing is imprecise. For the negotiation study, the tool is misidentified as GPT-3.5 rather than a dialogue state detector/separate LLM, and the five states are incorrect (should be Offer, Ponder, Accept, Deal-break, and Chit-chat, not greeting/offer/counter-offer/rejection/acceptance).",
+  "judge_cost_usd": 0.001202,
+  "total_cost_accumulated_usd": 5.9524,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.5082
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    }
+  ]
+}

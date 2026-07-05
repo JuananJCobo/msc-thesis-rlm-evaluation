@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T19:59:55.040821",
+  "response": "Across the corpus, two forces repeatedly push LLM agents away from the game-theoretic optimum:\n\n1. Communication constraints reduce what the agents can condition on.\n   - In PokéChamp, Pokémon battle is treated as a partially observable game: an observation can map to multiple hidden states, so the agent does not have full information when choosing.\n   - In Poje et al. (private deliberation/deception), the environment is a partially observable stochastic game with ambiguous statements and strategic communication. The paper argues that information-theoretic deception and communication can improve play, but the setting itself limits what agents can know and share.\n   - In MAgIC, communication, coordination, and cooperation are explicitly part of the benchmark, showing that multi-agent performance depends on more than just isolated reasoning.\n\n2. Algorithmic irrationality prevents LLMs from executing the optimum even when they know it.\n   - In The Illusion of Randomness, LLMs can state the Nash equilibrium for Rock–Paper–Scissors, but their actual choices are biased and non-uniform; the cognition–behaviour gap persists even in simple stochastic games.\n   - The emotion/strategic-decision paper shows that model rationality and decision optimality shift with emotional prompts, and strong models still deviate from optimal behavior under negative emotion.\n   - The negotiation paper frames Ultimatum Game and Nash Bargaining as theoretical optima, but uses them because LLM behavior must be tested against fairness/efficiency/rationality standards rather than assumed to satisfy them.\n   - In PokéChamp, the LLM is only one component inside minimax search: action sampling, opponent modeling, and value estimation are all approximate, so the overall policy is still limited by imperfect LLM subroutines.\n\nTaken together, the studies show that LLM agents deviate from the mathematical optimum for two complementary reasons: they often lack full communicative access to the relevant state, and they are not reliably rational even when the optimal strategy is known. The result is systematic suboptimality in equilibrium play: biased randomization, imperfect bargaining, lower long-term payoffs in repeated games, and approximation rather than true minimax behavior.",
+  "latency_s": 22.453,
+  "input_tokens": 56230,
+  "output_tokens": 2298,
+  "cost_usd": 0.052513,
+  "judge_score": 4,
+  "judge_justification": "The response gives a solid synthesis of the two main drivers of suboptimal equilibrium play: communication limits and algorithmic irrationality. It correctly connects partial observability/coordination constraints to deviations from optimal play, and it also notes that LLMs can know equilibrium concepts yet still behave non-uniformly or suboptimally. However, it is somewhat less aligned with the reference’s specific cross-paper examples (e.g., timing effects in social deduction, overly cautious extraction in shared-resource settings, and aggressive/passive GTO deviations), so it misses some of the most concrete comparative details.",
+  "judge_cost_usd": 0.001286,
+  "total_cost_accumulated_usd": 4.8963,
+  "n_iterations": 8,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C1_gpt/rlm_2026-06-22_19-59-30_27ae9f03.jsonl"
+}

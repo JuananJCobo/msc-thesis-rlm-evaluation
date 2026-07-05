@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T21:24:50.069469",
+  "response": "Across the evaluated settings, LLM agents move away from the mathematical optimum for two linked reasons.\n\nFirst, communication is incomplete. Repeated games are often framed with perfect information, where a referee makes actions publicly observed and information is shared by all players. In the evaluated setting, however, the agents have only historical actions and payoffs, and effectively no direct information about opponents’ underlying type. That means they cannot reliably distinguish whether an opponent is risk-taking, risk-averse, rational, or irrational. Without that behavioral signal, the agent cannot condition its strategy on the right opponent model, so the chosen action can be mismatched to the actual environment and produce payoff regret.\n\nSecond, agent behavior itself is not perfectly rational. The presence of irrational or otherwise nonstandard opponents means that optimal play under a fully rational model is no longer guaranteed to be the best response in practice. The agent may need different strategies for different behavior types, but when those types are uncertain, the decision rule is only an imperfect approximation. As a result, the agent’s action is shaped by inference under uncertainty rather than by the exact payoff-maximizing response.\n\nTogether, these factors create a gap between the mathematical optimum and actual performance: limited information prevents correct opponent modeling, and algorithmic irrationality or bounded decision-making prevents perfectly optimal adaptation. The outcome is strategically conservative or miscalibrated behavior instead of the ideal equilibrium action.",
+  "latency_s": 3.065,
+  "input_tokens": 2539,
+  "output_tokens": 283,
+  "cost_usd": 0.003178,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the two main drivers of deviation from optimal play: limited/incomplete communication and non-ideal agent rationality. It captures that agents cannot fully infer opponent types from sparse interaction history and that this uncertainty leads to miscalibrated, non-optimal strategies. However, it is somewhat generic and misses several concrete cross-paper findings in the reference, such as timing-dependent voting effects, overly cautious resource extraction, and specific suboptimal aggressive/passive tendencies in game-theoretic settings.",
+  "judge_cost_usd": 0.001089,
+  "total_cost_accumulated_usd": 11.5332,
+  "chunks": [
+    {
+      "paper_id": "paper_19",
+      "score": 0.5585
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    }
+  ]
+}

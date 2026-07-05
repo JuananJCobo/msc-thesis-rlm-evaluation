@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q36",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T22:58:39.478432",
+  "response": "Recent frameworks for imperfect-information and partially observable games converge on a few complementary methodologies.\n\nFirst, they reconstruct concealed state through theory-of-mind and opponent modeling. In **“Evaluating and Enhancing LLMs Agent Based on Theory of Mind in Guandan”**, the agent is given only the game rules, current state, and history, then uses ToM planning to infer allies’ and opponents’ likely intentions. In **“Evaluating Theory-of-Mind in Large Language Models Through Opponent Modeling”**, negotiation histories are used to recover latent utility representations such as issue and value weights. These works treat hidden state as something to be inferred from observed behavior rather than directly known.\n\nSecond, they extend this inference recursively with higher-order belief modeling. **“K-Level Reasoning: Establishing Higher Order Beliefs in Large Language Models for Strategic Reasoning”** uses a recursive K-level framework so the model can reason not just about an opponent’s belief, but about what the opponent believes about others. This is the key mechanism for strategic play under partial observability, where the best move depends on nested beliefs and anticipated responses.\n\nThird, they preserve deception and avoid leakage of internal strategy by separating private reasoning from public action. **“Effect of Private Deliberation: Deception of Large Language Models in Game Play”** introduces a private agent in a POSG setting, where internal deliberation is kept private while outward moves are generated strategically. This allows the model to deceive or withhold information without exposing its reasoning trace. A related strategy appears in **“Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization”**, which maps free-form language into a compact latent strategy space, optimizes there with game-theoretic tools like CFR, and then aligns the LLM back to that policy with DPO. That latent-channel design helps the agent act strategically without revealing its full internal plan in natural language.\n\nAcross these frameworks, the shared recipe is:\n1. infer a belief state from partial observations,\n2. model others recursively at higher cognitive levels,\n3. use constrained, private, or latent internal channels for planning, and\n4. expose behavior through controlled external actions rather than raw reasoning.\n\nFinally, benchmark papers such as **GTBENCH** and **LLMsPark** play an important supporting role: they systematically evaluate these abilities across complete vs. incomplete information, dynamic vs. static, and probabilistic vs. deterministic settings, making it clear where LLM agents still struggle and where tools like external planners or RL modules are needed.",
+  "latency_s": 29.436,
+  "input_tokens": 124918,
+  "output_tokens": 2321,
+  "cost_usd": 0.104133,
+  "judge_score": 4,
+  "judge_justification": "The response gives a solid synthesis of the main methodologies: hidden-state inference via ToM/opponent modeling, recursive higher-order belief reasoning, and privacy-preserving separation of internal deliberation from public actions to support deception without leakage. It also appropriately mentions latent strategy spaces and benchmark frameworks. Minor gaps are that it does not explicitly emphasize some of the reference’s broader point about combining public observations with statistical/heuristic priors, and the examples are narrower than the full cross-paper synthesis, but overall it is accurate and relevant.",
+  "judge_cost_usd": 0.001292,
+  "total_cost_accumulated_usd": 15.8618,
+  "n_iterations": 16,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C3_gpt/rlm_2026-06-22_22-58-07_436168a1.jsonl"
+}

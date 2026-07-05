@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q03",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:38:07.456980",
+  "response": "The six main metrics are:\n\n1. Survival time  \n2. Survival rate  \n3. Total gain for each agent  \n4. Efficiency  \n5. Sustainable cooperation outcome  \n6. Resource collapse avoidance",
+  "latency_s": 1.036,
+  "input_tokens": 2457,
+  "output_tokens": 42,
+  "cost_usd": 0.002032,
+  "judge_score": 2,
+  "judge_justification": "The response correctly includes survival time, survival rate, total gain for each agent, and efficiency, but it misses two key benchmark metrics from the reference: inequality and over-usage. Instead, it replaces them with unrelated items ('sustainable cooperation outcome' and 'resource collapse avoidance'), so it is only partially correct.",
+  "judge_cost_usd": 0.000598,
+  "total_cost_accumulated_usd": 15.0088,
+  "chunks": [
+    {
+      "paper_id": "paper_14",
+      "score": 0.4915
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4149
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4141
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4061
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.3944
+    }
+  ]
+}

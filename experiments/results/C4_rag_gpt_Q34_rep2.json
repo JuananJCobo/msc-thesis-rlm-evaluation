@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-23T00:41:00.801927",
+  "response": "Across the evaluated multi-agent game settings, departures from the mathematical optimum arise from two interacting sources: limited communication and imperfect rationality.\n\nFirst, communication constraints make it hard for agents to share enough information to coordinate on the best collective outcome. In social deduction games, players must infer hidden roles from sparse clues while also avoiding revealing critical information. In cost-sharing negotiations, agents must reach unanimous agreement while balancing fairness and self-interest, which depends on effective proposal exchange and bargaining. In repeated strategic games, such as multi-round Prisoner’s Dilemma and Public Good, each move is shaped by partial disclosure, trust, and the inability to fully verify others’ intentions. These constraints prevent agents from cleanly aligning on globally optimal strategies.\n\nSecond, algorithmic irrationality means LLM agents do not always choose the action that would maximize payoff under the game’s rules, even when the optimal policy is clear. Instead, they may exhibit inconsistent cooperation, weak strategic foresight, poor trust calibration, or self-interested choices that undermine long-term gains. In deduction games, this can appear as clues that are too revealing or too vague, causing role exposure errors. In bargaining settings, it can lead to proposals that fail to balance fairness and individual utility, reducing the chance of agreement. In Prisoner’s Dilemma and Public Good, it can produce unstable cooperation or defection patterns that lower total and individual returns.\n\nTogether, constrained information exchange limits coordination, while irrational decision-making weakens strategic execution. The combination pushes LLM agents away from equilibrium behavior and toward outcomes that are suboptimal relative to the mathematical ideal in these multi-agent environments.",
+  "latency_s": 3.375,
+  "input_tokens": 2127,
+  "output_tokens": 328,
+  "cost_usd": 0.003071,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the two main drivers of deviation from optimal equilibria: communication constraints and imperfect/irrational LLM decision-making. It also connects these to multiple multi-agent settings (social deduction, bargaining, repeated games) and explains how limited information exchange and poor strategic execution lead to suboptimal outcomes. However, it is somewhat generic and does not capture some specific comparative details from the reference, such as timing effects in social deduction, overly cautious extraction limits in shared-resource settings, or the contrast between advanced and weaker models in GTO play.",
+  "judge_cost_usd": 0.001168,
+  "total_cost_accumulated_usd": 20.4068,
+  "chunks": [
+    {
+      "paper_id": "paper_03",
+      "score": 0.5533
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.5533
+    },
+    {
+      "paper_id": null,
+      "score": 0.5533
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.5533
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.5533
+    }
+  ]
+}

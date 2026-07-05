@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q36",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T21:25:06.548955",
+  "response": "Recent frameworks for imperfect-information games combine several methods to help LLM agents act strategically despite partial observability:\n\n- **Private deliberation:** an agent is given hidden internal reasoning about past and future interactions, while that reasoning is kept concealed from the opponent.\n- **POSG formulation:** gameplay is modeled as a partially observable stochastic game, making uncertainty and hidden state central to the setup.\n- **In-context learning and chain-of-thought prompting:** these are formalized to support richer action reasoning from dialogue and interaction history.\n- **History-based action distribution analysis:** agents use conversation history to estimate which actions are more favorable over time.\n- **Opponent-type inference:** agents attempt to identify the opponent’s type, though performance on this remains weak.\n- **Sampling from priors and Bayesian-style action selection:** the work highlights the need for better sampling from diverse distributions to support near-optimal decisions under uncertainty.\n- **Concealed internal reasoning for strategic deception:** by keeping private thoughts hidden, the agent can reason about future actions without exposing its internal state, improving performance especially in competitive settings.\n\nTogether, these methods let the agent reconstruct partially hidden situations, reason about concealed variables, and preserve strategic advantage without revealing its internal deliberation.",
+  "latency_s": 2.711,
+  "input_tokens": 2504,
+  "output_tokens": 247,
+  "cost_usd": 0.002989,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes several relevant methodologies for imperfect-information settings: partial observability/POSG framing, opponent or hidden-type inference, use of history and priors for action selection, and private internal reasoning kept hidden to support strategic deception. It captures the core idea that LLM agents must infer concealed state while preventing information leakage. However, it is somewhat generic and does not clearly connect the methods to the specific diverse frameworks implied by the reference (e.g., explicit reconstruction from restricted observations and dialogue-based inference of private thresholds/budgets), so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001148,
+  "total_cost_accumulated_usd": 11.5486,
+  "chunks": [
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5545
+    }
+  ]
+}

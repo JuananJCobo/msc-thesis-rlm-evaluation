@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T21:47:31.075623",
+  "response": "In the evaluation of the Secret Hitler game, LLM agents exhibited a strategic behavior transition from **exploratory behavior** in the early rounds to **exploitative decision-making** in the final rounds of the game.\n\nSpecifically, early rounds were characterized by agents \"probing uncertain actors\" and \"testing unknowns,\" with a steep drop in these exploratory behaviors from Round 1 to Round 4. As the game progressed into later rounds, agents shifted to favoring \"familiar, trusted collaborators\" and \"leveraging known quantities,\" demonstrating a rise in exploitative behaviors. This pattern of shifting from exploration to exploitation mirrored human play in hidden-role games (Hansteen Izora, K. and Teuscher, C., 2025).",
+  "latency_s": 8.393,
+  "input_tokens": 359044,
+  "output_tokens": 151,
+  "cost_usd": 0.108091,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the strategic transition: early exploratory probing of uncertain actors shifting to exploitative collaboration with familiar, trusted actors in the final rounds. This matches the reference answer and directly addresses the question.",
+  "judge_cost_usd": 0.0006,
+  "total_cost_accumulated_usd": 4.1549
+}

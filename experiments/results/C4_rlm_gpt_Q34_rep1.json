@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:49:33.991103",
+  "response": "Across the evaluated studies, LLM agents deviate from the mathematical optimum for two interacting reasons: communication constraints and algorithmic irrationality.\n\nOn the communication side, restricted information exchange prevents agents from forming the complete strategic picture needed for equilibrium play. In the negotiation benchmark, agents only operate over a public communication channel with partial observability and hidden BATNA/threshold information, so their proposals depend on inference from incomplete dialogue rather than full strategic knowledge. The authors explicitly note that richer channels such as private messaging or coalition-building would change behavior, showing that the observed outcomes are already bounded by the communication protocol. In the cybersecurity Prisoner’s Dilemma study, agents likewise act with partial information and limited history, and the paper reports that final payoffs vary with whether agents know repeated-round structure. These settings show that when information flow is constrained, LLM agents cannot reliably compute or sustain the game-theoretic best response, so they drift away from equilibrium even before model-level errors enter.\n\nOn the irrationality side, several studies show that even when the game structure is clear, LLMs do not behave as perfectly rational optimizers. The emotion/alignment paper finds that emotional prompting shifts cooperation, coordination, and payoff attainment away from theoretical benchmarks: negative emotions and model-specific biases reduce rationality and lower decision optimality, with smaller or less robust models most affected. The cybersecurity paper similarly reports cross-language instability and personality-sensitive deviations, where agents sometimes defect as expected but also exhibit dramatic inconsistencies that reveal internal bias rather than stable equilibrium reasoning. The negotiation paper adds that weaker planning and inference produce “wrong deals” below feasible thresholds, meaning agents violate the rational strategy space itself rather than merely choosing among optimal equilibria. Related game papers cited in the corpus also show LLMs failing even solved strategic tasks or converging only under heavy prompt scaffolding, reinforcing that their policy choice is brittle and implementation-dependent.\n\nTaken together, the literature suggests a compound effect: limited communication reduces what the agents can condition on, while algorithmic irrationality determines how poorly they use even the information they do receive. The result is not just suboptimal play, but unstable, context-sensitive departures from equilibrium—manifesting as defective cooperation in Prisoner’s Dilemma, lower negotiation success, sensitivity to language or emotion, and inconsistent best-response behavior across repeated or multi-agent settings.",
+  "latency_s": 23.762,
+  "input_tokens": 22888,
+  "output_tokens": 1294,
+  "cost_usd": 0.022989,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the two main drivers of deviation from equilibrium: constrained communication/information flow and algorithmic irrationality. It also connects these to multiple studies and explains how partial observability, protocol limits, and model instability/bias lead to suboptimal play. However, it is somewhat less specific than the reference about the distinctive empirical patterns across papers (e.g., timing effects in social deduction, overly cautious extraction limits, and the contrast between aggressive vs. passive deviations in GTO settings), so it misses some of the finer comparative details.",
+  "judge_cost_usd": 0.001272,
+  "total_cost_accumulated_usd": 20.7426,
+  "n_iterations": 6,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C4_gpt/rlm_2026-06-23_00-49-07_5c440866.jsonl"
+}

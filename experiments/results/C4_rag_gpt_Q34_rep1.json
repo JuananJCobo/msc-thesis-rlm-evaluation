@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:40:56.088269",
+  "response": "Across the evaluated game-theory settings, deviations from the mathematical optimum come from two compounding sources: limited information exchange and imperfect decision-making.\n\nOn the communication side, several games intentionally restrict what agents can know or reveal. In Chameleon and Undercover, some players do not know the secret word or have a different target word, so they must reason from partial clues while also avoiding exposing too much. This creates a setting where agents cannot simply compute the best move from full information; they must infer roles, bluff, and coordinate under ambiguity. In Cost Sharing, the challenge is not hidden identity but negotiation: each party has private incentives and must propose allocations that are fair enough to gain unanimous agreement while still minimizing its own cost. In Multi-turn Prisoner’s Dilemma and Public Good, agents repeatedly choose whether to cooperate, defect, or contribute, but the payoff depends on others’ actions, so outcomes hinge on trust, anticipation, and strategic signaling rather than isolated optimization.\n\nOn the rationality side, LLM agents are evaluated against defenders and challengers in the same environments, revealing that they do not always act with perfect strategic consistency. Even when a payoff-maximizing action is clear in principle, agents may fail to sustain it across rounds, misread opponents, or prioritize locally attractive moves over globally optimal ones. In social deduction games, this appears as weak deception or weak detection; in bargaining games, as unstable compromise; and in repeated social dilemmas, as cooperation or defection patterns that do not align with the payoff-best equilibrium behavior.\n\nTogether, constrained communication limits what can be known or coordinated, while algorithmic irrationality limits how well agents convert that partial information into optimal play. The combined effect is that LLM agents often settle for plausible but suboptimal strategies instead of the true equilibrium behavior, especially in multi-round settings where successful play requires both inference under uncertainty and disciplined strategic consistency.",
+  "latency_s": 3.775,
+  "input_tokens": 2127,
+  "output_tokens": 383,
+  "cost_usd": 0.003319,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the two main drivers of deviation from optimal equilibria: communication constraints (partial information, hidden roles, negotiation limits) and imperfect/irrational strategic behavior by LLM agents. It also connects these to suboptimal outcomes across multiple game settings. However, it is somewhat generic and misses some specific comparative details from the reference, such as the timing-dependent voting behavior in social deduction and the explicit pattern of advanced models being overly aggressive versus weaker models being overly passive in rigorous game-theoretic settings.",
+  "judge_cost_usd": 0.001177,
+  "total_cost_accumulated_usd": 20.4025,
+  "chunks": [
+    {
+      "paper_id": "paper_03",
+      "score": 0.5533
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.5533
+    },
+    {
+      "paper_id": null,
+      "score": 0.5533
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.5533
+    },
+    {
+      "paper_id": "paper_03",
+      "score": 0.5533
+    }
+  ]
+}

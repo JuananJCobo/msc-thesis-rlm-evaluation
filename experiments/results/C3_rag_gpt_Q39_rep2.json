@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q39",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T22:49:14.297708",
+  "response": "Recent work describes two main prompting methodologies used to boost strategic adaptability and role-specific play:\n\n- **Game-theoretic language prompts**: prompts framed with explicit strategic, opponent-modeling, or equilibrium-oriented language. These were able to make one model, in particular, generate stronger **aggressive strategies** than the other, raising the viability of conflict-oriented play.\n- **Prose prompts**: more natural-language, narrative-style prompts. These improved performance under noisy conditions, though they also made behavior across attitudes more similar.\n- **Refine prompts**: prompting that iteratively improves the strategy draft. This especially strengthened **aggressive strategies** without materially changing cooperative or neutral ones, shrinking the performance gap between peaceful and aggressive play.\n\nA key operational change was the move from **asking the model for individual actions** to **asking it to create full strategies**. That gives the model a broader decision-making privilege: instead of reacting one move at a time in a zero-shot manner, it can encode contingencies, opponent adaptation, and role-specific plans up front.\n\nThese interventions override baseline zero-shot behavior by:\n1. **Adding strategic framing** that pushes the model beyond generic cooperative defaults,\n2. **Enabling structured strategy generation** rather than isolated action prediction,\n3. **Improving asymmetric roles**, especially aggression, under certain prompts,\n4. **Increasing adaptability under noise**, where the model can embed responses to uncertainty and opponent behavior into the strategy itself.\n\nIn short, the prompting changes give the model more room to plan, specialize, and condition on opponent dynamics, instead of simply emitting a default zero-shot action pattern that tends to look cooperative or neutral.",
+  "latency_s": 3.869,
+  "input_tokens": 2578,
+  "output_tokens": 334,
+  "cost_usd": 0.003436,
+  "judge_score": 2,
+  "judge_justification": "The response captures a general idea of prompting changes that improve strategic adaptability and asymmetric roles, but it misses the specific interventions described in the reference. It does not mention the probabilistic posterior/beta-distribution injection for opponent modeling, the Persona Prompting 'Game Expert' framing, or the explicit rule-breaking privileges for the DDA role (e.g., bypassing mulligan/setup constraints). Instead, it substitutes broader and partly different concepts like game-theoretic prompts, prose prompts, and refine prompts, which are not the key mechanisms asked about. The synthesis is therefore only partially aligned and lacks the central comparative details.",
+  "judge_cost_usd": 0.001266,
+  "total_cost_accumulated_usd": 15.1834,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5171
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    }
+  ]
+}

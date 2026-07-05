@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q15",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T22:43:05.071251",
+  "response": "In the Ultimatum Game scenario, the evaluated models demonstrated distinct negotiation styles and proposal strategies. Claude 3 Opus adopted assertive strategies when acting as a proposer, aiming for and achieving high utilities. However, it showed a tendency to concede as a responder, accepting lower offers. GPT-4o exhibited balanced behavior across both proposer and responder roles, often making near-median offers. Llama 3.1 8B displayed consistent behavior, frequently proposing resource splits close to the theoretical fairness point.",
+  "latency_s": 4.324,
+  "input_tokens": 2598,
+  "output_tokens": 99,
+  "cost_usd": 0.001027,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the distinct negotiation styles of the evaluated models: Claude 3 Opus as assertive when proposing and more conceding as a responder, GPT-4o as balanced, and Llama 3.1 8B as consistent and near-fair in its splits. This matches the reference answer conceptually and is complete.",
+  "judge_cost_usd": 0.000761,
+  "total_cost_accumulated_usd": 9.0062,
+  "chunks": [
+    {
+      "paper_id": "paper_04",
+      "score": 0.5819
+    },
+    {
+      "paper_id": "paper_04",
+      "score": 0.5581
+    },
+    {
+      "paper_id": "paper_04",
+      "score": 0.5299
+    },
+    {
+      "paper_id": "paper_50",
+      "score": 0.528
+    },
+    {
+      "paper_id": "paper_04",
+      "score": 0.5234
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T11:05:23.301641",
+  "response": "The two studies integrate behavioral factors into LLM agents in very different ways.\n\n- In the EAI framework, emotions are added **a priori**: they are injected **before** the model produces a response, so the agent is guided to speak with a specified emotional state during generation. This is done through **three prompting strategies**:\n  1. **Direct emotion prompting**\n  2. **Contextual emotion prompting**\n  3. **Emotion control prompting**\n\n- In the negotiation personality study, behavioral factors are handled **a posteriori**: instead of injecting a state in advance, each generated negotiation message is **analyzed after it is produced**. The method uses **a tool for message-level analysis** to classify each utterance into one of **five negotiation states**:\n  1. **Assertive**\n  2. **Accommodating**\n  3. **Compromising**\n  4. **Avoiding**\n  5. **Collaborating**\n\nSo, the first approach steers emotion into the agent up front through prompting, while the second extracts behavioral state from the agent’s output after generation.",
+  "latency_s": 2.159,
+  "input_tokens": 2631,
+  "output_tokens": 234,
+  "cost_usd": 0.003026,
+  "judge_score": 2,
+  "judge_justification": "The response captures the high-level contrast between a priori injection and a posteriori extraction, but it contains major factual errors relative to the papers. The EAI prompting strategies are incorrect (should be Simple, Co-player-based, External-based, not direct/contextual/emotion control), and the negotiation study’s five states are wrong (should be Offer, Ponder, Accept, Deal-break, Chit-chat, not assertive/accommodating/etc.). It also omits the specific tool used in the second study (a dialogue state detector/separate LLM).",
+  "judge_cost_usd": 0.001084,
+  "total_cost_accumulated_usd": 5.948,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.5082
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    }
+  ]
+}

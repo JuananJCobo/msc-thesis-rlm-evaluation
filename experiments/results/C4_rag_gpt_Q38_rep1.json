@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q38",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-23T00:41:40.598292",
+  "response": "In LLM-driven multi-agent environments, social behavior appears to be shaped by three interacting forces:\n\n- **Social perception**: agents are evaluated not only for task performance, but also for whether their actions appear cooperative, self-interested, or disruptive. This creates a collective sense of who is “trustworthy” or “pro-social.”\n- **Trust volatility**: trust is fragile because a single anti-social or noisy action can quickly alter how other agents respond. As a result, trust is not fixed; it can rise or fall rapidly depending on recent behavior.\n- **Normative behaviors**: over time, repeated interaction can stabilize expectations about acceptable conduct. Agents that consistently follow socially aligned patterns are more likely to be treated as reliable, while those that deviate risk exclusion or loss of influence.\n\nWhen an agent’s internal objective conflicts with social expectations, it faces a strategic trade-off. Pursuing its objective may deliver short-term gain but can damage reputation, reduce future cooperation from others, and make it harder to influence group outcomes. To navigate this, agents may adapt by moderating their actions, aligning outward behavior with group norms, or choosing strategies that preserve access to cooperation even when their goals are not perfectly aligned with the group.\n\nIn group settings, consensus tends to emerge from repeated feedback: agents that are perceived as cooperative reinforce pro-social equilibria, while persistent anti-social behavior can push the system toward less cooperative outcomes. Thus, reputational risk becomes a key constraint on self-interested behavior, and consensus is maintained by the ongoing balance between individual incentives and the social consequences of deviation.",
+  "latency_s": 3.699,
+  "input_tokens": 1856,
+  "output_tokens": 320,
+  "cost_usd": 0.002832,
+  "judge_score": 4,
+  "judge_justification": "The response gives a broadly correct synthesis of the key themes: social perception, volatile trust, and the role of norms in stabilizing behavior in multi-agent LLM settings. It also correctly notes the reputational trade-off when agents’ objectives conflict with social expectations, and explains how agents may adapt behavior to preserve cooperation and influence. However, it is somewhat generic and does not explicitly capture some of the reference’s more specific theoretical points, such as role-specific incentives in social deduction, explicit normative grounding via universalization principles, or the stronger claim about transparency/fairness expectations in human-AI bargaining. Still, it is accurate and reasonably complete.",
+  "judge_cost_usd": 0.001225,
+  "total_cost_accumulated_usd": 20.4329,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5067
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5067
+    },
+    {
+      "paper_id": null,
+      "score": 0.5066
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5066
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5066
+    }
+  ]
+}

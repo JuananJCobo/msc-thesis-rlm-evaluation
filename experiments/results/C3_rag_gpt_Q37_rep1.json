@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q37",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T22:48:48.424709",
+  "response": "Extended multi-agent interactions create a tension between preserving detail and staying within finite memory.\n\nWith raw context accumulation, the agents keep appending the full message history until the context window is filled. This preserves more recent interaction detail and avoids an explicit compression step, but it quickly hits the fixed context limit. Once that buffer is full, the round number itself no longer has strategic impact, and any further behavior is driven mainly by stochasticity rather than additional informational gains. In other words, raw accumulation can maintain fidelity up to the window boundary, but after that it cannot expand further and becomes constrained by hard memory limits.\n\nHistory summarization addresses the bottleneck by compressing prior interaction into shorter representations. This extends the usable interaction horizon, but at the cost of information loss. That loss can remove subtle strategic cues, distort the chain of prior actions, and reduce the system’s ability to reason consistently over long games. Such compression can also contribute to phenomena like echo chambers, self-deception, and deception symbiosis.\n\nSo the trade-off is:\n\n- Raw accumulation: higher detail, but limited by fixed context and eventual saturation.\n- Summarization: longer reach over extended games, but greater information loss and potential degradation in strategic consistency and interpretability.\n\nOverall, both methods involve performance degradation in long-horizon play: raw accumulation degrades when the window is exhausted, while summarization degrades earlier through lossy compression.",
+  "latency_s": 2.956,
+  "input_tokens": 2547,
+  "output_tokens": 285,
+  "cost_usd": 0.003193,
+  "judge_score": 4,
+  "judge_justification": "The response correctly contrasts raw context accumulation with history summarization: raw accumulation preserves detail but is bounded by the context window, while summarization extends horizon at the cost of information loss and degraded strategic consistency. It also captures the key synthesis that both approaches degrade performance in different ways over long horizons. However, it is less specific than the reference about the empirical findings (e.g., regret increases under summaries, raw history better reveals adversarial trends, and planning depth collapse over time), so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001122,
+  "total_cost_accumulated_usd": 15.1611,
+  "chunks": [
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    }
+  ]
+}

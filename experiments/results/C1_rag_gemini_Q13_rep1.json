@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q13",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:29:11.272623",
+  "response": "Mistral models demonstrated hallucination problems, leading to issues such as forming teams with Pokémon not on the roster or creating incomplete teams with fewer than three members.",
+  "latency_s": 2.29,
+  "input_tokens": 2598,
+  "output_tokens": 31,
+  "cost_usd": 0.000857,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies Mistral as the language model family and accurately describes the hallucination issues (teams with Pokémon not on the roster and incomplete teams). It directly answers the question with no substantive errors.",
+  "judge_cost_usd": 0.000515,
+  "total_cost_accumulated_usd": 5.0318,
+  "chunks": [
+    {
+      "paper_id": "paper_11",
+      "score": 0.4864
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4841
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4745
+    },
+    {
+      "paper_id": "paper_12",
+      "score": 0.4739
+    },
+    {
+      "paper_id": "paper_11",
+      "score": 0.4575
+    }
+  ]
+}

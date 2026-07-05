@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q09",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T17:02:45.845099",
+  "response": "LLM agents shifted from early-round exploration and information gathering to late-round exploitation of trusted, previously tested players.",
+  "latency_s": 1.009,
+  "input_tokens": 2575,
+  "output_tokens": 25,
+  "cost_usd": 0.002044,
+  "judge_score": 5,
+  "judge_justification": "The response correctly captures the reported transition: early-round exploratory/information-gathering behavior shifting to late-round exploitative behavior focused on trusted, previously tested players. This matches the reference answer conceptually and directly.",
+  "judge_cost_usd": 0.000512,
+  "total_cost_accumulated_usd": 12.9051,
+  "chunks": [
+    {
+      "paper_id": "paper_02",
+      "score": 0.5337
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5149
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.506
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5046
+    },
+    {
+      "paper_id": "paper_02",
+      "score": 0.5043
+    }
+  ]
+}

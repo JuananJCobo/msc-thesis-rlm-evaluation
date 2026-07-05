@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T13:53:01.121105",
+  "response": "The two studies integrate behavioral factors into LLM agents in different ways:\n\n- **EAI framework:** it uses an **a priori emotional injection** approach, meaning emotions are introduced **before and during the decision-making process** through prompting. The framework’s emotion prompting uses **three strategies**:\n  1. **Inject emotions before the game starts**\n  2. **Inject emotions at the beginning of each round**\n  3. **Inject emotions throughout the interaction**\n\n- **Personality-traits negotiation study:** it uses an **a posteriori extraction** approach, meaning behavior is **analyzed after the dialogue is produced**. Each message is examined with a **message-level classification tool** that extracts the offered price and strategy, and the negotiation behavior is categorized into **five negotiation states**:\n  1. **Assertive**\n  2. **Accommodating**\n  3. **Avoiding**\n  4. **Compromising**\n  5. **Competing**\n\nSo, EAI **injects emotional factors upfront into the agent prompting**, while the negotiation study **extracts and labels behavioral signals from generated messages afterward**.",
+  "latency_s": 1.981,
+  "input_tokens": 2587,
+  "output_tokens": 238,
+  "cost_usd": 0.003011,
+  "judge_score": 2,
+  "judge_justification": "The response captures the broad contrast between a priori injection and a posteriori extraction, but it contains major factual errors. For EAI, it incorrectly describes the timing and the three strategies; the reference specifies emotions are injected into the initial system prompt before gameplay, with Simple, Co-player-based, and External-based strategies. For the negotiation study, it gives the wrong analysis tool and the wrong five states: the reference uses a dialogue state detector (a separate LLM) and classifies Offer, Ponder, Accept, Deal-break, and Chit-chat, not the listed personality-style categories. Thus it only partially answers the comparison.",
+  "judge_cost_usd": 0.001155,
+  "total_cost_accumulated_usd": 20.7534,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4962
+    }
+  ]
+}

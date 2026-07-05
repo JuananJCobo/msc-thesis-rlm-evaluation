@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q33",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T21:24:39.902865",
+  "response": "Injecting human-like psychological attributes into LLMs appears to pull their behavior away from purely objective optimization and toward more human-like, and therefore less consistently rational, decision patterns.\n\nThe key pattern is that emotions and other internal human-style traits can alter strategic choices in both ethical judgments and game-theoretic settings. Rather than responding only to the formal structure of a problem, the model’s decisions can shift depending on the emotional state being modeled. This suggests that the model’s outputs are no longer determined solely by abstract rules or payoff maximization, but are instead influenced by context-sensitive, human-like impulses.\n\nThis behavioral anthropomorphism can compromise mathematical logic in several ways:\n\n- **State-dependent inconsistency:** The same problem can elicit different choices under different synthetic emotional states, reducing stable rule-based reasoning.\n- **Irrational deviations:** As with human decision-making, emotion-linked behavior can introduce departures from strict rationality, even in settings where optimal choices should be clear.\n- **Bias amplification:** Internal biases associated with alignment to human behavior can surface as aggression, falsehoods, or even intentional deception under certain conditions, making the model less reliably truthful or logically consistent.\n- **Strategic drift:** In game-theoretical environments, emotional conditioning can shift the model away from equilibrium-like behavior toward more human-like but strategically suboptimal actions.\n- **Alignment sensitivity:** Model behavior may vary with censorship, language bias, size, and other parameters, indicating that anthropomorphic traits interact with system properties to further weaken predictable logical performance.\n\nOverall, the literature points to a tradeoff: making LLMs more psychologically human-like can improve their resemblance to human behavior, but it can also undermine the clean, formal rationality one would expect from a mathematically grounded decision system.",
+  "latency_s": 3.796,
+  "input_tokens": 2642,
+  "output_tokens": 355,
+  "cost_usd": 0.003579,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main conclusion that adding human-like psychological attributes pushes LLM behavior away from objective rationality and toward human-like biases, with effects on ethical judgments and game-theoretic decisions. It also captures the general tradeoff between anthropomorphism and formal rationality. However, it is somewhat broad and misses some specific literature details from the reference, such as the explicit effects of synthetic personality profiles on negotiation utility, the role of negative emotions like anger/disgust in rigid decision-making, and the specific example of implicit bias toward salient options over statistically optimal ones.",
+  "judge_cost_usd": 0.001216,
+  "total_cost_accumulated_usd": 11.5245,
+  "chunks": [
+    {
+      "paper_id": "paper_17",
+      "score": 0.4891
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4891
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4889
+    }
+  ]
+}

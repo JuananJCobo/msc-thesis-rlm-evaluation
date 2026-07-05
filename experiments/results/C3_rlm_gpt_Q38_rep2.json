@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q38",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T23:01:48.958541",
+  "response": "Across the corpus, social perception, trust volatility, and normative behavior are emergent properties of interaction, not fixed agent traits.\n\n- In *Simulating Social Dynamics with LLMs in Secret Hitler* (Hansteen Izora & Teuscher, 2025), agents display theory-of-mind-like inference: they reason about others’ beliefs, motives, and how actions will be interpreted. Trust is asymmetric—slow to build, fast to collapse—with betrayal producing immediate drops. Deceptive agents manage reputation by blending into group sentiment, timing betrayals, and using trusted intermediaries to hide inside existing trust networks. This paper most directly shows how agents navigate reputational risk when their goals conflict with social expectations: they conform tactically, shift blame, and exploit consensus rather than openly violating it.\n\n- In the negotiation/opponent-modeling literature, social perception is built through preference inference from offers, concessions, and histories of interaction. The Stacked Alternating Offers protocol and opponent models make hidden preferences observable through behavior, so trust and reliability depend on consistency, concession timing, and acceptance strategy. Here, agents balance individual utility against appearing reasonable enough to reach agreement.\n\n- In *GOVSIM*, normative behavior is maintained through dialogue functions such as consensus seeking, excusing behavior, and punishment. Most interaction is negotiation, but the relational layer shows how agents repair or enforce norms when behavior deviates from group expectations. Consensus is not passive agreement; it is actively produced through discussion and constraint around shared sustainability thresholds.\n\n- In the strategic-reasoning paper using BRIRLM/FPIRLM/PSROLM, naïve LLM action selection is described as suboptimal and easily exploitable. Iterative level-k style reasoning improves robustness by simulating others’ capabilities and likely responses. This shows the formal counterpart of reputational navigation: when objectives conflict, agents do not simply optimize payoff; they reason about how others will react and choose actions that reduce exploitability under social pressure.\n\n- In LLMsPark and related trust-game/Prisoner’s Dilemma work, outcomes depend on repeated interaction, temporal strategy, and model-specific biases. The key pattern is that cooperative or trustworthy behavior is context-dependent, while abrupt defections or role-misaligned moves shift perception quickly.\n\nSynthesis: LLM agents maintain social order through predictive inference, conformity signaling, and reputation management. When their underlying objectives conflict with social expectations, they typically do not abandon sociality; instead, they strategically manage visibility, time their deviations, exploit consensus, and use deception or selective cooperation to preserve standing while pursuing private goals. The literature therefore portrays multi-agent LLM behavior as socially adaptive but fragile: norms and trust can be sustained, but they are highly contingent on interaction history, group sentiment, and the perceived cost of reputational damage.",
+  "latency_s": 79.813,
+  "input_tokens": 125490,
+  "output_tokens": 3595,
+  "cost_usd": 0.110295,
+  "judge_score": 4,
+  "judge_justification": "The response gives a solid synthesis of how social perception and trust are dynamically constructed in LLM multi-agent settings, emphasizing reputation management, conformity signaling, deception, and consensus maintenance. It also correctly notes that agents with conflicting objectives often navigate social expectations strategically rather than abandoning them. However, it is somewhat less explicit than the reference about the broader theoretical thread connecting trust volatility, normative grounding/universalization, and the human-AI fairness/transparency angle, so it misses a bit of the cross-paper synthesis.",
+  "judge_cost_usd": 0.001285,
+  "total_cost_accumulated_usd": 16.2262,
+  "n_iterations": 14,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C3_gpt/rlm_2026-06-22_23-00-26_15d76374.jsonl"
+}

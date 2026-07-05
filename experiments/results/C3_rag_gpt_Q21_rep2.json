@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T13:52:23.606817",
+  "response": "MAgIC and the EAI framework use different mechanisms to shape LLM decision-making:\n\n- **MAgIC** injects **belief tracking** to help the model reason about other agents’ likely states, intentions, or actions. The emphasis is on representing and updating what the model thinks others believe or will do, so the decision emerges from explicit reasoning about others.\n- **EAI** injects **explicit emotional prompts** before the model makes a decision, including in the **Dictator Game**. The model is primed with a predefined emotion such as anger, sadness, happiness, disgust, or fear, and then asked to make the economic choice.\n\nSo, the key difference is:\n\n- **MAgIC**: reasons about others through **belief-state tracking**\n- **EAI**: influences decisions through **emotion induction**\n\nIn short, MAgIC is about **cognitive modeling of others**, while EAI is about **emotional priming before decision-making**.",
+  "latency_s": 1.785,
+  "input_tokens": 2513,
+  "output_tokens": 202,
+  "cost_usd": 0.002794,
+  "judge_score": 5,
+  "judge_justification": "The response correctly compares the two frameworks at a high level: MAgIC is described as injecting belief tracking to reason about others, while EAI is described as injecting explicit emotional prompts before an economic decision in the Dictator Game. It captures the key contrast between cognitive/belief-state reasoning and emotional priming, which is the central synthesis requested. It is accurate and relevant, though slightly less detailed than the reference answer.",
+  "judge_cost_usd": 0.000944,
+  "total_cost_accumulated_usd": 20.7081,
+  "chunks": [
+    {
+      "paper_id": "paper_17",
+      "score": 0.4383
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4382
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4339
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4339
+    }
+  ]
+}

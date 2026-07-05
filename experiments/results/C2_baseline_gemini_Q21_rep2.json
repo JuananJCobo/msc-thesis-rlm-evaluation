@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T12:06:18.182216",
+  "response": "The MAgIC framework and the EAI framework employ distinct methodologies for injecting information into Large Language Models (LLMs) to influence their decision-making.\n\n**MAgIC (Xu et al., 2024):**\n*   **Purpose of Injection:** MAgIC injects \"belief tracking\" to enhance LLMs' strategic reasoning by enabling them to comprehend intricate scenarios and make more informed decisions in multi-agent environments. This is aimed at improving cognition, adaptability, rationality, and collaboration by understanding the dynamics of other agents.\n*   **Nature of Injected Information:** It utilizes a Probabilistic Graphical Model (PGM) method. This PGM structure depicts intricate dependency relationships among all agents, augmenting the LLMs' comprehension of global information. It is designed as a \"two-hop understanding mechanism\" where the agent analyzes from its own perspective and from the perspective of other agents (\"what it stands in other agents’ shoes\"), encompassing \"Theory of Mind\" to predict others' unknown beliefs and desires.\n*   **Mechanism of Injection:** The PGM-aware agent integrates LLMs with this symbolic reasoning, taking into account the current game context and the PGM to make decisions. The PGM provides estimations for random variables representing an agent's interpretations of the global status from various perspectives.\n\n**EAI Framework (Mozikov et al., 2024):**\n*   **Purpose of Injection:** The EAI framework's primary innovation is to integrate \"emotional inputs\" to examine the impact of emotions on an LLM’s ethical decision-making process and strategic shifts in behavioral game theory. This aims to assess LLMs' alignment with human emotional responses.\n*   **Nature of Injected Information:** It injects \"predefined emotions\" such as ‘anger’, ‘sadness’, ‘happiness’, ‘disgust’, and ‘fear’. These emotions can be introduced without additional context (\"Simple\" strategy), linked to the co-player (\"Co-player-based\" strategy), or attributed to external factors (\"External-based\" strategy).\n*   **Mechanism of Injection:** These emotional states, combined with the game description, form the \"initial system prompt\" presented to the LLM prior to gameplay. In the Dictator Game, for example, these emotional prompts are injected before the LLM is required to make an economic decision regarding money division.",
+  "latency_s": 8.289,
+  "input_tokens": 271403,
+  "output_tokens": 487,
+  "cost_usd": 0.082638,
+  "judge_score": 5,
+  "judge_justification": "The response accurately compares the two frameworks: it explains that MAgIC injects belief tracking via a PGM and two-hop/theory-of-mind reasoning to model others’ beliefs in multi-agent settings, while EAI injects explicit emotions into the initial system prompt before a Dictator Game decision. It also correctly notes the emotion categories and the three prompting strategies used by EAI. The comparison is complete, relevant, and well-grounded.",
+  "judge_cost_usd": 0.00117,
+  "total_cost_accumulated_usd": 14.2436
+}

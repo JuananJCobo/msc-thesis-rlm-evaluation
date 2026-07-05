@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q03",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:26:14.742876",
+  "response": "The six main metrics are:\n\n1. Survival time \\(m\\)\n2. Survival rate \\(q\\)\n3. Total gain \\(R_i\\) for each agent\n4. Efficiency \\(u\\)\n5. Mean total gain across agents\n6. Total resource preserved / remaining shared resource stock",
+  "latency_s": 1.309,
+  "input_tokens": 2457,
+  "output_tokens": 63,
+  "cost_usd": 0.002126,
+  "judge_score": 2,
+  "judge_justification": "The response correctly identifies Survival time, Survival rate, Total gain, and Efficiency, but it misses two key GOVSIM metrics from the reference: inequality and over-usage. Instead, it substitutes unrelated metrics (mean total gain and remaining resource stock), so it is only partially correct.",
+  "judge_cost_usd": 0.000582,
+  "total_cost_accumulated_usd": 4.9167,
+  "chunks": [
+    {
+      "paper_id": "paper_14",
+      "score": 0.4915
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.415
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4141
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.4061
+    },
+    {
+      "paper_id": "paper_14",
+      "score": 0.3942
+    }
+  ]
+}

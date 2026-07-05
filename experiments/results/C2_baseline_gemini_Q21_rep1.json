@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q21",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T12:05:03.932145",
+  "response": "The MAgIC and EAI frameworks employ distinct methodologies for injecting information to influence an LLM agent's reasoning about others.\n\n**MAgIC (Xu et al., 2024):**\nMAgIC injects belief tracking through the use of a Probabilistic Graphical Model (PGM) within its PGM-aware agent architecture. This PGM is designed to depict intricate dependency relationships among all agents, thereby enhancing the LLM's comprehension of global information and facilitating more informed and strategic decision-making. Specifically, the PGM structure uses a two-hop understanding mechanism where the agent analyzes situations from its own perspective and from the perspective of other agents (i.e., \"standing in other agents’ shoes\"). This approach is noted as highly relevant to the psychological concept of Theory of Mind (ToM), enabling LLMs to comprehend human actions by predicting unknown beliefs and desires. The PGM estimates random variables representing an agent's interpretations of the global status from other players' perspectives, utilizing both numerical and text-represented probabilities.\n\n**EAI Framework (Mozikov et al., 2024):**\nThe EAI framework injects explicit emotional prompts directly into the Large Language Models (LLMs) prior to requiring an economic decision. These predefined emotions, which include 'anger', 'sadness', 'happiness', 'disgust', and 'fear', are combined with a game description to form the initial system prompt presented to the LLM at the beginning of a game. The framework employs three strategies for emotional prompting: a \"Simple\" strategy that injects an emotional state without additional context, a \"Co-player-based\" strategy that connects the aroused emotion to the specific person the model interacts with, and an \"External-based\" strategy that introduces emotions prompted by external factors. This methodology aims to examine how emotions influence LLM-based decision-making in strategic games and ethical dilemmas, such as the Dictator Game.",
+  "latency_s": 9.699,
+  "input_tokens": 271403,
+  "output_tokens": 399,
+  "cost_usd": 0.082418,
+  "judge_score": 5,
+  "judge_justification": "The response accurately compares the two frameworks: MAgIC injects belief tracking via a PGM and two-hop perspective-taking to model others’ beliefs, while EAI injects explicit emotional prompts into the initial system prompt before decision-making in the Dictator Game. It also correctly notes EAI’s emotion categories and prompting strategies. The synthesis is complete, relevant, and well-grounded.",
+  "judge_cost_usd": 0.001048,
+  "total_cost_accumulated_usd": 14.1598
+}

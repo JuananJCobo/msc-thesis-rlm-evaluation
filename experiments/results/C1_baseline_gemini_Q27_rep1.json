@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T10:54:29.861355",
+  "response": "The methodology for integrating behavioral factors into LLM agents differs significantly between the EAI framework and the study on personality traits in negotiation.\n\n**EAI Framework: 'a priori' emotional injection**\nThe EAI framework integrates emotions into LLM agents through an 'a priori' emotional injection technique. Emotions are injected **before gameplay** by incorporating them into the initial system prompt presented to the LLM. The framework employs three strategies for emotional prompting:\n1.  **\"Simple\" strategy:** Injects an emotional state without any additional context.\n2.  **\"Co-player-based\" strategy:** Connects the aroused emotion to the co-player the model is interacting with.\n3.  **\"External-based\" strategy:** Introduces emotions that are prompted by external factors.\n\n**Study on Personality Traits in Negotiation: 'a posteriori' extraction of negotiation states**\nIn contrast, the study on personality traits in negotiation primarily integrates personality traits into agents 'a priori' via in-context learning, but it then employs an 'a posteriori' extraction technique to analyze the behavioral manifestations within the generated negotiation dialogues. The methodological tool employed to analyze each message (utterance) is a **third, separate LLM functioning as a dialogue state detector**. This detector analyzes each utterance and its context to extract the negotiation state, current offer price, and negotiation strategy. This tool classifies negotiation states into five categories:\n1.  **Offer**\n2.  **Ponder**\n3.  **Accept**\n4.  **Deal-break**\n5.  **Chit-chat**",
+  "latency_s": 5.505,
+  "input_tokens": 199610,
+  "output_tokens": 328,
+  "cost_usd": 0.060703,
+  "judge_score": 4,
+  "judge_justification": "The response correctly contrasts the EAI framework’s a priori emotional injection (before gameplay, in the initial system prompt) and accurately lists the three prompting strategies. It also correctly identifies the second study’s a posteriori analysis using a separate LLM/dialogue state detector and names the five negotiation states. The main issue is a minor inaccuracy/extra detail: it adds that the second study integrates personality traits a priori via in-context learning, which is not part of the asked comparison and may be misleading. Overall, the key comparative synthesis is correct and complete.",
+  "judge_cost_usd": 0.001149,
+  "total_cost_accumulated_usd": 5.4308
+}

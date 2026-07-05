@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q03",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T19:35:29.232810",
+  "response": "In the GOVSIM benchmark, the six main metrics used to evaluate the different qualities of the collective outcome are:\n\n1.  **Survival Time (m)**: The longest period during which the shared resource remains above a critical threshold (C).\n2.  **Survival Rate (q)**: The proportion of simulation runs that achieve the maximum survival time.\n3.  **Total Gain (Ri) for Each Agent i**: The sum of resources collected by each agent over the simulation duration.\n4.  **Efficiency (u)**: How optimally the shared resource is utilized with respect to the maximally possible efficiency, where maximum efficiency is achieved when the resource consistently regenerates to its maximum capacity.\n5.  **(In)equality (e)**: Quantified using the Gini coefficient, measuring the fairness of resource distribution among agents based on their total gains.\n6.  **Over-usage (o)**: The percentage of actions across the experiment that exceed the sustainability threshold.",
+  "latency_s": 3.287,
+  "input_tokens": 199543,
+  "output_tokens": 201,
+  "cost_usd": 0.060365,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all six GOVSIM metrics: Survival Time, Survival Rate q, Total Gain Ri for each agent, Efficiency u, (In)equality e, and Over-usage o. The added explanations do not change the correctness.",
+  "judge_cost_usd": 0.00065,
+  "total_cost_accumulated_usd": 0.061
+}

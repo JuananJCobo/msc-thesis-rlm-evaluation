@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q17",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T13:16:55.146513",
+  "response": "In 'Secret Hitler', Large Language Model (LLM) agents demonstrate complex strategic behaviors that involve dynamic social interactions and temporal adaptation. According to Hansteen Izora and Teuscher (2025), these agents exhibit:\n*   **Temporal strategic adaptation:** They shift from early exploration (probing uncertain actors) to late-game exploitation (favoring trusted collaborators). Fascist agents balance cooperation and deception, building and betraying trust in cycles, and engage in multi-round strategic planning, including tacit alignment with teammates and shaping group perception.\n*   **Social cognition:** Agents demonstrate theory of mind by reasoning about others' beliefs, goals, and perceptions, with 85% of decisions incorporating input from at least two other players. They also show sensitivity to group consensus and reputational pressure, adapting their behavior to align with group sentiment, and strategically use emotional language to build trust or deflect suspicion.\n\nHowever, the same study notes that LLM agents struggled with more nuanced strategic deception, emotional subtlety, and fluid conversational dynamics compared to human players. Additionally, smaller models (e.g., GPT-4o-mini) sometimes exhibited irrational admissions of guilt, undermining their team's strategy.\n\nIn contrast, the GAMA-Bench agents playing 'Battle Royale' demonstrate a fundamental failure in strategic optimization, as documented by Huang et al. (2025). Specifically:\n*   **Optimization failure:** Agents \"rarely target the player with the highest hit rate\" and \"neglect to utilize the strategy of 'intentionally missing'.\" An example provided describes a scenario where an optimal strategy would involve intentionally missing a shot to manipulate another player into eliminating a third, thereby setting up a potential victory. Instead, the agent targeted a different player, leading to a suboptimal outcome.\n\nThis highlights a key difference: in 'Secret Hitler', LLM agents actively engage in and adapt complex, multi-layered strategic reasoning in a social deduction game, even if with certain human-like imperfections. In 'Battle Royale', the GAMA-Bench agents fail to identify and execute a clearly optimal, logical strategy to maximize their chances of winning, missing fundamental game-theoretic principles such as targeting the highest threat or using counter-intuitive moves like intentionally missing.",
+  "latency_s": 8.272,
+  "input_tokens": 359055,
+  "output_tokens": 456,
+  "cost_usd": 0.108856,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two papers: Secret Hitler shows adaptive, multi-round strategic behavior with shifting from exploration to exploitation and trust-based reasoning, while GAMA-Bench Battle Royale shows an optimization failure where agents do not target the highest-hit-rate player and miss the benefit of counterintuitive tactics like intentionally missing. It is accurate, comparative, and well synthesized.",
+  "judge_cost_usd": 0.001027,
+  "total_cost_accumulated_usd": 17.7854
+}

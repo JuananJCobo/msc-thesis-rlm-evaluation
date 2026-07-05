@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:19:35.776855",
+  "response": "The eight scenarios are:\n\n1. Guess 2/3 of the Average  \n2. El Farol Bar  \n3. Divide the Dollar  \n4. Public Goods Game  \n5. Diner’s Dilemma  \n6. Sealed-Bid Auction  \n7. Battle Royale  \n8. Pirate Game  \n\nThe authors group them into three categories:\n\n- Cooperative Games: Guess 2/3 of the Average, El Farol Bar, Divide the Dollar  \n- Betraying Games: Public Goods Game, Diner’s Dilemma, Sealed-Bid Auction  \n- Sequential Games: Battle Royale, Pirate Game",
+  "latency_s": 9.425,
+  "input_tokens": 192693,
+  "output_tokens": 126,
+  "cost_usd": 0.145087,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists all eight game-theory scenarios and groups them into the same three categories as the reference answer. The content is complete and conceptually accurate, with only trivial capitalization/wording differences.",
+  "judge_cost_usd": 0.000583,
+  "total_cost_accumulated_usd": 0.4359
+}

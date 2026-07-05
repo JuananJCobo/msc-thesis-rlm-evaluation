@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q08",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T19:48:32.944306",
+  "response": "The AmazonHistoryPrice dataset encompasses 930 popular and real products across 18 categories.",
+  "latency_s": 3.163,
+  "input_tokens": 199547,
+  "output_tokens": 20,
+  "cost_usd": 0.059914,
+  "judge_score": 5,
+  "judge_justification": "The response correctly states both required quantities: 930 products and 18 categories. It is complete and directly answers the question.",
+  "judge_cost_usd": 0.000418,
+  "total_cost_accumulated_usd": 0.7315
+}

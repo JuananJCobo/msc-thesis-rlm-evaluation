@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:20:41.805069",
+  "response": "The two main types of biases are:\n\n1. **Intrinsic bias** from pre-training regularities, including **high-frequency or semantically salient options**.\n2. **Positional bias** from the **placement/order of options in the prompt**.",
+  "latency_s": 11.061,
+  "input_tokens": 192704,
+  "output_tokens": 53,
+  "cost_usd": 0.144766,
+  "judge_score": 4,
+  "judge_justification": "The response correctly identifies the two bias types: intrinsic bias and positional bias. It adds a bit of extra detail about high-frequency/semantically salient options, but this does not change the core answer. The only minor issue is that the reference emphasizes intrinsic biases from pre-training corpora and notes they alone do not fully explain the gap, which the response does not explicitly mention.",
+  "judge_cost_usd": 0.000681,
+  "total_cost_accumulated_usd": 1.307
+}

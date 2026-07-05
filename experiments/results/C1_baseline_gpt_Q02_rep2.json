@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:19:45.697771",
+  "response": "The eight scenarios are grouped into three categories:\n\n**Cooperative Games**\n1. Guess 2/3 of the Average  \n2. El Farol Bar  \n3. Divide the Dollar  \n\n**Betraying Games**\n4. Public Goods Game  \n5. Diner’s Dilemma  \n6. Sealed-Bid Auction  \n\n**Sequential Games**\n7. Battle Royale  \n8. Pirate Game",
+  "latency_s": 9.039,
+  "input_tokens": 192693,
+  "output_tokens": 83,
+  "cost_usd": 0.144893,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists all eight game-theory scenarios and groups them into the same three categories as the reference. Minor capitalization differences do not affect correctness.",
+  "judge_cost_usd": 0.000501,
+  "total_cost_accumulated_usd": 0.5813
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q03",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T16:52:43.157016",
+  "response": "The six main metrics are:\n\n- Survival Time\n- Survival Rate\n- Total Gain\n- Efficiency\n- Inequality\n- Over-usage",
+  "latency_s": 16.856,
+  "input_tokens": 261322,
+  "output_tokens": 32,
+  "cost_usd": 0.196135,
+  "judge_score": 4,
+  "judge_justification": "The response correctly identifies all six metrics and matches the reference conceptually. It omits the specific notation/details for some metrics (e.g., q, Ri for each agent i, and (In)equality), but these are minor wording differences rather than substantive errors.",
+  "judge_cost_usd": 0.000545,
+  "total_cost_accumulated_usd": 7.2899
+}

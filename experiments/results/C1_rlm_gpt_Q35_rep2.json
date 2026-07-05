@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q35",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T20:00:55.573813",
+  "response": "The corpus points to two main families of external scaffolding for strategic reasoning in multi-agent settings:\n\n1. Recursive Level-k / higher-order-belief scaffolding\n- K-Level Reasoning (K-R) explicitly wraps the LLM in a recursive Level-k structure.\n- At each level, the model reasons about what an opponent is likely to do, what the opponent thinks it will do, and what it believes the model thinks, yielding higher-order beliefs.\n- This is the clearest mechanism for forcing explicit theory-of-mind style cognition: opponent mental states are not implicit, but represented through level-indexed recursive prompts/steps.\n- The paper positions this as a multi-stage reasoning trace that increases strategic depth and lets the policy be refined across levels rather than chosen in one shot.\n\n2. Search-based minimax scaffolding with modular opponent modeling\n- PokéChamp uses a minimax tree-search framework for two-player imperfect-information games.\n- It inserts the LLM into three external algorithmic modules: action sampling, opponent modeling, and value-function estimation.\n- These modules help prune the search space, model hidden opponent intentions from history, and evaluate candidate lines under partial observability.\n- The search itself is the structural scaffold: candidate moves are expanded, scored, and backed up through minimax rather than relying on a single direct generation.\n\n3. Iterative policy refinement mechanisms\n- In the negotiation/social-intelligence literature, methods such as Reflection, Refine, and PCoT provide weaker but related scaffoldings.\n- Refine and Reflection use multi-round self-critique / revise loops.\n- PCoT adds an explicit opponent-action prediction step before decision-making.\n- The K-R paper contrasts itself with these baselines by emphasizing recursive opponent-belief modeling, while PokéChamp contrasts with direct action generation by embedding the model in search.\n- Taken together, these methods show a spectrum: direct prompting < explicit prediction of opponent action < self-refinement < recursive higher-order belief modeling < full minimax search with opponent modeling.\n\nOverall, the primary external mechanisms are:\n- recursive level-k reasoning to model nested beliefs,\n- explicit opponent modeling as a separate module,\n- tree search / minimax as the decision scaffold,\n- and iterative reflection/refinement loops to update policies over rounds.\n\nThe literature suggests that standard zero-shot prompting is insufficient because these settings require the model to externalize latent mental-state inference and repeatedly revise decisions under strategic uncertainty; the successful approaches therefore add structure outside the raw LLM: recursion, search, prediction, critique, and module separation.",
+  "latency_s": 35.008,
+  "input_tokens": 69210,
+  "output_tokens": 1617,
+  "cost_usd": 0.059184,
+  "judge_score": 4,
+  "judge_justification": "The response correctly identifies the main external scaffolding mechanisms: recursive level-k / higher-order belief prompting, explicit opponent modeling, search/minimax structure, and iterative refinement loops. It also captures the core synthesis that these methods externalize theory-of-mind and policy updating rather than relying on zero-shot prompting. However, it is somewhat less aligned with the reference’s emphasis on probabilistic graphical-model-based perspective taking and the specific equilibrium-over-levels mechanism, so it is strong but not fully complete.",
+  "judge_cost_usd": 0.001258,
+  "total_cost_accumulated_usd": 5.002,
+  "n_iterations": 14,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C1_gpt/rlm_2026-06-22_20-00-18_78db2c3f.jsonl"
+}

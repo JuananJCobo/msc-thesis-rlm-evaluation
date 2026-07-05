@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q24",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T10:25:27.758059",
+  "response": "In **Game of Thoughts** (Kempinski et al., 2025), **PSROLM** adds the next strategy by:\n1. starting from an initial strategy set \\(X\\),\n2. computing a Nash equilibrium over the current set \\(X_{k-1}\\),\n3. sampling a strategy \\(s_j\\) from that equilibrium,\n4. prompting the LLM to produce responses to \\(s_j\\),\n5. taking the **most frequently returned response** \\(s_w\\),\n6. **adding that strategy to the set**: \\(X_k = X_{k-1} \\cup \\{s_w\\}\\),\n7. recomputing the Nash equilibrium over the expanded set.\n\nSo in PSROLM, the next strategy is **explicitly appended to the strategy pool** as a new pure strategy, and the equilibrium is then recomputed on the enlarged pool.\n\nIn the **LSPO framework for Werewolf** (Xu et al., 2025), expanding the latent space in the next iteration is done differently:\n1. the current free-form discussion actions are first **clustered into a finite latent strategy space**,\n2. CFR is used to optimize a policy in that latent space,\n3. DPO is then used to **fine-tune the LLM to align with the learned latent policy**,\n4. the fine-tuned LLM is used again to **generate a broader distribution of actions**,\n5. these newly generated actions are **re-collected and re-clustered**, thereby **expanding the latent strategy space** for the next iteration.\n\nSo in LSPO, the next iteration does **not** add one best-response strategy directly to a strategy set. Instead, it **expands the latent action space by regenerating language actions from the fine-tuned model and reclustering them**.\n\n**Key contrast:**\n- **PSROLM**: adds a **single most frequent best-response strategy** to an explicit strategy set and recomputes Nash equilibrium.\n- **LSPO**: expands a **latent strategy space** by **re-generating free-form language actions after fine-tuning**, then reclustering them for the next optimization round.",
+  "latency_s": 11.738,
+  "input_tokens": 192721,
+  "output_tokens": 448,
+  "cost_usd": 0.146557,
+  "judge_score": 5,
+  "judge_justification": "The response correctly compares the two mechanisms: PSROLM adds a new strategy by sampling from the current Nash equilibrium, prompting the LLM, selecting the most frequent returned response, appending it to the strategy set, and recomputing equilibrium; LSPO instead expands the latent space by clustering generated actions, using DPO fine-tuning to align the model, then regenerating and reclustering actions for the next iteration. The key contrast is accurately captured and the answer is complete and well-reasoned.",
+  "judge_cost_usd": 0.00119,
+  "total_cost_accumulated_usd": 2.2071
+}

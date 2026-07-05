@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rlm",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q40",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T21:37:46.563852",
+  "response": "The literature evaluates LLM agents in continuous or infinitely repeated games mainly by tracking whether their strategies shift toward stable cooperation, defection, or mixed equilibria over many rounds, and by measuring how quickly and consistently they converge.\n\nKey methodologies used across the papers include:\n\n- Iterated Prisoner’s Dilemma simulations\n  - Example: *Will Systems of LLM Agents Lead to Cooperation: An Investigation into a Social Dilemma*.\n  - LLMs are prompted to generate full strategies, not just single moves.\n  - Researchers then place these strategies into repeated-game populations and study evolutionary dynamics.\n\n- Evolutionary game-theoretic population dynamics\n  - Agents are assigned strategic types such as aggressive, cooperative, or neutral.\n  - The studies simulate repeated interactions across populations and observe which strategies survive or spread.\n  - Adaptability is quantified through changes in relative fitness or success over time.\n\n- Long-horizon strategy rollout / repeated interaction traces\n  - Rather than one-shot decisions, the evaluation follows agent behavior across many rounds.\n  - This lets authors see whether the model learns, locks into a pattern, retaliates, reciprocates, or stabilizes.\n\n- Convergence and stability metrics\n  - The papers assess whether behavior converges to a steady strategic regime.\n  - Common indicators are:\n    - cooperation rate over time,\n    - frequency of defections,\n    - strategy dominance in the population,\n    - equilibrium-like stability across rounds or generations.\n\nWhat the literature suggests:\n\n- LLM agents are not treated as static action predictors; they are evaluated as strategic entities whose behavior may evolve under repeated incentives.\n- Their “learning capacity” is usually inferred indirectly from whether they adapt their strategy in response to prior play and whether this adaptation leads to stable cooperation or exploitation.\n- Different LLMs show distinct strategic biases, meaning some are more prone to cooperative equilibria while others favor aggressive or exploitative dynamics.\n- The main experimental lens is therefore not supervised learning accuracy, but repeated-game trajectory analysis under evolutionary or iterated interaction protocols.\n\nIn short, the field measures adaptability by simulating many rounds or generations of strategic play and then tracking cooperation, defection, population fitness, and equilibrium convergence over time.",
+  "latency_s": 20.36,
+  "input_tokens": 28364,
+  "output_tokens": 853,
+  "cost_usd": 0.025111,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes that LLM agents are evaluated in repeated/continuous strategic settings by tracking behavior over many rounds and assessing convergence, stability, cooperation/defection patterns, and population dynamics. It captures the main experimental families in the literature (iterated Prisoner’s Dilemma, evolutionary population simulations, long-horizon rollouts) and explains how adaptability is inferred from trajectory changes over time. However, it misses some key methodological specifics from the reference, especially the adversarial online-learning/regret framework with adaptive loss sequences and the PSRO-style mixed-strategy evolution toward higher-support distributions. So it is accurate but not fully complete.",
+  "judge_cost_usd": 0.001352,
+  "total_cost_accumulated_usd": 12.619,
+  "n_iterations": 16,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C2_gpt/rlm_2026-06-22_21-37-24_967d8a5e.jsonl"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q37",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T21:25:15.989593",
+  "response": "Prolonged multi-agent interaction creates a tension between preserving relevant history and staying within a fixed memory budget.\n\nTwo broad approaches emerge:\n\n- Raw context accumulation: keeping as much of the interaction history as possible inside the message buffer preserves more detail, but it is limited by the fixed context window. Once the buffer is full, older information must be dropped or compressed. This can leave the agent operating with incomplete information, and as history grows, the model becomes increasingly constrained by finite memory rather than by the actual strategic structure of the game. The result is not necessarily better decision-making; instead, performance becomes more dependent on the model’s stochastic behavior and less on stable long-horizon reasoning.\n\n- History summarization: compressing past game events into shorter representations helps fit long interactions into the available context, but it introduces information loss. That loss can degrade the agent’s ability to track prior commitments, opponent behavior, and latent strategic patterns. In other words, summarization trades memory efficiency for fidelity.\n\nThe main trade-off is therefore:\n\n- Raw accumulation favors detail but quickly runs into hard context limits.\n- Summarization extends the usable horizon but at the cost of losing information.\n\nThis loss of information can produce undesirable behaviors such as echo chambers, self-deception, and deception symbiosis. In adversarial settings, where agents may exploit incomplete or distorted histories, these limitations become especially consequential because explainability and safety are harder to maintain.\n\nSo, extended game histories reveal a core cognitive bottleneck: LLMs can either retain more history or preserve more accuracy, but under fixed context constraints they cannot do both.",
+  "latency_s": 3.727,
+  "input_tokens": 2547,
+  "output_tokens": 323,
+  "cost_usd": 0.003364,
+  "judge_score": 4,
+  "judge_justification": "The response correctly captures the central trade-off: raw history preserves detail but is bounded by context-window limits, while summarization extends usable horizon at the cost of information loss and degraded strategic tracking. It also notes that long histories can still overwhelm planning capacity. However, it is less specific than the reference about the empirical performance degradations (e.g., regret increases under summary-based inputs, raw history better revealing adversarial trends, and the sharp drop in reasoning depth over time), and it adds some less relevant claims. Overall, it is accurate and relevant but not as complete as the reference synthesis.",
+  "judge_cost_usd": 0.001213,
+  "total_cost_accumulated_usd": 11.5574,
+  "chunks": [
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5185
+    }
+  ]
+}

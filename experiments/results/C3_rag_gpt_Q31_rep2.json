@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q31",
+  "level": "synthesis",
+  "rep": 2,
+  "timestamp": "2026-06-22T22:47:25.685791",
+  "response": "The main strategies can be grouped into a few broad ideas:\n\n1. **Use classical search to narrow the decision space**\n   - Methods such as **Alpha-Beta pruning** and **MCTS** reduce the number of actions that must be explored by selectively expanding only the most promising branches.\n   - This makes optimization feasible by avoiding exhaustive enumeration of all moves.\n\n2. **Add deep learning to focus search on high-value regions**\n   - When combined with **deep reinforcement learning**, these search methods can achieve strong play without examining the full action space.\n   - The learned components effectively compress the environment into a much smaller set of strategically relevant choices.\n\n3. **Replace direct action selection with structured agent generation**\n   - Instead of asking an LLM to choose actions directly in a huge action space, the LLM is used to **generate game-playing code**.\n   - The generated bot then operates according to the code’s internal logic, which acts as a compact policy representation rather than a flat action-by-action prompt.\n\n4. **Use self-play / competition among candidate codes**\n   - Rather than optimizing in the entire space at once, candidate strategies are iteratively refined through **competition between codes**.\n   - This game-theoretic filtering compresses the environment by keeping only strategies that survive repeated head-to-head evaluation.\n\n5. **Use game-theoretic solutions to augment strategic decision making**\n   - Some methods apply **game-theoretic reasoning** to guide or constrain choices, which reduces the effective search space by focusing on equilibrium-relevant behavior instead of all possible actions.\n\nOverall, these approaches make computation feasible by **compressing a vast action space into a smaller strategic representation**: either through pruning and search, by learning focused value estimates, by generating executable agent code instead of raw actions, or by iteratively selecting among candidate strategies through self-play.",
+  "latency_s": 3.682,
+  "input_tokens": 2580,
+  "output_tokens": 375,
+  "cost_usd": 0.003622,
+  "judge_score": 2,
+  "judge_justification": "The response identifies some relevant high-level ideas like pruning/search, learned value guidance, and self-play-based refinement, but it does not synthesize the specific literature strategies described in the reference. It misses the key compression mechanisms of latent abstraction for open-ended communication, depth-limited expansion with LLM value functions, and statistical downsampling of low-value actions in structured games like poker. It also introduces less-supported or overly generic claims (e.g., Alpha-Beta pruning, generating game-playing code) that are not the main comparative insight asked for.",
+  "judge_cost_usd": 0.00118,
+  "total_cost_accumulated_usd": 15.1149,
+  "chunks": [
+    {
+      "paper_id": "paper_36",
+      "score": 0.5257
+    },
+    {
+      "paper_id": "paper_36",
+      "score": 0.5256
+    },
+    {
+      "paper_id": "paper_36",
+      "score": 0.5256
+    },
+    {
+      "paper_id": "paper_36",
+      "score": 0.5256
+    },
+    {
+      "paper_id": "paper_36",
+      "score": 0.5256
+    }
+  ]
+}

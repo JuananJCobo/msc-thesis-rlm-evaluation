@@ -1,0 +1,9 @@
+{
+  "status": "SKIPPED_CONTEXT_LIMIT",
+  "subset": "C3",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "query_id": "Q30",
+  "rep": 2,
+  "timestamp": "2026-06-23T17:32:04.451644"
+}

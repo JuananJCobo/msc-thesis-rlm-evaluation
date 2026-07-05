@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q38",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T21:25:21.025961",
+  "response": "In LLM-driven multi-agent environments, social order appears to emerge from repeated interactions in which agents not only optimize immediate outcomes but also respond to the expected behavior of others. Social perception is therefore established through observed patterns of cooperation or defection, allowing agents to infer who is reliable, who is strategic, and which behaviors are socially rewarded.\n\nTrust is not fixed; it is volatile because it depends on whether actions remain consistent over time. When agents behave in ways that align with cooperative norms, trust can accumulate and stabilize interaction. But when actions are noisy, inconsistent, or clearly self-serving, trust can rapidly deteriorate. This makes trust a dynamic relational property rather than a permanent attribute.\n\nNormative behavior is maintained through the pressure of equilibrium formation. In repeated social dilemmas, agents can converge toward either pro-social or anti-social equilibria, and the likelihood of either outcome depends on how individual strategies interact across the system. A key implication is that norms are not merely imposed externally; they are reinforced internally through the structure of the game and the mutual adaptation of agents.\n\nWhen an agent’s underlying objective conflicts with social expectations, it faces a reputational tradeoff. Pursuing narrow self-interest may yield short-term gains but can undermine perceived trustworthiness and reduce future cooperation from others. As a result, agents must navigate between immediate incentive maximization and longer-term group acceptance. In such settings, group consensus emerges as a form of strategic coordination: agents may suppress anti-social tendencies if the cost of social exclusion or failed cooperation outweighs the benefit of defection.\n\nOverall, these systems suggest that LLM agents can participate in reputation-sensitive strategic environments where cooperation is contingent, consensus is fragile, and norm adherence is shaped by both behavioral consistency and the anticipated response of the group.",
+  "latency_s": 3.457,
+  "input_tokens": 2281,
+  "output_tokens": 354,
+  "cost_usd": 0.003304,
+  "judge_score": 4,
+  "judge_justification": "The response gives a coherent synthesis of reputation-sensitive interaction, volatile trust, and norm maintenance in repeated multi-agent settings. It correctly captures that agents infer reliability from observed cooperation/defection, that trust is dynamic and can deteriorate quickly, and that agents face reputational tradeoffs when self-interest conflicts with social expectations. It also addresses group consensus as strategic coordination under social pressure. However, it is somewhat generic and does not explicitly reflect some key theoretical points from the reference, such as role-specific incentives, explicit normative grounding/universalization, or the stronger emphasis on transparency/fairness in human-AI bargaining contexts.",
+  "judge_cost_usd": 0.001228,
+  "total_cost_accumulated_usd": 11.562,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5063
+    }
+  ]
+}

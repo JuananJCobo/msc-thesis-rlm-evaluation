@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q24",
+  "level": "comparison",
+  "rep": 2,
+  "timestamp": "2026-06-21T10:25:37.835096",
+  "response": "In **Game of Thoughts** (PSROLM), the next strategy is added by:\n- prompting the LLM to **respond to a strategy sampled from the current Nash equilibrium** over the existing strategy set \\(X_{k-1}\\),\n- collecting multiple candidate responses,\n- selecting the **most frequent response** among those candidates,\n- **adding that strategy to the support set** \\(X_k = X_{k-1} \\cup \\{s_w\\}\\),\n- and then **recomputing the Nash equilibrium** over the expanded set.\n\nIn **LSPO for Werewolf**, the latent space is expanded by:\n- first **mapping free-form utterances into a finite latent strategy space** via generation and clustering,\n- then **optimizing a policy in that latent space** with CFR,\n- then **fine-tuning the LLM with DPO** to align language outputs to the learned latent policy,\n- and finally using the fine-tuned LLM to **regenerate discussion actions and expand the latent strategy space in the next iteration**.\n\nSo, the key difference is:\n\n- **PSROLM** adds a **new pure strategy directly into the strategy set** based on LLM best-response generation to the **current Nash equilibrium** and then recomputes equilibrium.\n- **LSPO** expands the **representation space of language strategies** by **re-generating and clustering new utterances after policy alignment**, so the next iteration has a broader latent action space to optimize over.\n\n",
+  "latency_s": 9.021,
+  "input_tokens": 192721,
+  "output_tokens": 304,
+  "cost_usd": 0.145909,
+  "judge_score": 5,
+  "judge_justification": "The response accurately compares the two mechanisms: PSROLM generates a best-response strategy from the current Nash equilibrium, selects the most frequent LLM output, adds it directly to the strategy set, and recomputes the equilibrium; LSPO expands the latent strategy space through generation/clustering and DPO-based alignment before using the updated latent space in the next iteration. It captures the key synthesis and the contrast in how new strategies are incorporated.",
+  "judge_cost_usd": 0.001019,
+  "total_cost_accumulated_usd": 2.354
+}

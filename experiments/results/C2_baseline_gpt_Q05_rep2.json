@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q05",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:54:15.577098",
+  "response": "The two main types of biases are:\n\n- **Intrinsic bias** from pre-training regularities, including **high-frequency / semantic-salience bias**\n- **Positional bias** from the **ordering of options in the prompt**",
+  "latency_s": 16.691,
+  "input_tokens": 261338,
+  "output_tokens": 49,
+  "cost_usd": 0.196224,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies the two main bias types: intrinsic bias from pre-training regularities and positional bias from option ordering. This matches the reference answer conceptually and directly.",
+  "judge_cost_usd": 0.000494,
+  "total_cost_accumulated_usd": 8.2725
+}

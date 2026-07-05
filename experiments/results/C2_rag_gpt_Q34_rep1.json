@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q34",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T21:24:45.604681",
+  "response": "Communication limits and algorithmic irrationality together push LLM agents away from the theoretical optimum in a few reinforcing ways.\n\nFirst, when agents do not have full, shared information, they cannot reliably infer opponents’ types or intentions. In repeated settings, that means they only observe limited historical actions and payoffs, while still facing uncertainty about whether the other side is risk-taking, risk-averse, rational, or irrational. Without enough information to distinguish these behavior types, an agent cannot condition its strategy precisely, so it is more likely to choose actions that are safe or reactive rather than payoff-maximizing.\n\nSecond, the discounted payoff structure means present choices matter relative to uncertain future gains. If agents are myopic or if the interaction is effectively perceived as unstable, they may overweight immediate outcomes and underinvest in cooperation or long-term coordination, even when a more patient strategy would yield a better total return.\n\nThird, irrationality on the other side breaks the assumptions needed for equilibrium play. When opponents behave inconsistently or unpredictably, the best-response logic behind the mathematical optimum becomes harder to apply, because the “correct” response depends on stable behavior patterns that may not exist. As a result, LLM agents can incur payoff regret by adapting to noise, misreading intentions, or failing to sustain cooperation.\n\nSo across the evaluated setting, the deviation from the optimum comes from the combination of incomplete information and uncertainty on one side, and imperfectly rational or unstable behavior on the other. Together they prevent reliable inference, weaken strategic coordination, and make equilibrium outcomes difficult to sustain.",
+  "latency_s": 4.063,
+  "input_tokens": 2539,
+  "output_tokens": 315,
+  "cost_usd": 0.003322,
+  "judge_score": 4,
+  "judge_justification": "The response correctly synthesizes the main idea that incomplete communication/information and imperfect rationality push LLM agents away from equilibrium-optimal play. It captures the role of limited information, unstable or irrational opponents, and resulting coordination failures/regret. However, it is somewhat generic and does not reflect several specific study-level findings in the reference, such as cautious extraction limits in shared-resource negotiation, timing-dependent voting shifts in social deduction, or the contrast between overly aggressive vs overly passive play in GTO settings.",
+  "judge_cost_usd": 0.001113,
+  "total_cost_accumulated_usd": 11.5289,
+  "chunks": [
+    {
+      "paper_id": "paper_19",
+      "score": 0.5585
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    },
+    {
+      "paper_id": "paper_19",
+      "score": 0.5584
+    }
+  ]
+}

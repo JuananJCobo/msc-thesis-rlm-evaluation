@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q17",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T11:54:46.156002",
+  "response": "In 'Secret Hitler', LLM agents demonstrate a high degree of strategic depth and social cognition (Hansteen Izora et al., 2025). They exhibit behaviors such as:\n*   **Temporal strategic adaptation:** Agents shift from exploratory behavior in early rounds (seeking information about uncertain actors) to exploitative decision-making in later rounds (leveraging known, trusted collaborators).\n*   **Role-specific trust cycles:** Fascist agents actively build credibility, strategically betray trust, and then work to repair their standing, mirroring human deception tactics. Liberal agents show consistent, upward trust trajectories, reflecting reputational resilience.\n*   **Long-term and implicit planning:** Especially in Fascist roles, agents display a capacity for multi-round strategic planning, including constructing deceptive narratives, leveraging social dynamics, and implicitly coordinating with allies over several rounds.\n*   **Theory of mind and multi-agent inference:** Agents consistently reason about the beliefs, goals, and perceptions of other players, with 85% of decisions incorporating input from at least two other players.\n*   **Sensitivity to group consensus and emotional language:** Agents adapt their behavior based on group sentiment and strategically use emotional expressions to manage perception or build rapport.\n\nThis demonstrates a sophisticated ability to navigate complex social dynamics and plan multiple steps ahead, even without explicit programming for these social behaviors. However, smaller models (GPT-4o-mini) were noted to make irrational admissions of guilt, undermining their deception.\n\nIn contrast, GAMA-Bench agents playing 'Battle Royale' exhibit a clear optimization failure (Huang et al., 2025). Their strategic deficiencies include:\n*   **Ignoring optimal targeting:** Agents \"rarely target[ed] the player with the highest hit rate,\" which is a critical strategic move to eliminate the most dangerous opponent in a survival game.\n*   **Neglecting tactical maneuvers:** Agents \"neglect[ed] to utilize the strategy of 'intentionally missing' shots.\" This tactical option, vital for manipulating opponents into eliminating each other to gain an advantage, was overlooked. For instance, a player might fail to intentionally miss to coerce another player into taking out a third, thus setting up an easier victory.\n\nThis highlights a fundamental limitation in identifying and executing optimal, multi-step tactical reasoning for self-preservation in a sequential game, as opposed to the more nuanced social, adaptive, and deceptive planning observed in the 'Secret Hitler' agents.",
+  "latency_s": 11.805,
+  "input_tokens": 271404,
+  "output_tokens": 499,
+  "cost_usd": 0.082669,
+  "judge_score": 5,
+  "judge_justification": "The response correctly contrasts the two papers: Secret Hitler agents show adaptive, multi-round strategic behavior with shifting from exploration to exploitation and trust-based planning, while GAMA-Bench Battle Royale agents fail to execute the optimal tactic of targeting the highest-hit-rate player and neglect other advanced tactics like intentional misses. It is accurate, relevant, and synthesizes the key comparative insight well.",
+  "judge_cost_usd": 0.001066,
+  "total_cost_accumulated_usd": 13.481
+}

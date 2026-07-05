@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q38",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T22:48:58.615831",
+  "response": "In LLM-driven multi-agent settings, cooperative or anti-social outcomes are treated as emergent collective behaviors rather than just isolated model responses. The work frames these environments through game-theoretic social dilemmas, where the key question is whether agents gravitate toward pro-social or anti-social equilibria.\n\nThe theoretical picture is that social perception and trust are not fixed traits; they are continually shaped by interaction history and by how consistently an agent’s actions match the expected role. Normative behavior is established by repeatedly demonstrating the requested social pattern, and then maintained through the accumulation of those interaction signals. Because the study also examines noisy actions, it treats trust as potentially fragile: execution mistakes can disrupt the appearance of reliable behavior and thereby affect how others interpret the agent’s intentions.\n\nWhen underlying objectives conflict with social expectations, agents face a tension between pursuing their own payoff and preserving their standing within the group. Reputational risk emerges when behavior that is strategically advantageous in the short term may push the system toward anti-social dynamics or reduce the likelihood of sustaining pro-social equilibrium. In that setting, agents navigate group consensus by adapting to the incentives of the dilemma itself: they may align with cooperative norms to preserve stable collective outcomes, or deviate when the structure rewards anti-social choices.\n\nOverall, the synthesis is that norm formation in these systems depends on repeated behavioral consistency, trust is vulnerable to errors and strategic deviation, and group consensus is maintained only when agents’ local choices support a stable shared equilibrium rather than conflicting with social expectations.",
+  "latency_s": 3.758,
+  "input_tokens": 2281,
+  "output_tokens": 303,
+  "cost_usd": 0.003074,
+  "judge_score": 4,
+  "judge_justification": "The response gives a broadly correct synthesis of LLM multi-agent social dynamics: it captures emergent collective behavior, game-theoretic dilemmas, the role of repeated interaction in shaping trust and norms, and the tension between self-interest and social expectations. It also reasonably discusses reputational risk and how agents may conform to preserve group equilibrium. However, it is somewhat generic and misses key theoretical specifics from the reference, especially the stronger emphasis on volatile trust under role-specific incentives, explicit normative grounding via universalization principles, and the human-AI trust fragility/opacity and fairness aspects. Overall, it is accurate but not fully complete.",
+  "judge_cost_usd": 0.001203,
+  "total_cost_accumulated_usd": 15.1698,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5067
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5067
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5066
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5066
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5066
+    }
+  ]
+}

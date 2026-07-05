@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q37",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T21:25:10.668385",
+  "response": "When multi-agent games run for many steps, the main bottleneck is limited context: the agents can only retain a finite portion of the interaction history. That creates a trade-off between completeness and tractability.\n\n- **Raw context accumulation** preserves more of the original dialogue and game state, which helps maintain continuity and reduces the risk of losing important details. But as the history grows, it consumes the available window quickly. Once the buffer is full, older information is pushed out, and the agent’s behavior can start to depend more on the most recent exchanges and on stochastic variation rather than on the full strategic history.\n- **History summarization** helps fit longer interactions into the same window, but it compresses information. That compression necessarily loses detail, and the loss can distort strategic memory. As a result, the agent may become less consistent, less explainable, and more vulnerable to phenomena associated with information loss, such as self-deception or other forms of deceptive interaction.\n\nIn short, **raw accumulation favors fidelity but is limited by fixed context size**, while **summarization extends reach at the cost of information loss and degraded strategic precision**. The underlying constraint is that the agents cannot expand memory beyond the fixed context window, so longer games inevitably force a compromise between retaining detailed history and preserving usable space for ongoing interaction.",
+  "latency_s": 2.733,
+  "input_tokens": 2547,
+  "output_tokens": 267,
+  "cost_usd": 0.003112,
+  "judge_score": 4,
+  "judge_justification": "The response correctly contrasts raw context accumulation with history summarization: raw history preserves fidelity but is constrained by fixed context windows, while summarization extends usable history at the cost of information loss and degraded strategic precision. It captures the core trade-off and the idea that longer histories strain the model’s capacity. However, it misses some specific literature-grounded details from the reference, such as the stronger empirical degradation under summary-based inputs (e.g., regret increases) and the sharper decline in planning depth/reasoning capacity over long games.",
+  "judge_cost_usd": 0.001113,
+  "total_cost_accumulated_usd": 11.5529,
+  "chunks": [
+    {
+      "paper_id": "paper_01",
+      "score": 0.5184
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5184
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5184
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5184
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.5184
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q01",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T17:39:43.673614",
+  "response": "The five games evaluated in the experiments are:\n*   Prisoner’s Dilemma\n*   Stag Hunt\n*   Chicken game\n*   Head-tail game\n*   The battle of sexes",
+  "latency_s": 2.359,
+  "input_tokens": 2547,
+  "output_tokens": 43,
+  "cost_usd": 0.000872,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists all five games from Table 2. The only differences are trivial capitalization/punctuation variations, which do not affect correctness.",
+  "judge_cost_usd": 0.000454,
+  "total_cost_accumulated_usd": 15.0912,
+  "chunks": [
+    {
+      "paper_id": "paper_06",
+      "score": 0.486
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.4837
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.4659
+    },
+    {
+      "paper_id": "paper_01",
+      "score": 0.4655
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4643
+    }
+  ]
+}

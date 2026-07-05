@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "subset": "C3",
+  "system": "baseline",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T21:30:18.899626",
+  "response": "The GAMA-Bench evaluation framework is made up of eight classic game-theory scenarios, which the authors group into three categories:\n\n**I. Cooperative Games**\n*   Guess 2/3 of the Average\n*   El Farol Bar\n*   Divide the Dollar\n\n**II. Betraying Games**\n*   Public Goods Game\n*   Diner’s Dilemma\n*   Sealed-Bid Auction\n\n**III. Sequential Games**\n*   Battle Royale\n*   Pirate Game\n\n(Huang, J.-T. et al., 2025)",
+  "latency_s": 6.065,
+  "input_tokens": 359039,
+  "output_tokens": 124,
+  "cost_usd": 0.108022,
+  "judge_score": 5,
+  "judge_justification": "The response correctly lists all eight game-theory scenarios and groups them into the same three categories as the reference answer. The wording differs only trivially (e.g., capitalization), and it directly answers the question.",
+  "judge_cost_usd": 0.000581,
+  "total_cost_accumulated_usd": 2.6327
+}

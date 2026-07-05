@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q27",
+  "level": "comparison",
+  "rep": 1,
+  "timestamp": "2026-06-21T14:07:42.264538",
+  "response": "The two studies integrate behavioral factors into LLM agents in different ways:\n\n- **EAI framework:** It uses an **a priori emotional injection** approach. Emotions are added **before the game starts and are carried into the model’s decision-making process during the interaction**. The framework describes **three prompting strategies** for this:\n  1. **Emotion prompting**\n  2. **Emotion-conditioned prompting**\n  3. **Emotion simulation prompting**\n\n- **Personality-in-negotiation study:** It uses an **a posteriori extraction** approach. Instead of injecting behavior beforehand, it analyzes the negotiation **after each message is produced** by extracting the **offered price and strategy** from each utterance for evaluation. The methodological tool used for this analysis is a **message-level extraction pipeline**, which classifies the negotiation into **five states**:\n  1. **Initial state**\n  2. **Offer state**\n  3. **Counteroffer state**\n  4. **Concession state**\n  5. **Agreement state**\n\nSo, the first framework embeds emotion into the agent up front, while the second studies behavioral patterns by extracting and classifying them from the dialogue after generation.",
+  "latency_s": 2.153,
+  "input_tokens": 2582,
+  "output_tokens": 249,
+  "cost_usd": 0.003057,
+  "judge_score": 2,
+  "judge_justification": "The response correctly contrasts the broad idea of a priori emotional injection versus a posteriori extraction, but it gets several key details wrong. For the EAI framework, the three prompting strategies are misnamed and the timing is vague rather than clearly stating emotions are injected into the initial system prompt before gameplay. For the negotiation study, it incorrectly describes the method as extracting offered price and strategy with a message-level pipeline, and it gives the wrong five negotiation states instead of the paper’s actual state labels. Overall, it captures the high-level comparison but misses the specific methodological details requested.",
+  "judge_cost_usd": 0.001109,
+  "total_cost_accumulated_usd": 22.0629,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.5082
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.5081
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_17",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.4932
+    }
+  ]
+}

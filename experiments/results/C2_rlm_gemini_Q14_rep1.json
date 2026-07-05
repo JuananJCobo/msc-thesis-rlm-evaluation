@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rlm",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q14",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-23T14:49:36.722033",
+  "response": "According to the study 'Personality Influences on Negotiation Outcomes: A Dialogue State Detector Approach', the five specific negotiation states that the dialogue state detector extracts from each interaction are:\n1. Opening\n2. Exploring\n3. Bargaining\n4. Proposing\n5. Concluding",
+  "latency_s": 20.751,
+  "input_tokens": 13562,
+  "output_tokens": 729,
+  "cost_usd": 0.005891,
+  "judge_score": 1,
+  "judge_justification": "The response does not identify the five negotiation states from the study. It lists different states (Opening, Exploring, Bargaining, Proposing, Concluding) that do not match the reference states (Offer, Ponder, Accept, Deal-break, Chit-chat).",
+  "judge_cost_usd": 0.000616,
+  "total_cost_accumulated_usd": 2.7498,
+  "n_iterations": 6,
+  "log_file": "/content/drive/MyDrive/Colab Notebooks/UTAMED/TFM/experiments/rlm_logs/C2_gemini/rlm_2026-06-23_14-49-14_6968b63e.jsonl"
+}

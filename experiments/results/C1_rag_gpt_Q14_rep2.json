@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C1",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q14",
+  "level": "factual",
+  "rep": 2,
+  "timestamp": "2026-06-20T16:27:09.426447",
+  "response": "The dialogue state detector extracts these five negotiation states:\n\n- Offer\n- Ponder\n- Accept\n- Deal-break\n- Chit-chat",
+  "latency_s": 1.263,
+  "input_tokens": 2402,
+  "output_tokens": 31,
+  "cost_usd": 0.001941,
+  "judge_score": 5,
+  "judge_justification": "The response correctly identifies all five negotiation states: Offer, Ponder, Accept, Deal-break, and Chit-chat. It is complete and directly answers the question, with only trivial formatting differences from the reference.",
+  "judge_cost_usd": 0.000544,
+  "total_cost_accumulated_usd": 4.9756,
+  "chunks": [
+    {
+      "paper_id": "paper_20",
+      "score": 0.5029
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.4846
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.4843
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.477
+    },
+    {
+      "paper_id": "paper_20",
+      "score": 0.4746
+    }
+  ]
+}

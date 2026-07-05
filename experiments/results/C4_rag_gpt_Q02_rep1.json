@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C4",
+  "system": "rag",
+  "model": "gpt-5.4-mini",
+  "model_tag": "gpt",
+  "query_id": "Q02",
+  "level": "factual",
+  "rep": 1,
+  "timestamp": "2026-06-20T22:39:27.436800",
+  "response": "The eight scenarios are:\n\n1. Guess 2/3 of the Average  \n2. El Farol Bar  \n3. Public Goods Game  \n4. Chicken Game  \n5. Battle of the Sexes  \n6. Hawk-Dove Game  \n7. Centipede Game  \n8. Minority Game  \n\nThey are grouped into four categories:\n\n- Cooperative games\n- Coordination games\n- Competitive games\n- Mixed-motive games",
+  "latency_s": 1.261,
+  "input_tokens": 2475,
+  "output_tokens": 88,
+  "cost_usd": 0.002252,
+  "judge_score": 1,
+  "judge_justification": "The response does not match the eight GAMA-Bench scenarios or their three categories. It lists different games and different category groupings, so it is factually incorrect.",
+  "judge_cost_usd": 0.000523,
+  "total_cost_accumulated_usd": 8.8694,
+  "chunks": [
+    {
+      "paper_id": "paper_28",
+      "score": 0.4962
+    },
+    {
+      "paper_id": "paper_08",
+      "score": 0.4745
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4696
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4592
+    },
+    {
+      "paper_id": "paper_28",
+      "score": 0.4528
+    }
+  ]
+}

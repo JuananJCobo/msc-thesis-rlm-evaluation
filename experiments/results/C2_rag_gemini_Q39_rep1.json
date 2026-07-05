@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "subset": "C2",
+  "system": "rag",
+  "model": "gemini-2.5-flash",
+  "model_tag": "gemini",
+  "query_id": "Q39",
+  "level": "synthesis",
+  "rep": 1,
+  "timestamp": "2026-06-22T21:29:06.881076",
+  "response": "Recent literature introduces several prompting methodologies and a novel operational approach to enhance an LLM's ability to adapt to dynamic opponents or fulfill specific gameplay roles.\n\nSpecific prompting techniques include:\n*   **Refine prompt:** This method improved the performance of aggressive strategies without negatively affecting cooperative or neutral approaches.\n*   **Prompts containing game-theoretic language:** These prompts significantly increased ChatGPT-4o's capacity to develop effective aggressive strategies, which could lead to a higher likelihood of aggressive outcomes in systems utilizing this model.\n*   **Prose prompt:** This technique enhanced Claude 3.5 Sonnet's performance in noisy environments, although it also resulted in more uniform behavior across different attitudinal settings.\n\nBeyond specific prompts, a novel operational approach involves having LLMs create entire strategies rather than merely generating individual actions.\n\nThese interventions override baseline behaviors in several ways:\n*   Aggressive strategies are typically at a disadvantage, making systems less likely to converge on aggressive outcomes. However, the Refine prompt and game-theoretic language prompts enhance the viability of these aggressive strategies, counteracting this baseline disadvantage.\n*   LLMs may exhibit inherent cooperative biases, potentially stemming from fine-tuning processes aimed at aligning them with human values. The prompting techniques that improve aggressive capabilities can override this default cooperative inclination.\n*   The shift from generating individual actions to creating comprehensive strategies fundamentally alters the LLM's operational mode, moving beyond simple, reactive responses to enable more complex and adaptive gameplay.",
+  "latency_s": 7.972,
+  "input_tokens": 2586,
+  "output_tokens": 302,
+  "cost_usd": 0.001531,
+  "judge_score": 2,
+  "judge_justification": "The response is only partially aligned with the question. It mentions prompting methods that improve aggressive strategies and a shift from action-level to strategy-level generation, but it misses the key interventions in the reference answer: explicit probabilistic opponent modeling injected into prompts, persona prompting with a 'Game Expert' role, and special operational privileges such as bypassing normal rules (e.g., mulligan exceptions for a DDA). It also introduces vague or unsupported items like 'refine prompt' and 'prose prompt' without clearly connecting them to dynamic opponents or asymmetric gameplay roles.",
+  "judge_cost_usd": 0.001185,
+  "total_cost_accumulated_usd": 11.6278,
+  "chunks": [
+    {
+      "paper_id": "paper_24",
+      "score": 0.5171
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5171
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.5171
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    },
+    {
+      "paper_id": "paper_24",
+      "score": 0.517
+    }
+  ]
+}
