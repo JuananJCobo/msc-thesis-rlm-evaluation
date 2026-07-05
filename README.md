@@ -59,7 +59,8 @@ proyect/
 ├── docs/
 │   └── TFM_Juan_Antonio_Jimenez_Cobo.pdf       # Memoria del trabajo
 ├── experiments/
-│   ├── results/                      # Registros de las ejecuciones de los experimentos            │   ├── rlm_logs/                     # Registros de las trayectorias de razonamiento de los sistemas RLM
+│   ├── results/                      # Registros de las ejecuciones de los experimentos
+│   ├── rlm_logs/                     # Registros de las trayectorias de razonamiento de los sistemas RLM
 │   └── experiment_summary.csv        # Informe de las ejecuciones de los experimentos
 ├── figures/                          # Figuras empleadas en la memoria
 ├── notebooks/                        # Libretas de Google Colab con el código fuente del proyecto
