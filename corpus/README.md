@@ -1,23 +1,30 @@
 # Corpus
 
-Este directorio contiene los informes asociados a la extracción de texto y preprocesamiento del corpus de artículos empleados en la fase experimental del TFM. El listado con los metadatos de los 55 registros analizados puede consultarse en `slr/final/corpus_final_20260415.csv`.
+Este directorio contiene los informes asociados a la extracción de texto y preprocesamiento del corpus de artículos empleados en la fase experimental del TFM, así como los registros que pertenecen a cada subconjunto del corpus (C1, C2, C3 y C4). El listado con los metadatos de los 55 registros analizados puede consultarse en `slr/final/corpus_final_20260415.csv`.
 
 ## Estructura del directorio
 
 ```
 corpus/
 ├── reports/
-│   ├── extraction_report.csv      # Estadísticas de extracción de cada artículo
+│   ├── extraction_report.csv         # Estadísticas de extracción de cada artículo
 │   └── preprocessing_report.csv      # Estadísticas del preprocesamiento de cada artículo
+├── subsets/                          # Registros de cada subconjunto del corpus
+│   ├── subset1_metadata.csv
+│   ├── subset2_metadata.csv
+│   ├── subset3_metadata.csv
+│   └── subset4_metadata.csv         
 └── README.md
 ```
-En el repositorio de trabajo de Google Drive se incluyen adicionalmente las carpetas:
 
-* `corpus/papers/` →  registros descargados en formato .pdf
-* `corpus/raw/` →  archivos .txt con el texto extraído de cada registro
-* `corpus/preprocessed/` →  archivos .json con el texto final preprocesado y algunos metadatos de cada registro
-
-No obstante, no se han incluido en este repositorio por las restricciones de licencia de las editoriales.
+> [!IMPORTANT]
+>En el repositorio de trabajo de Google Drive se incluyen adicionalmente las carpetas:
+>
+>* `corpus/papers/` →  registros descargados en formato .pdf
+>* `corpus/raw/` →  archivos .txt con el texto extraído de cada registro
+>* `corpus/preprocessed/` →  archivos .json con el texto final preprocesado y algunos metadatos de cada registro
+>
+>No obstante, no se han incluido en este repositorio por las restricciones de licencia de las editoriales.
 
 ## Lista de artículos
 
