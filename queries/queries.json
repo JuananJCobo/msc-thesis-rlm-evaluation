@@ -1,0 +1,894 @@
+{
+  "queries": [
+    {
+      "query_id": "Q01",
+      "level": "factual",
+      "topic": "Environment & Dataset Design",
+      "query": "Based strictly on Table 2 (examples of games and their corresponding equilibria) from the article on private deliberation, list the five games evaluated in the experiments.",
+      "relevant_papers": ["paper_01"],
+      "ground_truth": {
+        "answer": "The five games are: Prisoner’s Dilemma, Stag Hunt, Chicken Game, Head-tail game, and The battle of sexes.",
+        "sources": [
+          {
+            "paper_id": "paper_01",
+            "location": "Section 4.2, Table 2",
+            "quote": "Table 2. An example of games and corresponding equilibria"
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q02",
+      "level": "factual",
+      "topic": "Environment & Dataset Design",
+      "query": "What eight classic game-theory scenarios make up the GAMA-Bench evaluation framework? What categories do the authors group them into? ",
+      "relevant_papers": ["paper_08"],
+      "ground_truth": {
+        "answer": "The eight games are classified into three different categories: - Cooperative Games: Guess 2/3 of the Average, El Farol Bar, Divide the Dollar. - Betraying  games: Public Goods Game, Diner’s Dilemma, Sealed-Bid Auction. - Sequential games: Battle royale, Pirate game.",
+        "sources": [
+          {
+            "paper_id": "paper_08",
+            "location": "Section 2",
+            "quote": "2.1 COOPERATIVE GAMES (1) Guess 2/3 of the Average [...] (2) El Farol Bar [...] (3) Divide the Dollar [...] 2.2 BETRAYING GAMES (4) Public Goods Game [...] (5) Diner’s Dilemma [...] (6) Sealed-Bid Auction [...] 2.3 SEQUENTIAL GAMES (7) Battle Royale [...] (8) Pirate Game"
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q03",
+      "level": "factual",
+      "topic": "Performance Metrics",
+      "query": "In the GOVSIM benchmark, what six main metrics are used to evaluate the different qualities of the collective outcome?",
+      "relevant_papers": ["paper_14"],
+      "ground_truth": {
+        "answer": "The GOVSIM benchmark uses six metrics to evaluate collective outcomes: Survival Time, Survival Rate q, Total Gain Ri for Each Agent i, Efficiency u, (In)equality e, and Over-usage o.",
+        "sources": [
+          {
+            "paper_id": "paper_14",
+            "location": "Section 2.4",
+            "quote": "In this section, we introduce metrics that measure different qualities of the collective outcome [...] Survival Time [...] Survival Rate q [...] Total Gain Ri for Each Agent i [...] Efficiency u [...] (In)equality e [...] Over-usage o"
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q04",
+      "level": "factual",
+      "topic": "Algorithmic Architecture",
+      "query": "What statistical distribution is used as both prior and posterior model to incorporate Bayesian inference into LLM agent decisions in infinitely repeated games?",
+      "relevant_papers": ["paper_19"],
+      "ground_truth": {
+        "answer": "The beta distribution is used as both the prior and posterior to incorporate Bayesian inference into LLM agent decisions in infinitely repeated games.",
+        "sources": [
+          {
+            "paper_id": "paper_19",
+            "location": "Abstract",
+            "quote": "Bayesian inference is incorporated by providing probabilistic information to assist LLMs in their decision-making process, using the beta distribution as both the prior and posterior for consistency."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q05",
+      "level": "factual",
+      "topic": "Biases & Limitations",
+      "query": "According to the study on the Rock-Paper-Scissors game, what are the two main types of biases that cause the 'cognition-behavior gap' in LLM randomness?",
+      "relevant_papers": ["paper_10"],
+      "ground_truth": {
+        "answer": "The study identifies two main types of biases causing the cognition-behavior gap in LLM randomness. First, intrinsic biases from pre-training corpora, which alone fail to fully explain the gap. Secondly, positional bias, which exerts a significant influence on stochastic decision-making.",
+        "sources": [
+          {
+            "paper_id": "paper_10",
+            "location": "Introduction",
+            "quote": "We establish two insightful findings: (1) Intrinsic biases in pre-training corpora alone fail to explain the gap. We first examine whether LLM choice reflects token frequencies in their training data, but we found a clear mismatch-most LLMs over-selected rock despite paper being most common in corpora. Empirical results show that LLMs continue to exhibit pronounced choice skews, confirming that corpus-level intrinsic biases alone cannot explain the cognition–behaviour gap in LLM stochastic decision-making. (2) Positional bias exerts a significant influence. By removing the semantic bias and lexical frequency bias introduced by the tokens, we are the first to isolate pure positional bias in stochastic decision-making."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q06",
+      "level": "factual",
+      "topic": "Algorithmic Architecture",
+      "query": "What exactly does the 'OG-Narrator' method proposed to improve Buyer role performance in bargaining tasks consist of?",
+      "relevant_papers": ["paper_16"],
+      "ground_truth": {
+        "answer": "The OG-Narrator method consists of two components. The Offer Generator (OG) calculates the Buyer’s offer prices using linear interpolation, producing factors escalating from 0.5 to 1 times the budget to generate a new offer price in each turn t following the formula p=(0.5+0.5t/tm)B. If the Seller’s offer is is higher than p, the OG triggers a new BUY Action; otherwise, it chooses to deal. Then, the OG-Narrator uses the original agent as an LLM Narrator to generate the natural language response, or ‘Talk’, using the Action along with the session history.",
+        "sources": [
+          {
+            "paper_id": "paper_16",
+            "location": "Section 6.1",
+            "quote": "As seen in Figure 6, OG-Narrator deploys an Offer Generator (OG) to help generate prices for the Buyer’s offers and let the LLM generate natural language sentences based on given offers. The deterministic Offer Generator first produces factors escalating from 0.5 to 1 using linear interpolation, and then it multiplies the budget and one of the factors to get a new offer price p = (0.5+0.5t/tm)B in each turn t. After receiving the Seller’s offer, if the offer’s price is still higher than p, the Buyer proposes a new BUY Action Ab with the price p; otherwise, the Buyer chooses to deal. Moreover, OG-Narrator employs the original agent as an LLM Narrator, to generate Talk for Buyer based on an Action and the session history, Talkb = LLM(I, Ab). Consequently, OG-Narrator frees the LLM from generating Actions and lets LLM only focus on natural language."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q07",
+      "level": "factual",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "Based on the study proposing the K- framework to establish higher-order beliefs, define the concept of 'K-level thinking'. In your definition, specify how an agent reasons at level 1 (first-level) compared to how it reasons at level 2 or higher.",
+      "relevant_papers": ["paper_05"],
+      "ground_truth": {
+        "answer": "K-level thinking consists of a classical concept in behavioral economics and game theory that categorizes reasoning into varying depths of strategic thought. It involves predicting other’s actions while recursively considering their beliefs about one own’s actions. Regarding the levels of reasoning, an agent in level 1 (first-level thinking) responds directly to the environment, while at level 2 or higher, the agent considers the thinking of others at the immediate preceding level.",
+        "sources": [
+          {
+            "paper_id": "paper_05",
+            "location": "Introduction",
+            "quote": "K-level thinking, a classical concept in behavioral economics and game theory, categorizes reasoning into varying depths of strategic thought. It involves not only predicting others’ actions but also considering their beliefs about one’s actions, and even further layers of recursive thinking [...] In first-level thinking, agents respond directly to the environment. In second-level thinking, agents consider the first-level thinking of others. This process continues iteratively, with agents forming higher order beliefs based on assumptions about others’ thoughts."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q08",
+      "level": "factual",
+      "topic": "Environment & Dataset Design",
+      "query": "What is the exact size (in number of products and number of categories) of the AmazonHistoryPrice dataset collected for bargaining evaluations? ",
+      "relevant_papers": ["paper_16"],
+      "ground_truth": {
+        "answer": "The dataset AmazonHistoryPrice collected for the Bargaining task features 930 popular and real products based on Amazon’s price history, encompassing 18 categories.",
+        "sources": [
+          {
+            "paper_id": "paper_16",
+            "location": "Introduction",
+            "quote": "(i) This work formally formulated the Bargaining task for LLM agents and collected a dataset for the Bargaining task, AmazonHistoryPrice, based on Amazon’s price history, encompassing 18 categories, featuring 930 popular and real products. "
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q09",
+      "level": "factual",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "In the evaluation of the Secret Hitler game, what strategic behavior transition did LLM agents exhibit when moving from the early rounds to the final rounds of the game?",
+      "relevant_papers": ["paper_02"],
+      "ground_truth": {
+        "answer": "The authors report a shift in the LLM behavior from the early rounds to  the final rounds of the game. Early rounds were characterised by  an exploratory behavior, with players probing uncertain actors. This shifted to exploitative decision-making in the final rounds, with players trying to collaborate with familiar and trusted actors.",
+        "sources": [
+          {
+            "paper_id": "paper_02",
+            "location": "Introduction",
+            "quote": "One of the earliest strategic adaptations among LLM agents was a shift from exploratory behavior to exploitative decision-making—a pattern that closely mirrors human play in hidden-role games. Early rounds were marked by probing uncertain actors, while later rounds favored familiar, trusted collaborators."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q10",
+      "level": "factual",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "In the experiment on the traditional Vietnamese game Ô Ăn Quan, what are the three categories into which the reasoning trace of the agents is qualitatively classified?",
+      "relevant_papers": ["paper_15"],
+      "ground_truth": {
+        "answer": "The three categories into which the reasoning trace of the agents is classified are: SHORT TERM GAIN, LONG TERM STRATEGY, or AMBIGUOUS.",
+        "sources": [
+          {
+            "paper_id": "paper_15",
+            "location": "Section 5.D",
+            "quote": "During each game, we collect the step-by-step reasoning produced by the agents. These reasoning traces are then classified using the Gemini-2.0-Flask [5] model in a zero-shot setting into one of three categories: SHORT TERM GAIN, LONG TERM STRATEGY, or AMBIGUOUS."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q11",
+      "level": "factual",
+      "topic": "Algorithmic Architecture",
+      "query": "What are the three main steps or components that make up each iteration of the 'Latent Space Policy Optimization (LSPO)' framework used to train agents in the Werewolf game?",
+      "relevant_papers": ["paper_09"],
+      "ground_truth": {
+        "answer": "Each iteration of the Latent Space Policy Optimization (LSPO) framework consists of three components: Latent space optimization, which generates language actions with the LLM and clusters them into a finite latent strategy space; policy optimization in latent space, which applies game-theoretic methods to an abstract version of the original game to learn latent space policy; and latent space expansion, which generates new strategies to expand the latent strategy space with a fine-tuned LLM to align with the latent space policy.",
+        "sources": [
+          {
+            "paper_id": "paper_09",
+            "location": "Section 2.1 Figure 1",
+            "quote": "Overview of the Latent Space Policy Optimization (LSPO) framework. Each iteration consists of three components. (1) Latent space construction: generate language actions with the LLM and cluster the vast language action into a finite latent strategy space. (2) Policy optimization in latent space: reformulate the original game as an abstracted game and apply game-theoretic methods to learn latent space policy. (3) Latent space expansion: fine-tune the LLM to align with the latent space policy and generate new strategies to expand the latent strategy space."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q12",
+      "level": "factual",
+      "topic": "Environment & Dataset Design",
+      "query": "To analyze how open-ended dialogue supports cooperation in the GOVSIM benchmark, the study categorizes LLM interactions into three high-level clusters. What are these three main clusters, and what specific subcategories does each one contain according to the proposed taxonomy? ",
+      "relevant_papers": ["paper_14"],
+      "ground_truth": {
+        "answer": "To analyze open-ended dialogue, interactions are categorized into three high-level clusters, each containing specific subcategories based on the proposed taxonomy: 1. Information: includes Information Sharing, Problem Identification, and Solution Proposing. 2. Negotiation: includes Persuasion, Consensus Seeking, and Expressing Disagreement. 3. Relational: includes Excusing Behavior and Punishment.",
+        "sources": [
+          {
+            "paper_id": "paper_14",
+            "location": "Section 3.6",
+            "quote": "To support interpretability, we categorize conversations into three high-level clusters: information sharing, negotiation, and relational interactions using the following taxonomy: 1. Information: (a) Information Sharing: disseminating facts among participants. (b) Problem Identification: highlighting challenges that require collective attention and resolution. (c) Solution Proposing: offering ideas or actions to address identified issues. 2. Negotiation: (a) Persuasion: attempting to influence others to achieve a desired outcome. (b) Consensus Seeking: aiming to align group members on a decision or action plan. (c) Expressing Disagreement: articulating opposition to proposals or existing conditions, with or without offering alternatives. 3. Relational: (a) Excusing Behavior: justifying one’s actions or decisions, especially when they deviate from group norms or expectations. (b) Punishment: imposing consequences for perceived wrongdoings or failures to adhere to norms."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q13",
+      "level": "factual",
+      "topic": "Biases & Limitations",
+      "query": "Which language model family demonstrated 'hallucination' problems when attempting to structure teams in the Pokémon VGC AI environment? ",
+      "relevant_papers": ["paper_11"],
+      "ground_truth": {
+        "answer": "According to the authors, Mistral models achieved low performance, close to the base versions, given their inability to generate  a structured response. This effect has been apparently caused by generated hallucinations, such as forming teams with Pokemon outside the roster or incomplete teams with less than 3 members, regardless of the pre-temperature settings during preliminary experimentation.",
+        "sources": [
+          {
+            "paper_id": "paper_11",
+            "location": "Section V. Results",
+            "quote": "Mistral models have operated with very low performance and close to the base versions due to their lack to give a properly structured response. Apparently, this has occurred due to the effect of generated hallucinations (e.g., forming teams with Pokemon outside the roster or incomplete teams of less than 3 members) regardless of the pre-temperature settings during preliminary experimentation."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q14",
+      "level": "factual",
+      "topic": "Algorithmic Architecture",
+      "query": "According to the study investigating the influence of personality traits on negotiation outcomes, what are the five specific negotiation states that the dialogue state detector extracts from each interaction?",
+      "relevant_papers": ["paper_20"],
+      "ground_truth": {
+        "answer": "The five negotiation states that the dialogue state detector extracts from each interaction are as follows: 1. Offer: the agent offers a price. 2. Ponder: the agent considers whether to accept or reject the other agent’s offer. 3. Accept: the agent accepts the offer. 4. Deal-break: the agent rejects the last offer or walks away from the negotiation. 5. Chit-chat: the agent brings up topics that have nothing to do with the negotiation.",
+        "sources": [
+          {
+            "paper_id": "paper_20",
+            "location": "Section 3.3",
+            "quote": "The negotiation state st is one of the following: • Offer: the agent makes a price offer. • Ponder: the agent considers whether to accept or reject the other agent’s offer. • Accept: the agent accepts the current offer. • Deal-break: the agent refuses the last offer or walks away from the negotiation. • Chit-chat: the agent engages in chatting that is not directly related to the negotiation, such as greetings."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q15",
+      "level": "factual",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "In the article evaluating LLM negotiation capabilities in scenarios such as the Ultimatum Game, describe the negotiation styles and proposal strategies exhibited by the evaluated models.",
+      "relevant_papers": ["paper_04"],
+      "ground_truth": {
+        "answer": "According to the study, the evaluated models exhibit distinct negotiation styles and proposal strategies. Claude 3 Opus adopts an assertive proposer strategy, driving harder bargains when in control to achieve high utilities (e.g., 0.78 vs  GPT-4o), but tends to concede and back down when acting on defense as a responder (e.g., 0.17 vs. GPT-4o). GPT-4o acts as a moderate negotiator, displaying a balanced behavior across roles by offering and accepting fair deals. Finally, Llama 3.1 8B exhibits consistent and predictable behavior across different scenarios, often opting to split resources near the theoretical fairness point (e.g., opting for 70/30 or 60/40 splits).",
+        "sources": [
+          {
+            "paper_id": "paper_04",
+            "location": "Results - Ultimatum Game Analysis",
+            "quote": "Claude 3 Opus adopted assertive proposer strategies, achieving high utilities (e.g., 0.78 vs. GPT-4o) but conceding as a responder (e.g., accepting 0.17 against GPT-4o). GPT-4o displayed balanced behavior across roles. Llama 3.1 8B exhibited consistent behavior, often splitting resources near the theoretical fairness point. We observed in Figure 4 that Claude 3 tends to drive harder bargains when in control but backs down when on defense. GPT-4o is a moderate negotiator that offers and accepts fair deals. Llama 3.1 8B acts predictably across scenarios, often opting for 70/30 or 60/40 splits."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q16",
+      "level": "factual",
+      "topic": "Performance Metrics",
+      "query": "Based on the results from the article on the MAgIC framework, identify which model has the best Win Rate and which has the worst. Once both models are identified, provide their exact win rates along with the win rate obtained by the Claude 2 model.",
+      "relevant_papers": ["paper_03"],
+      "ground_truth": {
+        "answer": "Based on the results from the MAgIC framework, the model with the best Win Rate is GPT o1 with an exact rate of 62.1%, while the model with the worst Win Rate is Llama-2-70B with 26.5%. Additionally, the exact win rate obtained by the Claude 2 model is 34.0%.",
+        "sources": [
+          {
+            "paper_id": "paper_03",
+            "location": "Section 5.1 Table 1",
+            "quote": "[Table 1] Win Rate results: GPT o1: 62.1%, GPT-4-turbo: 57.2%, GPT-4: 53.3%, GPT-3.5-turbo: 39.3%, Claude 2: 34.0%, PaLM 2: 33.3%, Cohere: 27.3%, Llama-2-70B: 26.5%."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q17",
+      "level": "comparison",
+      "topic": "Behavior & Strategic Analysis",
+      "query": "Contrast the strategic behavior documented in the final rounds of 'Secret Hitler’ with the optimization failure of GAMA-Bench agents when playing 'Battle Royale' (where they ignore targeting the player with the highest hit rate).",
+      "relevant_papers": ["paper_02", "paper_08"],
+      "ground_truth": {
+        "answer": "According to the studies, there is a clear contrast in strategic behavior. In the final rounds of Secret Hitler, LLM agents demonstrate successful strategic adaptation by shifting from exploratory behavior to exploitative decision-making. They dynamically update their trust models, favoring familiar, trusted collaborators, and leverage known quantities. In contrast, agents playing Battle Royale in the GAMA-Bench framework exhibit a strategic optimization failure. They fail to execute the optimal strategy by rarely targeting the player with the highest rate and neglecting to use advanced tactics like  intentionally missing shots, opting to employ suboptimal strategies that can even result in self-elimination.",
+        "sources": [
+          {
+            "paper_id": "paper_02",
+            "location": "Section 4.1.1",
+            "quote": "One of the earliest strategic adaptations among LLM agents was a shift from exploratory behavior to exploitative decision-making—a pattern that closely mirrors human play in hidden-role games. Early rounds were marked by probing uncertain actors, while later rounds favored familiar, trusted collaborators [...] Like human players, agents shifted from testing unknowns to leveraging known quantities as rounds progressed. These patterns demonstrate that LLM agents, like human players, dynamically update trust models and adapt their strategies over time."
+          },
+          {
+            "paper_id": "paper_08",
+            "location": "Section 3.3",
+            "quote": "Our observations reveal: (1) Unlike our expectations, agents rarely target the player with the highest hit rate. (2) Agents neglect to utilize the strategy of “intentionally missing.” For example, in round 19, with players 7, 8, and 10 remaining, it was player 7’s turn to act. The optimal strategy for player 7 would have been to intentionally miss the shot, thereby coaxing player 8 into eliminating player 10, enabling player 7 to target player 8 in the following round for a potential victory. Instead, player 7 opted to target player 10, resulting in player 8 firing upon itself."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q18",
+      "level": "comparison",
+      "topic": "Algorithmic Architecture",
+      "query": "Analyze and compare the architecture of 'PokeHit', where the LLM analyzes battle logs to select the team (Macro-strategy), against the architecture of 'PokéChamp', which uses the LLM for three specific components in the minimax search tree (Micro-strategy). What responsibilities does the LLM replace in each bot?",
+      "relevant_papers": ["paper_11", "paper_12"],
+      "ground_truth": {
+        "answer": "There is a clear distinction in how both architectures integrate LLMs. In PokeHit, the LLM is incorporated during the simulation phase of Monte Carlo algorithm. Its main responsibility is to analyze logs from previous  battles, the used teams, and the complete roster, and generate a new team based on that information, making the LLM-chosen team the return value of the MCTS algorithm. On the other hand, PokéChamp integrates the generalist capacities of the LLM to enhance minimax tree search. Specifically, the LLM replaced three key modules: (1) player action sampling, (2) opponent modelling, and (3) value function estimation, which enables the agent to reduce the search space and address partial observability using gameplay history and human knowledge.",
+        "sources": [
+          {
+            "paper_id": "paper_11",
+            "location": "Section IV (B)",
+            "quote": "The main idea of PokeHit is to delegate the reasoning of the team policy to the LLM. To do so, the model is incorporated during the simulation phase of Monte Carlo, receiving a log from the last battle executed during the expansion phase as well as the used team in that battle and the complete roster of Pokemon for it to be able to select a new team.With each simulated battle, a new node on the tree with a new log is generated and given to the LLM to analyze, so the model then generates a new team based on the logs and the shared roster. Then, the model returns a list of indexes from the roster, and a new team is selected and added to a new node which will be used in the backpropagation phase, making the LLM chosen team the return value of the MCTS algorithm."
+          },
+          {
+            "paper_id": "paper_12",
+            "location": "Introduction",
+            "quote": "PokéChamp leverages the generalist capabilities of LLMs to enhance minimax tree search. Specifically, LLMs replace three key modules: (1) player action sampling, (2) opponent modeling, and (3) value function estimation, enabling the agent to effectively utilize gameplay history and human knowledge to reduce the search space and address partial observability."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q19",
+      "level": "comparison",
+      "topic": "Environment & Dataset Design",
+      "query": "Compare the technique of grouping similar boards into textures used in PokerBench to handle the vastness of the post-flop game, against the mapping and clustering technique used in LSPO (Werewolf) to group free-form dialogue actions into finite latent strategies.",
+      "relevant_papers": ["paper_09", "paper_13"],
+      "ground_truth": {
+        "answer": "Both studies employ dimensionality reduction techniques to handle vast spaces, but they operate on completely different domains. In PokerBench, the number of possible post-flop boards is managed by grouping them into 11 classes called 'textures' that cover the most common flop situations. From these textures, an equal number of flops are randomly sampled, and turn cards are then selected to cover the most new ground in each scenario. In contrast, the LSPO framework handles the infinite free-form text space of dialogue actions by first embedding each action into a vector representation, using 'text-embedding-3-small' to capture semantic context. Then, a k-means clustering algorithm is applied to partition these embeddings into k groups, each representing a finite, discrete latent strategy.",
+        "sources": [
+          {
+            "paper_id": "paper_09",
+            "location": "Section 3.1.1",
+            "quote": "To transform them into a discrete latent strategy space, we embed each discussion action into a vector representation using an embedding model such as “text-embedding-3-small” that captures its semantic and contextual information. We then apply a simple k-means clustering algorithm to partition the embedded utterances into k clusters, where each cluster represents a distinct latent strategy. Clustering reduces the infinite free-form text space to a finite set of abstract strategies, paving the way for sub- sequent game-theoretic optimization. By interpreting each cluster as a latent action, we can more efficiently search for and optimize strategic policies with minimal sacrifice of exploration of language space."
+          },
+          {
+            "paper_id": "paper_13",
+            "location": "The POKERBENCH Benchmark - Board selection",
+            "quote": "It is impossible to evaluate our model on that many boards, which is why we group the boards into 11 classes, called textures. These board textures cover the most common situations on the flop. We randomly sample an equal number of flops from each of the textures to create the dataset of boards on which the game is evaluated. Then to select the turn cards for each scenario, we select cards that would continue to cover the most new ground."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q20",
+      "level": "comparison",
+      "topic": "Performance Metrics",
+      "query": "Compare the use of 'Regret' to measure optimality against an adversary in the paper Do LLM Agents Have Regret? with the 'Score/Total Points' metric used to validate the success of long-term cooperation in infinitely repeated games with Bayesian inference.",
+      "relevant_papers": ["paper_07", "paper_19"],
+      "ground_truth": {
+        "answer": "These two metrics measure optimality and success in different ways. Regret is a core metric in decision-making that measures how “sorry” the decision-maker is in retrospect for not following the best prediction in hindsight. It provides a quantitative way to measure an agent's robustness against arbitrary and adversarial environments, where the long-run interaction of no-regret learners leads to a certain equilibrium. In contrast, 'Score' refers to the absolute payoffs the models accumulate during the game. Instead of measuring retrospective regret against an adversary, the 'Score' metric validates the success of long-term cooperation by comparing the accumulated payoffs against specific theoretical benchmarks: the Mixed Nash Equilibrium and the Pareto Optimal.",
+        "sources": [
+          {
+            "paper_id": "paper_07",
+            "location": "Introduction",
+            "quote": "Regret, on the other hand, has been a core metric in (online) decision-making. It measures how “sorry” the decision-maker is, in retrospect, not to have followed the best prediction in hindsight. It provides not only a sensible way to evaluate the sophistication level of online decision-makers, but also a quantitative way to measure their robustness against arbitrary (and possibly adversarial) environments. More importantly, it inherently offers a connection to modeling and analyzing strategic behaviors: the long-run interaction of no-regret learners leads to certain equilibrium when they repeatedly play games."
+          },
+          {
+            "paper_id": "paper_19",
+            "location": "Section III (D)",
+            "quote": "Score refers to the payoffs that models get during the game. We use Mixed Nash Equilibrium (Mixed NE) and Pareto Optimal to be our benchmarks. Mixed NE refers to the equilibrium where players choose a probability distribution over possible strategies and Pareto Optimal indicates a scenario where it is impossible to make any one individual better off without making at least one individual worse off."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q21",
+      "level": "comparison",
+      "topic": "Algorithmic Architecture",
+      "query": "Compare the way MAgIC injects belief tracking to reason about others, against the methodology of the EAI framework, which injects explicit emotional prompts prior to requiring an economic decision in the Dictator Game.",
+      "relevant_papers": ["paper_03", "paper_17"],
+      "ground_truth": {
+        "answer": "Both frameworks propose methodologies to influence LLM decision-making via prompt injection, but they target different aspects of reasoning. The MAgIC framework focuses on cognitive enhancement by injecting belief tracking through a Probabilistic Graphical Model (PGM). It utilizes a two-hop understanding mechanism where the agent analyzes situations from its own perspective and by standing in other agents' shoes.  Decisions are then conditioned dynamically on both this PGM and the game contexts. The EAI framework focuses on emotional influence by injecting predefined emotions (anger, sadness, happiness, disgust, and fear) into the initial system prompt before gameplay begins. To evaluate how these emotions affect decisions, the EAI framework uses three specific prompting strategies: a 'Simple' strategy with no added context, a 'Co-player-based' strategy that connects the emotion directly to the interacting person, and an 'External-based' strategy where emotions are triggered by external factors.",
+        "sources": [
+          {
+            "paper_id": "paper_03",
+            "location": "Section 4.1",
+            "quote": "We design the PGM structure in a two-hop understanding mechanism in which the agent analyzes from its own perspective and perspective when it stands in other agents’ shoes."
+          },
+          {
+            "paper_id": "paper_03",
+            "location": "Section 4.2",
+            "quote": "Our PGM-Aware Agent makes decisions conditioned both on the PGM and game contexts, which can be formulated as: P(bi) = LLM(bi|Pdecision, B1, B2, B3, Ti−1), where Pdecision is the prompt to guide the LLM to make a decision given both PGM and context in the next step."
+          },
+          {
+            "paper_id": "paper_17",
+            "location": "Section 3",
+            "quote": "We inject predefined emotions into the LLMs before gameplay. These emotions, combined with the game description, constitute the initial system prompt presented to the LLM at the beginning of the game. We focus on five basic emotions: ‘anger’, ‘sadness’, ‘happiness’, ‘disgust’, and ‘fear’. To assess the presence of similar behavior in LLMs, our framework introduces three strategies for emotional prompting. “Simple” strategy injects an emotional state without additional context. The “Co-player-based” strategy connects the aroused emotion to the person the model interacts with, and the “External-based” strategy introduces emotions prompted by external factors."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q22",
+      "level": "comparison",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "Compare how GOVSIM isolates and measures the sub-skill of calculating the 'sustainability threshold' assuming equality among players, against how evaluators in Ô Ăn Quan extract reasoning depth by purely counting the number of planned steps.",
+      "relevant_papers": ["paper_14", "paper_15"],
+      "ground_truth": {
+        "answer": "Both studies evaluate specific cognitive capabilities of LLMs but employ entirely different isolation and measurement techniques. In the GOVSIM benchmark, the sub-skill of calculating the 'sustainability threshold'—the maximum resources extractable without diminishing the future stock— assuming all participants harvest equally is isolated and measured by testing the models on 150 problems created from a template with procedurally generated values, computing their exact accuracy against the ground truth answers. In contrast, the evaluators in the Ô Ăn Quan game extract reasoning depth by purely measuring the number of steps generated per move by the agent across different architectures, observing a consistent decline in this planning depth as the game advances from early rounds to the mid and late stages.",
+        "sources": [
+          {
+            "paper_id": "paper_14",
+            "location": "Section 2.3",
+            "quote": "This threshold represents the maximum resources that can be extracted at time t without diminishing the resource stock at time t+1, considering the future resource growth multiplier g. Formally, the sustainability threshold is given by the function f : N → N and is defined as follows: f(t) = max ({x | g (h(t) − x) ≥ h(t)})."
+          },
+          {
+            "paper_id": "paper_14",
+            "location": "Section 3.7",
+            "quote": "Since we observed significant heterogeneity in the emergence of sustainable cooperation across LLM models, we next investigated how basic LLM capabilities relate to success in GOVSIM. We test each LLM capabilities on four sub-skills: [...] (c) accurate calculation of the sustainability threshold based on the GOVSIM state under the direct assumption that all participants harvest equally [sustainability threshold (assumption)], [...] Each sub-skill test consists of 150 problems created from a template with procedurally generated values. For each sub-skill test, we compute the accuracy against the ground truth answer."
+          },
+          {
+            "paper_id": "paper_15",
+            "location": "Section V (C)",
+            "quote": "the planning depth—measured as the number of steps generated per move—across different LLM architectures. [...] we also observe a consistent decline in planning depth as the game progresses. Across all three models, early rounds (Rounds 1–5) tend to exhibit the highest number of steps per move, often exceeding 100 steps for the larger models. However, as the game advances into the mid (Rounds 6–15) and late stages (Rounds 16–25), the number of generated steps significantly decreases."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q23",
+      "level": "comparison",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "Compare the results documented in AmazonHistoryPrice using 'OG-Narrator' with the unaligned model Phi-2 against the results from EAI using the uncensored model OpenChat-7b, which showed a much higher propensity to cooperate/accept offers compared to strongly RLHF-aligned models such as Llama-2.",
+      "relevant_papers": ["paper_16", "paper_17"],
+      "ground_truth": {
+        "answer": "In both studies, non-RLHF-aligned models show high deal and cooperation rates, but in different conditions. In the AmazonHistoryPrice evaluation, the unaligned and non-fine-tuned Phi-2 model initially exhibited low valid and deal rates, so much that it could not play the Buyer role in the Bargaining task. However, after applying OG-Narrator, the Phi-2 model drastically increases both valid and deal rates, making it a reliable agent despite not being aligned. On the other hand, in the EAI framework, the  uncensored model OpenChat-7b shows the highest propensity to collaborate, frequently adopting the “Cooperator” strategy. It exhibits notably high acceptance rates—indicating a potential over-tolerance for lower offers— compared to strongly RLHF-aligned models such as LLaMA-2 70b, which displayed a much stricter threshold for offer acceptance.",
+        "sources": [
+          {
+            "paper_id": "paper_16",
+            "location": "Section 6.3",
+            "quote": "Among all models, only Phi-2 has not been fine-tuned for chat nor aligned through RLHF. [...] its valid rate and deal rate are so low that unaligned Phi-2 cannot effectively play the Buyer role in the Bargaining task. However, applying OG-Narrator to Phi-2 dramatically increases the valid rate by 19 times and the deal rate by 117 times, making the Phi-2 agent much more reliable than before"
+          },
+          {
+            "paper_id": "paper_17",
+            "location": "Section 5.3",
+            "quote": "In contrast, the OpenChat-7b model shows the highest cooperation, frequently adopting the “Cooperator” strategy."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q24",
+      "level": "comparison",
+      "topic": "Algorithmic Architecture",
+      "query": "Compare how the generation and addition of the next strategy (best response to the Nash equilibrium) is implemented in the PSROLM algorithm from the article 'Game of Thoughts', against the process of expanding the latent space in the next iteration of the LSPO framework applied to the Werewolf game.",
+      "relevant_papers": ["paper_06", "paper_09"],
+      "ground_truth": {
+        "answer": "Both frameworks iteratively generate new strategies to expand their search space, but they employ different methods. In the PSROLM algorithm ('Game of Thoughts'), the LLM is prompted to respond to a strategy selected at random from the previous level's mixed strategy. The strategy that is returned most frequently by the LLM is then added to the existing strategy set, and a new Nash equilibrium is computed over this updated set to obtain the next mixed strategy. In contrast, the LSPO framework expands the latent space by first fine-tuning the LLM via Direct Preference Optimization (DPO) to align its open-ended language outputs with the near-optimal strategies. These enhanced capacities are then used to expand the latent space by repeating the latent strategy generation and clustering procedures.",
+        "sources": [
+          {
+            "paper_id": "paper_06",
+            "location": "Section 2.1",
+            "quote": "To obtain the next strategy to add to the set X, PSROLM prompts the LLM to respond to a strategy s selected at random from \\Delta_{k-1} through calls to LLMResponseQuery(Ps;). It then adds to X the strategy s_w which was returned most frequently from the LLM (so X_k = X_{k-1} \\cup \\{s_w\\}), and computes the Nash equilibrium over the strategy set X_k to obtain the new mixed strategy \\Delta_k."
+          },
+          {
+            "paper_id": "paper_09",
+            "location": "Section 3.3",
+            "quote": "We employ Direct Preference Optimization (DPO) to fine-tune the LLM so that its open-ended language outputs align with the near-optimal strategies derived from the abstracted game. Once the LLM is fine-tuned, it can produce a broader distribution of actions that reflect the refined policy. We exploit this enhanced generative capacity to expand the latent space in the next iteration. Specifically, we repeat the latent strategy generation and clustering procedures with the fine-tuned LLM to re-generate and expand the latent strategy space."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q25",
+      "level": "comparison",
+      "topic": "Environment & Dataset Design",
+      "query": "Compare the methodological approach used to define the objective of the LLM-DDA agent in the game 'Magic: The Gathering', against the evaluation approach used in the 'PokerBench' benchmark. According to the texts, what exact goal is injected into the prompt of the Magic agent to adjust difficulty, and against what type of rigorous strategy are models evaluated in poker?",
+      "relevant_papers": ["paper_13", "paper_18"],
+      "ground_truth": {
+        "answer": "According to the studies, these frameworks employ distinct methodological approaches to define objectives and evaluate models. In 'Magic: The Gathering', the approach focuses on empowering the LLM to perform dynamic difficulty adjustments (DDA) by balancing life points. The exact goal injected into the prompt of the LLM-DDA agent is: \"Make your opponent's round win rate in 50 percent. Here is the historical plays. Your opponent life: Player_life_S; Your life: DDA_Life_S\". In contrast, the 'PokerBench' benchmark utilizes a static and rigorous evaluation approach; it measures Action Accuracy by evaluating how well a model's strategy performs against a Game Theory Optimal (GTO) strategy, operating under the premise that playing GTO is a sufficient condition for winning against any imperfect strategy.",
+        "sources": [
+          {
+            "paper_id": "paper_13",
+            "location": "Experiments",
+            "quote": "Action Accuracy (AA): Action accuracy measures if LLMs can take game theory optimal actions (fold, raise, bet, etc.) for a given spot. [...] our dataset is evaluating the how well a strategy perform against a GTO strategy. One of the advantage about training the model to approach GTO strategy is that being GTO is a sufficient condition for winning against any imperfect strategy."
+          },
+          {
+            "paper_id": "paper_18",
+            "location": "Section 5",
+            "quote": "Based on this idea, we created our own objective based on our own understanding on MTG for the LLM-DDA on balancing the life points. Simultaneously, our goal aims to empower the LLM to perform dynamic difficulty adjustments. We need to identify an optimized prompt formulation capable of effectively guiding the LLM’s behavior. [...] For Player 2 (LLM-DDA), we adopt the conclusions from the previous study [16], the obj_txt is ‘‘Make your opponent’s round win rate in 50 percent. Here is the historical plays. Your opponent life: P layer_lif e_S; Your life: DDA_Lif e_S’’."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q26",
+      "level": "comparison",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "Contrast the findings of GAMA-Bench (where Llama-3.1-405B performs worse than the 70B version due to being overly conservative) with the conclusion of the K-Level Reasoning experiments regarding whether a smaller/weaker model using the K-R framework can outperform a larger base model (GPT-4) using direct prompting.",
+      "relevant_papers": ["paper_05", "paper_08"],
+      "ground_truth": {
+        "answer": "Both studies highlight that simply increasing a model's size does not guarantee better strategic decision-making, though they demonstrate it from different angles. In the GAMA-Bench evaluation, researchers found that the massive LLaMA-3.1-405B actually underperforms compared to its smaller counterpart, the 70B version. This optimization failure is attributed to the larger model's overly conservative strategy in scenarios like the 'El Farol Bar' game. Conversely, the K-Level Reasoning (K-R) experiments conclude that a better reasoning methodology can overcome scale limitations. The study observes that a smaller and weaker model using the K-R framework (K-R[GPT-3.5]) successfully outperforms the standard direct prompting method of a much larger base model (GPT-4) in average performance. By restoring the rival's perspective, the K-R framework significantly enhances the smaller LLM's abilities in competitive environments, even when facing opponents using reasoning methods on GPT-4.",
+        "sources": [
+          {
+            "paper_id": "paper_05",
+            "location": "Section 5.3",
+            "quote": "we observe that K-R[GPT-3.5] outperforms the standard prompting method of GPT-4 (Direct[GPT4]) from average performance. Furthermore, when competing against opponents using reasoning methods on GPT-4, K-R[GPT-3.5] demonstrates remarkable capabilities. K-R, with its excellent restoration of the rival’s perspective, enhances the LLM’s ability in competitive environments."
+          },
+          {
+            "paper_id": "paper_08",
+            "location": "Section 4.4",
+            "quote": "Interestingly, LLaMA-3.1-405B underperforms compared to its smaller counterpart, the 70B version, which we attribute to its overly conservative strategy in the “El Farol Bar” game, a challenge similar to the one faced by GPT-4."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q27",
+      "level": "comparison",
+      "topic": "Algorithmic Architecture",
+      "query": "Compare the methodology for integrating behavioral factors into LLM agents between the EAI framework and the study on personality traits in negotiation. In your response, contrast the 'a priori' emotional injection technique of the EAI framework (detailing the moment at which emotions are injected and its three prompting strategies) against the 'a posteriori' extraction technique of the second study (specifying the methodological tool employed to analyze each message and the five negotiation states it classifies).",
+      "relevant_papers": ["paper_17", "paper_20"],
+      "ground_truth": {
+        "answer": "The two studies incorporate behavioral factors into LLM agents but use different methodologies. The EAI framework uses an 'a priori' emotional injection technique, inserting predefined emotions (anger, sadness, happiness, disgust, fear) into the initial system prompt before gameplay, employing three prompting strategies: Simple, Co-player-based, and External-based. In contrast, the second study uses an 'a posteriori' extraction technique, utilizing a dialogue state detector (a separate LLM) to analyze each generated utterance and its context. This detector classifies the interaction into five specific negotiation states: Offer, Ponder, Accept, Deal-break, and Chit-chat.",
+        "sources": [
+          {
+            "paper_id": "paper_17",
+            "location": "Section 3",
+            "quote": "we inject predefined emotions into the LLMs before gameplay. These emotions, combined with the game description, constitute the initial system prompt presented to the LLM at the beginning of the game. We focus on five basic emotions: ‘anger’, ‘sadness’, ‘happiness’, ‘disgust’, and ‘fear’. [...] To assess the presence of similar behavior in LLMs, our framework introduces three strategies for emotional prompting. “Simple” strategy injects an emotional state without additional context. The “Co-player-based” strategy connects the aroused emotion to the person the model interacts with, and the “External-based” strategy introduces emotions prompted by external factors."
+          },
+          {
+            "paper_id": "paper_20",
+            "location": "Section 3.3",
+            "quote": "we introduce a dialogue state detector to extract negotiation-related information from each utterance. After the generation of each utterance dt, the dialogue state detector takes dt and its context (previous t − 1 utterances) as input and extracts the negotiation state st, current offer price pt, and strategy σt of dt. The negotiation state st is one of the following: • Offer: the agent makes a price offer. • Ponder: the agent considers whether to accept or reject the other agent’s offer. • Accept: the agent accepts the current offer. • Deal-break: the agent refuses the last offer or walks away from the negotiation. • Chit-chat: the agent engages in chatting that is not directly related to the negotiation, such as greetings. In addition, we extract the current offer price pt (if any) and the strategy σt of the current speaker in free text form."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q28",
+      "level": "comparison",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "Comparing the experiments of the Nash Bargaining framework and the AmazonHistoryPrice environment, describe the difference in difficulty between playing the Buyer role versus the Seller role. According to AmazonHistoryPrice, why is it mechanically more difficult for an LLM to be the Buyer?",
+      "relevant_papers": ["paper_04", "paper_16"],
+      "ground_truth": {
+        "answer": "According to the studies, playing the Buyer role is mechanically more difficult for an LLM than playing the Seller. In the AmazonHistoryPrice environment, LLMs struggle as Buyers because they must correctly understand the concept of a Budget (ensuring the deal price does not exceed it to avoid negative profit) and actively persuade conservative Sellers who frequently use reject actions. This difficulty is corroborated by the Nash Bargaining experiments (e.g., Ultimatum Game), where models perform well as assertive proposers (Sellers) but concede and back down when acting on defense as responders (Buyers).",
+        "sources": [
+          {
+            "paper_id": "paper_04",
+            "location": "Results",
+            "quote": "Claude 3 Opus adopted assertive proposer strategies, achieving high utilities (e.g., 0.78 vs. GPT-4o) but conceding as a responder (e.g., accepting 0.17 against GPT-4o). GPT-4o displayed balanced behavior across roles. Llama 3.1 8B exhibited consistent behavior, often splitting resources near the theoretical fairness point. We observed in Figure 4 that Claude 3 tends to drive harder bargains when in control but backs down when on defense. GPT-4o is a moderate negotiator that offers and accepts fair deals. Llama 3.1 8B acts predictably across scenarios, often opting for 70/30 or 60/40 splits. [...] Claude 3 Opus optimized well in proposer roles but varied in response. GPT-4o had strong synergy with Llama 3.1 8B. Llama 3.1 8B scored highest in self-pairings, suggesting high consistency."
+          },
+          {
+            "paper_id": "paper_16",
+            "location": "Section 5",
+            "quote": "Playing Buyer is more difficult than playing Seller. As seen in Table 2, ChatGPT as the Seller beats all Buyers, even ChatGPT itself. But when playing Buyer it loses to GPT-4 and Mixtral-8x7B-Instruct. Even when the abilities of agents are relatively equal, bargaining as a Buyer is more challenging than bargaining as a Seller [...] The difficulties include 1) the Buyer should correctly understand the Buyer role along with the concept of Budget and realize that the deal price should not exceed the Budget to avoid loss; 2) the Buyer needs to actively persuade the conservative Seller who prefers to use REJECT actions."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q29",
+      "level": "comparison",
+      "topic": "Performance Metrics",
+      "query": "Contrast how the article on 'Private Deliberation' promotes deception against how the MAgIC framework mathematically defines the formula for the 'Deception' metric (SD) in the Undercover/Chameleon games.",
+      "relevant_papers": ["paper_01", "paper_03"],
+      "ground_truth": {
+        "answer": "The studies approach deception in different ways. In the article on Private Deliberation, deception is promoted strategically by allowing a private agent to develop a deceptive strategy in its private thoughts (hidden within double curly brackets) while communicating misleading information through public thoughts to outsmart its opponent. Conversely, the MAgIC framework mathematically defines 'Deception' (SD) in the Undercover and Chameleon games as an evaluation metric. It is calculated as the ratio of successful deceptions (winning by blending in or causing incorrect code guesses) using the exact formula SD = nwuc/nuc + λ(nwcg/ncg).",
+        "sources": [
+          {
+            "paper_id": "paper_01",
+            "location": "Section 3.1",
+            "quote": "Since agents are involved in a two-option game, the first stage involves thinking about the first option, and the second stage involves thinking about the second option. The third stage involves developing a deception strategy that will be presented in public thoughts, although deception may not always occur if it is not optimal (e.g., in cooperative games). In other words, the private agent strategizes privately and communicates through public thoughts, deciding which information to reveal and which to keep hidden."
+          },
+          {
+            "paper_id": "paper_01",
+            "location": "Section 3.2",
+            "quote": "A private agent was explicitly instructed to adopt a strategy aimed at outsmarting its opponent, while concealing its private thoughts within double curly brackets (e.g., {{ (...) agent’s private thoughts to win over my opponent (...) }}). [...] However, the private agent’s opponent only received the public thoughts of the private agent, while thoughts enclosed in double curly brackets (i.e., private thoughts) remained concealed from the opponent."
+          },
+          {
+            "paper_id": "paper_03",
+            "location": "Section 3.3",
+            "quote": "Deception presents an agent’s capability to deceive others to serve their goal. We measure this by the ratio of successful deceptions. In detail, our benchmark calculates the ability as the ratio for chameleon/undercover’s successful blending or causing incorrect secret word guesses, denoted as: SD = nwuc/nuc + λ(nwcg/ncg), where nwuc and nuc are the win count and total count of games when the LLM plays chameleon and undercover, nwcg is the number of incorrect code guesses, and ncg is the total number of code guesses."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q30",
+      "level": "comparison",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "Compare the effect of enabling 'open-ended dialogue communication' in the GOVSIM environment against the integration of public probabilistic information (Beta distribution in the prompt) in the infinitely repeated game to sustain cooperation.",
+      "relevant_papers": ["paper_14", "paper_19"],
+      "ground_truth": {
+        "answer": "Both approaches modify the information available to agents to promote cooperation but do so through different mechanisms. In the GOVSIM benchmark, enabling open-ended dialogue communication allows agents to actively discuss and coordinate extraction limits at or below the sustainable threshold, preventing the overuse of the shared resource. On the other hand, in the infinitely repeated games study, cooperation is sustained by integrating public probabilistic information. Specifically, Bayesian inference using a Beta distribution. This historical action analysis is provided as a reply prompt after each round, capturing opponents' action uncertainty and helping the LLM optimize its decisions for higher long-term payoffs.",
+        "sources": [
+          {
+            "paper_id": "paper_14",
+            "location": "Section 3.5",
+            "quote": "Comparing simulations without communication with those with communication, we find that agents without communication tend to overuse the common resource by 22% (t-test; p < 0.001). This result shows the importance of the communication phase for sustainable resources. Analyzing the interactions between agents, we find that in most conversations, agents coordinate on extraction limits equal to or below the sustainable threshold through discussion, thereby increasing the robustness of resource use."
+          },
+          {
+            "paper_id": "paper_19",
+            "location": "Section II (C)",
+            "quote": "By doing this, we integrate Bayesian inference and beta distribution into the public information of repeated games. The historical actions are analyzed and uitilized as reply prompts after each rounds, while LLM agent is expected to use the given information to optimize their decisions and achieve higher payoffs. [...] Fig. 2 illustrates the improvement in LLM performance after introducing Bayesian inference. All three LLMs’ performances have improved to different degrees. GPT4 shows the highest improvement in score of 5.38, while Llama 3 has the best improvement percentage of 8.47%. The improvement results indicate that Bayesian inference enhances LLMs’ ability to face opponents with action uncertainty by capturing opponents’ historical actions and turning them into effective information."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q31",
+      "level": "synthesis",
+      "topic": "Algorithmic Architecture ",
+      "query": "Synthesize the main strategies that have been developed in the evaluated literature to reduce the intractability of vast action spaces in LLM-based game-playing systems. How do these diverse approaches compress the environment to make game-theoretic optimization computationally feasible? ",
+      "relevant_papers": ["paper_09", "paper_12", "paper_13"],
+      "ground_truth": {
+        "answer": "To make game-theoretic optimization computationally feasible, recent frameworks reduce vast action spaces by abstracting semantic complexity and actively filtering low-signal decisions. Instead of evaluating every possible move, these approaches compress the environment to isolate strategically meaningful actions. For open-ended communication, this is achieved through latent abstraction. Instead of dealing with infinite text, models generate distinct discussion candidates via self-play to create a diverse but finite set of natural language strategies. For structured but vast state transitions, heuristic filtering is applied. Rather than expanding the search tree to the end of the game, models limit expansion to a specific depth and use LLMs as a value function to evaluate immediate states. Finally, for environments governed by strict mathematical probabilities, statistical downsampling is utilized to aggressively remove obvious low-value actions, such as folding weak starting hands in poker, concentrating computational resources on highly profitable and complex situations.",
+        "sources": [
+          {
+            "paper_id": "paper_09",
+            "location": "Section 3.1",
+            "quote": "Latent Strategy Generation. In our setting, secret actions and voting actions are already discrete and therefore do not require further abstraction. We focus instead on the free-form discussion actions, which we aim to capture as latent strategies. We assume that each role in the game has the same set of latent strategies across all discussion rounds and collect the latent strategies for each role by letting the current LLM agent self-play as different roles for multiple trajectories. To further improve the exploration of latent strategies, we prompt the LLM to generate N strategically distinct discussion candidates and randomly choose one to execute in the game. This process encourages diversity in the collected discussion actions and generates a set of latent strategies in natural language for each role."
+          },
+          {
+            "paper_id": "paper_12",
+            "location": "Section 2",
+            "quote": "Players face asymmetric observation spaces, having complete information about their own team but only partial information about their opponent’s. Strategic decisions must therefore be made under uncertainty. [...] PokéChamp uses one-step lookahead prompts to gain admissible heuristic information regarding the likely effect of actions under the current metagame."
+          },
+          {
+            "paper_id": "paper_12",
+            "location": "Section 4",
+            "quote": "Value Function Estimation: Instead of expanding the search tree to the end of the game, we limit expansion to a depth of k steps and use LLMs as value function to evaluate infosets at this time step, replacing terminal rewards. It is challenging to estimate this value accurately through traditional methods, as it requires a deep understanding of game mechanics and effective state embeddings. In contrast, LLMs leverage common sense and gameplay knowledge from the internet, serving as an effective approximation for value functions."
+          },
+          {
+            "paper_id": "paper_13",
+            "location": "The POKERBENCH Benchmark - Dataset summary",
+            "quote": "We cannot preserve the highly imbalanced distribution for evaluation because a naive strategy of folding all hands will lead to an accuracy of close to 90%. Because of this, we downsample the fold action significantly to remove hands that do not provide much signal. For example, all starting hands like {72},{83},{93},{84} should be folded, but not all of these hands need to be kept in the evaluation set to get the signal that the model is folding such low-value hands. Whereas hands like {AK},{KQ},{AA},{JJ} should be played before the flop, it is important to analyze the model on a larger set of such hands, as these hands are also more profitable."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q32",
+      "level": "synthesis",
+      "topic": "Biases & Limitations",
+      "query": "Synthesize the specific cognitive and architectural bottlenecks documented in the literature that systematically prevent autonomous LLM agents from executing perfectly rational, game-theoretic strategies. How do these limitations manifest across different types of complex games?",
+      "relevant_papers": ["paper_08", "paper_10", "paper_11"],
+      "ground_truth": {
+        "answer": "Current LLMs face distinct but reinforcing barriers to game-theoretic rationality that systematically prevent them from executing mathematically optimal strategies. First, their stochastic decision-making is fundamentally biased by positional preferences. Empirical action frequencies shift predictably based solely on the prompt's option order, making it structurally impossible for them to approximate a uniform mixed-strategy Nash equilibrium. Second, in environments with dense rule sets and dynamic interactions, models fail to maintain a coherent internal representation of the game state. Under cognitive load, this lack of context compression manifests as severe hallucinations, leading models to confidently base their suggestions on entirely erroneous assumptions. Third, even when models correctly understand the rules, their utility preferences remain irrationally conservative. In social dilemmas and bargaining environments, advanced models often adopt risk-averse strategies, preferring to minimize expenditures rather than executing optimal maximization tactics. Taken together, the literature suggests that these failures are symptoms of a deeper misalignment between language processing and strict strategic rationality. ",
+        "sources": [
+          {
+            "paper_id": "paper_10",
+            "location": "Section 3.1.1",
+            "quote": "Even where AOI lowers some models’ TVD, the resulting distributions remain substantially non-uniform—models still fall well short of robust stochastic decision-making and the uniform mixed-strategy Nash target... temperature tuning alone cannot eliminate the cognition-behaviour gap: the skew originates upstream of the sampler, not in its entropy setting."
+          },
+          {
+            "paper_id": "paper_10",
+            "location": "Section 4.1.1",
+            "quote": "Figure 4 shows that the empirical action frequencies of most LLMs shift across the six prompt permutations, confirming that option order-the hallmark of positional bias-influences their decisions. "
+          },
+          {
+            "paper_id": "paper_11",
+            "location": "Section V (B)",
+            "quote": "Hallucinations and factual errors: Models tend to generate plausible but false information, due to their lack of compression of the whole game context (rules, synergies, dynamic scenario, etc.). This leads to situations where models offer suggestions based on erroneous assumptions. The most common have been those related to selecting inexistent Pokémon from the roster."
+          },
+          {
+            "paper_id": "paper_08",
+            "location": "Section 4.4",
+            "quote": "GPT-4’s lowered performance in the “(2) El Farol Bar” game (23.0) and the “(5) Diner’s Dilemma” game (0.9) stems from its conservative strategies favoring staying at home and spending less money."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q33",
+      "level": "synthesis",
+      "topic": "Biases & Limitations",
+      "query": "Synthesize the findings across the literature regarding how the injection of human-like psychological attributes, such as synthetic personalities, emotional states, and implicit cognitive biases, impacts the objective rationality of LLMs. In what ways does behavioral anthropomorphism compromise their mathematical logic?",
+      "relevant_papers": ["paper_10", "paper_17", "paper_20"],
+      "ground_truth": {
+        "answer": "When LLMs are assigned human-like personas or subjected to emotional prompting, their decision-making frequently deviates from pure mathematical rationality and predictably mirrors human cognitive biases. Embedding synthetic personality profiles actively overwrites purely economic objectives in negotiations. For instance, strategies positioned at the assertive end of the spectrum tend to enhance utility gains, while cooperative or empathetic strategies negatively impact the seller's utility, demonstrating a trade-off between objective maximization and behavioral consistency. Similarly, in complex ethical evaluations, introducing emotional states disrupts logical reasoning. Negative emotions such as 'anger' and 'disgust' introduce a susceptibility that compromises decision-making quality, making models rigidly determined rather than optimally adaptive in high-ambiguity scenarios. Finally, implicit cognitive biases fundamentally warp stochastic choices. Despite pre-training corpora regularities, models disproportionately favor semantically salient options (like 'rock') over statistically optimal uniform distributions. Ultimately, anthropomorphizing LLMs forces them to inherit human behavioral distortions.",
+        "sources": [
+          {
+            "paper_id": "paper_17",
+            "location": "Section 4",
+            "quote": "In scenarios with low ambiguity, most models perform well with a minimal impact from emotional states. However, LLaMA models, OpenChat, and Claude-Opus show more negative influences from emotions such as ‘anger’ and ‘disgust’, indicating a susceptibility that could compromise decision-making quality. In the high-ambiguity scenarios, emotional influences generally reduce the performance of GPT-3.5-turbo and GPT-4, making them more determined. On the contrary, emotions improve the performance of GPT-4o."
+          },
+          {
+            "paper_id": "paper_20",
+            "location": "Section 5.1",
+            "quote": "On the other hand, neurotic traits (NEU+) do not lead to concessions, whereas a lack of neurotic traits (NEU-) leads to concessions. Finally, agents with neurotic traits seem to employ more empathetic strategies, while by contrast, agents with fewer neurotic traits will refrain from them."
+          },
+          {
+            "paper_id": "paper_20",
+            "location": "Section 5.2",
+            "quote": "Strategies positioned at the assertive end of the spectrum, such as assertiveness (0.23), exhibit a positive effect leading to an enhanced utility gain us(pdeal). On the cooperative end, strategies such as concession (-0.11) or empathy (-0.13) show negative impacts on the seller's utility."
+          },
+          {
+            "paper_id": "paper_10",
+            "location": "Section 4.3",
+            "quote": "Recent work has documented a frequency effect, whereby token frequency in pre-training corpora systematically biases LLM outputs [...] However, our experiments reveal that the majority of LLMs disproportionately select R, even though paper is the most frequent token in reference corpora."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q34",
+      "level": "synthesis",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "In multi-agent environments, game-theoretic equilibria are highly sensitive to both information exchange and agent rationality. Synthesize how communication constraints and algorithmic irrationality collectively cause LLM agents to deviate from the mathematical optimum across the evaluated studies.",
+      "relevant_papers": ["paper_02", "paper_13", "paper_14"],
+      "ground_truth": {
+        "answer": "Achieving optimal game-theoretic equilibria requires flawless logical execution and the ability to coordinate or accurately interpret opponents. However, LLMs frequently deviate from the mathematical optimum due to communication dynamics and intrinsic algorithmic irrationality. In shared-resource environments, communication channels dictate behavioral outcomes. While models engage heavily in negotiations, many advanced agents adopt overly cautious stances, actively advocating for extraction limits well below the optimal sustainability threshold. Even when communication is allowed, models often display irrational behaviors that destroy their strategic position based purely on timing. In social deduction games, agents adjust their dissent based on discussion flow, becoming significantly more likely to vote against the majority when speaking first rather than last. Finally, in mathematically rigorous settings with incomplete information, advanced models deviate from Game Theory Optimal (GTO) play by adopting sub-optimal, overly aggressive tactics while weaker models remain overly passive. These unbalanced strategies represent a fundamental departure from optimal play and lose value in the long run.",
+        "sources": [
+          {
+            "paper_id": "paper_13",
+            "location": "Section 3.2",
+            "quote": "Also, neither player is playing at an optimal action fre-quency: GPT-4 is being over-aggressive while Llama is over-passive. A good example of this can be illustrated by a rock-paper-scissors game. Imagine player A chooses rock 100% of time, while player B chooses scissors 50% of time and rock 50% of time. We can see that even though player B has a strategy closer to the optimal solution14, it will never win against player A’s less optimal strategy. Similarly, while GPT-4 has a strategy farther from GTO (as assessed by our dataset), it is still able to win against Llama by coincidentally executing a strategy that happens to exploit Llama’s suboptimal decisions."
+          },
+          {
+            "paper_id": "paper_02",
+            "location": "Section 4.1.1",
+            "quote": "One of the earliest strategic adaptations among LLM agents was a shift from exploratory behavior to exploitative decision-making—a pattern that closely mirrors human play in hidden-role games. Early rounds were marked by probing uncertain actors, while later rounds favored familiar, trusted collaborators [...] The consistent progression from exploration to exploitation across simulations offers compelling evidence that LLMs can simulate key aspects of human social adaptation—especially the balance between risk aversion and information-seeking as group dynamics evolve."
+          },
+          {
+            "paper_id": "paper_02",
+            "location": "Section 4.1.2",
+            "quote": "Agents also adapted based on when they spoke. Fascists were more likely to vote against the majority when speaking first (50%, n = 334) than when speaking last (37%, n = 267). This suggests that agents monitored discussion flow, adjusting behavior based on how visible or risky dissent would appear in context. This mirrors a basic conformity pattern in human behavior: people are more likely to conform after gauging the room."
+          },
+          {
+            "paper_id": "paper_14",
+            "location": "Section 3.6",
+            "quote": "On average (overall models), the majority of utterances (54%) are focused on negotiations between agents, followed by information (45%) and relational (1%). Qualitatively, some models, such as GPT-4-turbo, tend to be overly cautious by advocating lower fishing limits than the sustainability limit per person. In contrast, scenarios where an agent significantly takes above this limit cause noticeable concern among other participants. For instance, an agent catching more fish usually avoids discussing the issue instead of negotiating for greater access to the resource."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q35",
+      "level": "synthesis",
+      "topic": "Algorithmic Architecture",
+      "query": "Standard zero-shot prompting is often insufficient for deep strategic reasoning in multi-agent environments. Synthesize the primary external algorithmic mechanisms and structural scaffoldings proposed in the literature to force LLMs to explicitly map opponents' cognitive states, anticipate actions recursively, and iteratively refine their policies",
+      "relevant_papers": ["paper_03", "paper_05", "paper_06"],
+      "ground_truth": {
+        "answer": "Standard LLM prompting often fails in multi-agent environments because it lacks a structured mechanism to anticipate opponent behavior and iterate upon those predictions. To achieve advanced game-theoretic optimization, recent frameworks implement external scaffolding to force models to explicitly map and respond to the cognitive states of others. One approach grounds the agent's logic in explicit perspective-taking through Probabilistic Graphical Models, which incorporates text-represented probabilities to dynamically analyze the conditional dependencies of the game state. Another approach relies on recursive anticipation, organizing thought into hierarchical levels where the model assumes opponents' hidden strategies and predicts their future behavior as the number of interactions increases. Finally, iterative equilibrium responses can be applied to the policy space itself. This is achieved by prompting the LLM to respond to a Nash equilibrium formulated over all previously generated levels, systematically adding the most frequent and successful responses to the strategy pool. Collectively, these architectures demonstrate that true strategic depth requires external mechanisms enforcing perspective-taking and iterative policy refinement.",
+        "sources": [
+          {
+            "paper_id": "paper_03",
+            "location": "Section 4.1",
+            "quote": "We design the PGM structure in a two-hop understanding mechanism in which the agent analyzes from its own perspective and perspective when it stands in other agents’ shoes. [...] We employ the Probabilistic Graphical Model (PGM) to provide a general formalization of this concept. PGM uses graphs to illustrate the conditional dependencies between random variables, making it particularly suitable for understanding interactions among multiple players. [...] In designing the Probabilistic Graphical Model (PGM), we have opted not to limit its representation solely to numerical probabilities. Instead, we also incorporate text-represented probabilities, acknowledging the text-based input and output nature of large language models (LLMs)."
+          },
+          {
+            "paper_id": "paper_05",
+            "location": "Section 2.1",
+            "quote": "Inspired by K-level thinking, we propose a novel strategic reasoning framework termed \"K-Level Reasoning with LLMs (K-R).\" K-R organizes reasoning into hierarchical levels and employs a recursive mechanism to integrate varying strategic depth into decision-making. Specifically, it involves: 1) recursively anticipating others’ actions at varying levels of strategic depth with environmental context and historical public information, and 2) reasoning the optimal action based on these anticipations. To the best of our knowledge, this is the first approach to implementing varying levels of strategic depth in LLMs using a recursive mechanism and enables deeper reasoning in LLM agents through an algorithmic framework."
+          },
+          {
+            "paper_id": "paper_05",
+            "location": "Section 2.2",
+            "quote": "Suppose agent j’s decision-making process follows a hidden strategy θ∗j [...] This implies that as the number of interactions increases, K-R can more accurately predict opponents’ behavior."
+          },
+          {
+            "paper_id": "paper_06",
+            "location": "Section 2.1",
+            "quote": "PSROLM, short for Policy Space Response Oracle Language Model, where the best response at level k is based on responding to the Nash equilibrium over the previous levels 1, 2, ..., k-1, inspired by Response Oracles from the game theory and reinforcement learning literature [...] To obtain the next strategy to add to the set X, PSROLM prompts the LLM to respond to a strategy selected at random from Delta_{k-1} through calls to LLMResponseQuery... It then adds to X the strategy s_w which was returned most frequently from the LLM... and computes the Nash equilibrium over the strategy set X_k to obtain the new mixed strategy Delta_k. "
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q36",
+      "level": "synthesis",
+      "topic": "Algorithmic Architecture",
+      "query": "In games with imperfect information and partial observability, agents cannot rely solely on deductive logic. Synthesize the diverse methodologies developed in recent frameworks to help LLM agents reconstruct concealed states, infer hidden variables, and maintain strategic deception without leaking internal information.",
+      "relevant_papers": ["paper_01", "paper_12", "paper_16"],
+      "ground_truth": {
+        "answer": "In imperfect information environments, autonomous agents face the challenge of inferring hidden variables while actively managing the signals they project to adversaries. Because the full game state is partially obscured, agents cannot rely solely on deductive logic, they must synthesize public interactions with statistical or heuristic priors to reconstruct the missing context. For instance, in complex simulators, opponent modeling is notoriously difficult due to partial observability, requiring the LLM to explicitly sample and infer hidden states based purely on the player's restricted observations. Concurrently, conversational interactions require models to parse open-ended dialogue to deduce concealed economic thresholds, demanding that players actively predict their counterpart's private costs or budgets to inform their next bid. To manage this asymmetry computationally and prevent information leakage, formal frameworks strictly partition observations. By decoupling an agent's internal state-tracking (allowing it to safely recollect private thoughts from previous rounds) from the filtered public actions exposed to adversaries, these architectures enable agents to execute safely calculated strategic deception without compromising their internal logic. ",
+        "sources": [
+          {
+            "paper_id": "paper_01",
+            "location": "Section 3.2",
+            "quote": "The initial prompts provided to the agents for prisoner’s dilemma and stag hunt games are presented in Listings 2 and 3, respectively. A private agent was explicitly instructed to adopt a strategy aimed at outsmarting its opponent, while concealing its private thoughts within double curly brackets (e.g., {{ (...) agent’s private thoughts to win over my opponent (...) }}). In each subsequent iteration of the game, both agents were provided with the amount of points scored in the previous round, total points scored, the choice made by the other agent, and the explanation provided by the other agent during the previous iteration. Furthermore, agents were capable of recollecting their own thoughts and their opponent’s thoughts from the last two rounds of the game (restricted due to context length). However, the private agent’s opponent only received the public thoughts of the private agent, while thoughts enclosed in double curly brackets (i.e., private thoughts) remained concealed from the opponent."
+          },
+          {
+            "paper_id": "paper_12",
+            "location": "Section 4",
+            "quote": "Opponent Modeling: Similarly, we prompt the LLM to sample the most likely opponent actions. Unlike player action sampling, opponent modeling is more complex due to partial observability, requiring the LLM to infer hidden states based on the player’s observations."
+          },
+          {
+            "paper_id": "paper_16",
+            "location": "Section 3.1",
+            "quote": "Rational decision-making agents, whether Buyer or Seller, should not accept transactions resulting in negative profit. So, the Buyer would like a deal price lower than its budget, and the Seller prefers a deal price higher than the cost. However, the Buyer is unaware of the Seller’s cost, and vice versa. Therefore, agents should predict the counterpart’s private information based on the dialogue and combine it with their own information to decide the next move in each turn."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q37",
+      "level": "synthesis",
+      "topic": "Biases & Limitations",
+      "query": "Prolonged multi-agent interactions expose severe cognitive bottlenecks in LLMs related to context window constraints. Synthesize the trade-offs and performance degradations associated with different methods of handling extended game histories, contrasting the effects of history summarization versus raw context accumulation.",
+      "relevant_papers": ["paper_07", "paper_11", "paper_15"],
+      "ground_truth": {
+        "answer": "In multi-agent scenarios that extend over numerous rounds, the sheer volume of game history severely tests the cognitive limits of LLMs, forcing a detrimental trade-off between context compression and strategic fidelity. When game states are summarized or simplified to fit within fixed context sizes, critical tactical information is frequently lost, significantly impairing the agent's ability to recall previous events and conform to long-term policies. The degradation caused by this compression is mathematically quantifiable: experiments demonstrate that LLMs suffer from much larger regret metrics when forced to rely on summary-based history inputs, whereas processing the raw, uncompressed history enables the model to accurately detect underlying adversarial trends. However, even without explicit summarization, the sheer cognitive load of extended raw histories overwhelms the model's planning capacity. While capable models generate massive reasoning trees during the early rounds of board games, their planning depth drops precipitously, with smaller architectures struggling to maintain even 100 steps of reasoning as the game progresses. Ultimately, history compression strips away granular signals, while raw accumulation exhausts reasoning depth.",
+        "sources": [
+          {
+            "paper_id": "paper_07",
+            "location": "Section 3.4",
+            "quote": "The GPT-4 agent with summarized history input, in contrast, suffers from much larger regret than FTRL and FTPL. We defer the detailed comparison between using raw history and summarized history to Figure C.5, and an explanation of LLMs’ behaviors via predicting the trend of the loss instances to Section C.6. In summary, the GPT-4 agent may predict such worst-case sequences well, and does not fail in the same way as FTL, which is known to suffer from a lack of randomness in decisions. Additionally, the results on Example 2 also imply that summary-based history input can perform worse than the raw-history-based one in the adversarial setting we consider, while the former was claimed to be the key in succeeding in the i.i.d. stochastic bandit setting"
+          },
+          {
+            "paper_id": "paper_11",
+            "location": "Section VI (B)",
+            "quote": "Context and continuity problems: LLM memory is limited by their context size, which affects their ability to recall previous events as the game progresses. This is particularly relevant for conforming policies that require long-term commitment. Although summaries of game events can be used as input for the model (battle logs in our case), crucial information may be omitted."
+          },
+          {
+            "paper_id": "paper_15",
+            "location": "Section V (C)",
+            "quote": "sequences. The Llama-3.1-8B-Instruct follows closely, with a planning capacity reaching around 150 steps. In contrast, the Llama-3.2-3B-Instruct model exhibits shallower planning, with most of its moves remaining below 100 steps. These findings suggest that larger models possess not only better language understanding but also more advanced planning capabilities in complex, rule-based environments like Oˆ An Quan."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q38",
+      "level": "synthesis",
+      "topic": "Behavior & Strategy Analysis",
+      "query": "Synthesize the theoretical findings on how social perception, trust volatility, and normative behaviors are established and maintained in LLM-driven multi-agent environments. How do agents navigate reputational risks and group consensus when their underlying objectives conflict with social expectations?",
+      "relevant_papers": ["paper_02", "paper_04", "paper_14"],
+      "ground_truth": {
+        "answer": "In multi-agent social and economic environments, establishing and maintaining trust is a highly volatile process governed by role-specific incentives and the strict enforcement of normative behavior. Agents operating in social deduction scenarios continuously monitor group dynamics, grasping reputational risks and the benefits of conformity to execute human-like group-sensitive reasoning. Beyond hidden roles, trust and cooperation can be explicitly engineered through normative grounding. Injecting universalization principles, reminding agents of the systemic consequences if everyone extracts over the limit, measurably encourages sustainable collective behaviors. Finally, when these interactions cross into human-AI dynamics, the fragility of trust becomes evident. The perceived opacity of an AI algorithm significantly impairs user trust, forcing AI models to actively maintain reasoning visibility and fairness expectations to avoid being strictly punished in economic bargaining. This dynamic forces AI models to manage social perception and transparency as rigorously as they manage strategic optimization.",
+        "sources": [
+          {
+            "paper_id": "paper_02",
+            "location": "Section 4.2.2",
+            "quote": "Agents also adapted based on when they spoke. Fascists were more likely to vote against the majority when speaking first (50%, n = 334) than when speaking last (37%, n = 267). This suggests that agents monitored discussion flow, adjusting behavior based on how visible or risky dissent would appear in context. This mirrors a basic conformity pattern in human behavior: people are more likely to conform after gauging the room. Despite lacking real emotions or intuition, LLM agents inferred these dynamics from dialogue cues and vote histories—choosing safer, more socially acceptable actions. Notably, this responsiveness wasn’t hardcoded. Agents inferred the risks of standing out and the benefits of conformity from prior conversation and role context—hallmarks of group-sensitive reasoning. Their emergent grasp of reputational risk and group pressure supports the broader claim that these models are capable of mimicking human-like strategies in dynamic social settings."
+          },
+          {
+            "paper_id": "paper_04",
+            "location": "Discussion - Transparency and Ethics",
+            "quote": "Without clear reasoning visibility, AI negotiators risk violating expectations of fairness. Sujan et al. (2022) and Chen et al. (2023) underscore that perceived opacity impairs user trust. Fairness metrics must therefore be transparent and user-legible. [...] Accordingly, we expect GPT‐4o’s balanced strategy to translate into smoother human collaborations, whereas Claude 3’s harder bargaining may trigger higher rejection rates unless tempered by transparency cues"
+          },
+          {
+            "paper_id": "paper_14",
+            "location": "Section 3.4",
+            "quote": "Analysis of LLM behavior suggests that the lack of sustainable governance may result from an inability to mentally simulate the long-term effects of greedy actions on the equilibrium of the multi-agent system. One approach to make these consequences salient is through a mechanism known in the moral psychology and philosophy literature as “Universalization”. The basic idea of Universalization is that when assessing whether a particular moral rule or action is permissible, one should ask, “What if everybody does that?” [...] Here, we hypothesize that a similar mechanism may make sustainable cooperation more likely in LLMs by making the long-term consequences of collective action more salient. For instance, a naive model might reason, “I should take as many fish as I can,” but if forced to consider the universalization of that policy (“we each take as many fish as we can”), they realize that such a policy will cause rapid collapse. [...] To study whether Universalization can encourage sustainable cooperation, we augment the memory of each agent with the following statement, “Given the current situation, if everyone takes more than f(t), the shared resources will decrease next month."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q39",
+      "level": "synthesis",
+      "topic": "Algorithmic Architecture ",
+      "query": "Identify and synthesize the specific prompting methodologies and operational privileges introduced in recent literature to artificially enhance an LLM's ability to adapt to dynamic opponents or fulfill asymmetric gameplay roles. How do these interventions override baseline zero-shot behaviors?",
+      "relevant_papers": ["paper_05", "paper_18", "paper_19"],
+      "ground_truth": {
+        "answer": "To handle dynamic opponents and asymmetric roles, recent frameworks intervene directly in the LLM's operational constraints and prompt structures, overriding baseline zero-shot limitations. First, when agents face adversaries with uncertain action patterns, standard prompts are augmented with explicit probabilistic priors. For instance, rather than relying on the model's raw intuition, systems inject the calculated posterior beta distribution of an opponent's historical habits directly into the prompt, explicitly detailing the mathematical probability of the opponent's next moves. Second, to enhance baseline reasoning without altering the game state, frameworks employ Persona Prompting, which modifies the standard process by injecting a 'Game Expert' persona to elevate the model's cognitive depth. Finally, to fulfill highly asymmetric and specialized roles, such as serving as a Dynamic Difficulty Adjuster (DDA), frameworks may grant the LLM explicit rule-breaking privileges. Rather than strictly adhering to standard gameplay mechanics, the DDA agent is provided with specialized prompts that allow it to bypass normal setup constraints, such as mulligan rules in card games, enabling it to directly select optimal starting conditions to properly balance the game for the human player. Ultimately, these methods demonstrate that advanced adaptability requires external statistical injection, persona framing, or mechanical privileges.",
+        "sources": [
+          {
+            "paper_id": "paper_05",
+            "location": "Section 3.2",
+            "quote": "Persona Prompting (Persona): This technique modifies the standard prompting process by incorporating a “Game Expert” persona to enhance the reasoning capabilities of the LLM."
+          },
+          {
+            "paper_id": "paper_18",
+            "location": "Section 3.3.2",
+            "quote": "The differences between prompt 2.1 and prompt 2.2 reveal distinct roles in the setup phase. Prompt 2.1 guides the LLM-Player to follow the MTG setup phase rules, while prompt 2.2 grants the LLM-DDA special privileges. The LLM-DDA is not required to adhere to the mulligan rules and can instead select its desired starting hand directly from the deck. This adjustment aims to give the LLM-DDA better control over the game’s difficulty, aligning with the rationale for providing different perspectives"
+          },
+          {
+            "paper_id": "paper_19",
+            "location": "Section II (C)",
+            "quote": "After each round stage game ends, we use the posterior distribution to calculate βt and combined the results with previous short prompts, then reply it to the LLM agent in the following form “According to the beta distribution of your opponent player’s action habits, here are further details: player 2 has βt1 probability that will be almost certain to choose B in the next round, βt2 probability that will be likely to choose B in the next round, βt3 probability that will be likely to choose A in the next round, βt4 probability that will be almost certain to choose A in the next round” By doing this, we integrate beyasian inference and beta distribution into the public information of repeated games. The historical actions are analyzed and uitilized as reply prompts after each rounds, while LLM agent is expected to use the given information to optimize their decisions and achieve higher payoffs."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "Q40",
+      "level": "synthesis",
+      "topic": "Performance Metrics",
+      "query": "Identify and synthesize how the literature evaluates the learning capacity and strategic evolution of LLM agents across continuous or infinitely repeated game environments. What specific experimental methodologies are used to quantify their adaptability and convergence over time?",
+      "relevant_papers": ["paper_06", "paper_07", "paper_19"],
+      "ground_truth": {
+        "answer": "Evaluating the learning capacity and strategic evolution of LLM agents across continuous environments requires methodologies that measure performance dynamically over time rather than in single-shot instances. In strictly adversarial online learning setups, researchers quantify adaptability by evaluating the model's performance against responsive sequences. By developing adaptive loss sequences that explicitly exploit the model's prior outputs, they can rigorously test if an agent achieves sublinear regret, indicating true learning and loss minimization over time. In infinitely repeated strategic games, adaptability is evaluated by measuring the model's score progression when facing specific dynamic opponent strategies, such as the 'Grim' trigger or 'Tit-for-Tat', which systematically adjust based on the LLM's past actions. Finally, in tournament-style evolutionary frameworks, the continuous refinement of mixed strategies is visualized through iterative probability shifts. In Policy Space Response Oracle paradigms, the progression of the resulting mixed strategies shows a clear evolution towards more diffuse, higher-support distributions over successive rounds, demonstrating that the agent iteratively learns to avoid highly exploitable, concentrated policies. Together, these methodologies provide a robust framework for quantifying long-term AI learning.",
+        "sources": [
+          {
+            "paper_id": "paper_06",
+            "location": "Section 3.2",
+            "quote": "PSROLM (Figure 3, left) shows a progression towards more diffuse mixed strategies (i.e., with higher support). In (Figure 3, middle), BRIRLM exhibits a cyclic pattern, where strategies defeat the immediately previous level, but performs poorly against those that appear before it"
+          },
+          {
+            "paper_id": "paper_07",
+            "location": "Section 3.4",
+            "quote": "Adaptive loss sequence. We also develop a simpler but more adaptive loss sequence that takes the full power of the adversary in our online learning setup. After the GPT-4 agent provides πt, we choose lt with lt (argmaxi πti) = 10 and lt (3 − argmaxi πti) = 0."
+          },
+          {
+            "paper_id": "paper_19",
+            "location": "Section II (B)",
+            "quote": "Dynamic strategies including: • Grim: Player 2 would start by choosing action A until his opponent change his action into another one, then player 2 would turn to choose that one forever. • Tit-for-Tat: Player 2 would start by choosing action A and repeatedly select the last action made by his opponent. • Tit-for-Two-Tats: The same choice logic of Tit-for-Tat but player 2 copy the last action of his opponent only when his opponent made another action in two consistent rounds."
+          }
+        ]
+      }
+    }
+]
+}
