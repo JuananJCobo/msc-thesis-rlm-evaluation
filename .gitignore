@@ -2,6 +2,8 @@
 .env
 *.pem
 *.key
+.openai_token
+.gemini_token
 
 # Python
 __pycache__/
