@@ -72,10 +72,39 @@ proyect/
 
 ## Reproducibilidad
 
-1. Clona el repositorio
-2. Copia `.env.example` como `.env` y añade tus claves de API
-3. Instala las dependencias de `requirements.txt`
-4. Consulta `docs/experiment_log.md` para ver el estado actual de progreso
+### Requisitos previos
+
+- Python 3.10+
+- Cuenta de Google Colab con Google Drive
+- Claves de API de [OpenAI](https://platform.openai.com/) y [Google Gemini](https://aistudio.google.com/)
+
+### Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/JuananJCobo/msc-thesis-rlm-evaluation
+cd msc-thesis-rlm-evaluation
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Configurar variables de entorno
+cp .env.example .env
+# Editar .env con tus claves de API
+```
+
+### Ejecución
+
+Los notebooks están diseñados para ejecutarse en Google Colab con Google Drive montado. Ejecuta los notebooks en el siguiente orden:
+
+| Notebook | Descripción |
+|---|---|
+| `01_text_extraction.ipynb` | Extracción y preprocesamiento del corpus desde PDF |
+| `02_query_design.ipynb` | Diseño y anotación manual de consultas |
+| `03_experiments.ipynb` | Ejecución de los experimentos (LLM base, RAG, RLM) |
+
+> [!NOTE]
+> La ejecución completa del experimento requiere acceso a las APIs de OpenAI y Google Gemini y puede incurrir en costes de API. Los resultados completos están disponibles en `experiments/` para reproducir únicamente el análisis sin necesidad de reejecutar los experimentos.
 
 ## Referencias
 
