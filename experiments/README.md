@@ -64,6 +64,10 @@ rlm_logs/
 ├── C3_gpt/
 ├── C4_gemini/
 └── C4_gpt/
+```
+
+> [!NOTE]
+> Los registros no han podido ser subidos al repositorio dado su tamaño. No obstante, se pueden inspeccionar y descargar en el siguiente enlace de [Google Drive](https://drive.google.com/drive/folders/1U8iYp6IR5NCWzkbadoXlFTwyttop7o3n?usp=sharing)
 
 ### Visualizador de trayectorias RLM
 
