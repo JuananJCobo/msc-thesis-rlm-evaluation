@@ -64,6 +64,9 @@ proyect/
 │   └── experiment_summary.csv        # Informe de las ejecuciones de los experimentos
 ├── figures/                          # Figuras empleadas en la memoria
 ├── notebooks/                        # Libretas de Google Colab con el código fuente del proyecto
+│   ├── 01_text_extraction.ipynb      # Pipeline de extracción de texto de los archivos PDF de los registros del corpus
+│   ├── 02_preprocessing.ipynb        # Pipeline de preprocesamiento de los textos extraídos
+│   └── 03_experiments.ipynb          # Pipeline principal de experimentación 
 ├── queries/
 │   └── queries.json                  # Listado de las consultas empleadas en los experimentos y sus respuestas de referencia
 ├── slr/                              # Guía para reproducir la revisión Sistemática de Literatura empleada para la creación del corpus
